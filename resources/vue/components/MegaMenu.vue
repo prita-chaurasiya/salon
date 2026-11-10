@@ -16,19 +16,19 @@
     >
       <!-- Caret Arrow Pointer aligned to caller (Exact Salonist match) -->
       <div 
-        class="absolute -top-2 w-4 h-4 bg-white border-t border-l border-[#E2E8F0] transform rotate-45 transition-all duration-300 z-10"
+        class="absolute -top-2 w-4 h-4 bg-white border-t border-l border-[#ECE8F2] transform rotate-45 transition-all duration-300 z-10"
         :style="{ left: pointerPosition }"
       ></div>
 
       <!-- Mega Card Container with 24px radius, soft border, luxury shadow -->
-      <div class="relative bg-white rounded-[24px] border border-[#E2E8F0] shadow-[0_20px_50px_rgba(15,61,62,0.08)] p-8 overflow-hidden text-[#0F172A]">
+      <div class="relative bg-white rounded-[24px] border border-[#ECE8F2] shadow-[0_20px_50px_rgba(15,61,62,0.08)] p-8 overflow-hidden text-[#1E1B2E]">
         
         <!-- ================= 1. WHY SALONIST (Preserved Exactly) ================= -->
         <div v-if="category === 'why-us'" class="grid grid-cols-3 gap-8">
           
           <!-- Column 1: COMPANY -->
           <div>
-            <h5 class="text-[12px] font-extrabold uppercase tracking-wider text-[#64748B] mb-5">
+            <h5 class="text-[12px] font-extrabold uppercase tracking-wider text-[#8C8698] mb-5">
               COMPANY
             </h5>
             <div class="space-y-4">
@@ -36,13 +36,13 @@
                 v-for="(item, i) in whyUsData.company" 
                 :key="i" 
                 :href="item.href"
-                class="group flex items-center gap-3.5 text-left transition-colors p-1.5 -mx-1.5 rounded-xl hover:bg-[#FAF5FF]"
+                class="group flex items-center gap-3.5 text-left transition-colors p-1.5 -mx-1.5 rounded-xl hover:bg-[#F8F6FC]"
               >
-                <div class="w-6 h-6 flex items-center justify-center text-[#581C87] group-hover:text-[#EC4899] transition-colors shrink-0">
+                <div class="w-6 h-6 flex items-center justify-center text-[#7C3AED] group-hover:text-[#7C3AED] transition-colors shrink-0">
                   <component :is="item.icon" class="w-5 h-5 stroke-[1.5]" />
                 </div>
                 <div class="flex-1">
-                  <span class="text-[15px] font-medium text-[#0F172A] group-hover:text-[#581C87] transition-colors block">
+                  <span class="text-[15px] font-medium text-[#1E1B2E] group-hover:text-[#7C3AED] transition-colors block">
                     {{ item.title }}
                   </span>
                 </div>
@@ -52,7 +52,7 @@
 
           <!-- Column 2: GUIDES -->
           <div>
-            <h5 class="text-[12px] font-extrabold uppercase tracking-wider text-[#64748B] mb-5">
+            <h5 class="text-[12px] font-extrabold uppercase tracking-wider text-[#8C8698] mb-5">
               GUIDES
             </h5>
             <div class="space-y-4">
@@ -60,13 +60,13 @@
                 v-for="(item, i) in whyUsData.guides" 
                 :key="i" 
                 :href="item.href"
-                class="group flex items-center gap-3.5 text-left transition-colors p-1.5 -mx-1.5 rounded-xl hover:bg-[#FAF5FF]"
+                class="group flex items-center gap-3.5 text-left transition-colors p-1.5 -mx-1.5 rounded-xl hover:bg-[#F8F6FC]"
               >
-                <div class="w-6 h-6 flex items-center justify-center text-[#581C87] group-hover:text-[#EC4899] transition-colors shrink-0">
+                <div class="w-6 h-6 flex items-center justify-center text-[#7C3AED] group-hover:text-[#7C3AED] transition-colors shrink-0">
                   <component :is="item.icon" class="w-5 h-5 stroke-[1.5]" />
                 </div>
                 <div class="flex-1">
-                  <span class="text-[15px] font-medium text-[#0F172A] group-hover:text-[#581C87] transition-colors block">
+                  <span class="text-[15px] font-medium text-[#1E1B2E] group-hover:text-[#7C3AED] transition-colors block">
                     {{ item.title }}
                   </span>
                 </div>
@@ -76,7 +76,7 @@
 
           <!-- Column 3: RESOURCES -->
           <div>
-            <h5 class="text-[12px] font-extrabold uppercase tracking-wider text-[#64748B] mb-5">
+            <h5 class="text-[12px] font-extrabold uppercase tracking-wider text-[#8C8698] mb-5">
               RESOURCES
             </h5>
             <div class="space-y-4">
@@ -84,13 +84,13 @@
                 v-for="(item, i) in whyUsData.resources" 
                 :key="i" 
                 :href="item.href"
-                class="group flex items-center gap-3.5 text-left transition-colors p-1.5 -mx-1.5 rounded-xl hover:bg-[#FAF5FF]"
+                class="group flex items-center gap-3.5 text-left transition-colors p-1.5 -mx-1.5 rounded-xl hover:bg-[#F8F6FC]"
               >
-                <div class="w-6 h-6 flex items-center justify-center text-[#581C87] group-hover:text-[#EC4899] transition-colors shrink-0">
+                <div class="w-6 h-6 flex items-center justify-center text-[#7C3AED] group-hover:text-[#7C3AED] transition-colors shrink-0">
                   <component :is="item.icon" class="w-5 h-5 stroke-[1.5]" />
                 </div>
                 <div class="flex-1">
-                  <span class="text-[15px] font-medium text-[#0F172A] group-hover:text-[#581C87] transition-colors block">
+                  <span class="text-[15px] font-medium text-[#1E1B2E] group-hover:text-[#7C3AED] transition-colors block">
                     {{ item.title }}
                   </span>
                 </div>
@@ -105,7 +105,7 @@
           
           <!-- Column 1: SCHEDULING & PAYMENTS -->
           <div>
-            <h5 class="text-[11px] font-extrabold uppercase tracking-wider text-[#64748B] mb-4">
+            <h5 class="text-[11px] font-extrabold uppercase tracking-wider text-[#8C8698] mb-4">
               SCHEDULING & PAYMENTS
             </h5>
             <div class="space-y-3.5">
@@ -113,16 +113,16 @@
                 v-for="(item, i) in featuresData.scheduling" 
                 :key="i" 
                 :href="item.href"
-                class="group flex items-center gap-3 text-left transition-colors p-1 -mx-1 rounded-lg hover:bg-[#FAF5FF]"
+                class="group flex items-center gap-3 text-left transition-colors p-1 -mx-1 rounded-lg hover:bg-[#F8F6FC]"
               >
-                <div class="w-5 h-5 flex items-center justify-center text-[#581C87] group-hover:text-[#EC4899] transition-colors shrink-0">
+                <div class="w-5 h-5 flex items-center justify-center text-[#7C3AED] group-hover:text-[#7C3AED] transition-colors shrink-0">
                   <component :is="item.icon" class="w-4 h-4 stroke-[1.6]" />
                 </div>
                 <div class="flex items-center gap-2">
-                  <span class="text-[13.5px] font-medium text-[#0F172A] group-hover:text-[#581C87] transition-colors">
+                  <span class="text-[13.5px] font-medium text-[#1E1B2E] group-hover:text-[#7C3AED] transition-colors">
                     {{ item.title }}
                   </span>
-                  <span v-if="item.isNew" class="text-[9px] font-black uppercase px-1.5 py-0.2 rounded bg-[#F5F3FF] text-[#581C87]">
+                  <span v-if="item.isNew" class="text-[9px] font-black uppercase px-1.5 py-0.2 rounded bg-[#F3ECFF] text-[#7C3AED]">
                     NEW
                   </span>
                 </div>
@@ -132,7 +132,7 @@
 
           <!-- Column 2: CLIENT RELATIONSHIPS -->
           <div>
-            <h5 class="text-[11px] font-extrabold uppercase tracking-wider text-[#64748B] mb-4">
+            <h5 class="text-[11px] font-extrabold uppercase tracking-wider text-[#8C8698] mb-4">
               CLIENT RELATIONSHIPS
             </h5>
             <div class="space-y-3.5">
@@ -140,12 +140,12 @@
                 v-for="(item, i) in featuresData.clients" 
                 :key="i" 
                 :href="item.href"
-                class="group flex items-center gap-3 text-left transition-colors p-1 -mx-1 rounded-lg hover:bg-[#FAF5FF]"
+                class="group flex items-center gap-3 text-left transition-colors p-1 -mx-1 rounded-lg hover:bg-[#F8F6FC]"
               >
-                <div class="w-5 h-5 flex items-center justify-center text-[#581C87] group-hover:text-[#EC4899] transition-colors shrink-0">
+                <div class="w-5 h-5 flex items-center justify-center text-[#7C3AED] group-hover:text-[#7C3AED] transition-colors shrink-0">
                   <component :is="item.icon" class="w-4 h-4 stroke-[1.6]" />
                 </div>
-                <span class="text-[13.5px] font-medium text-[#0F172A] group-hover:text-[#581C87] transition-colors">
+                <span class="text-[13.5px] font-medium text-[#1E1B2E] group-hover:text-[#7C3AED] transition-colors">
                   {{ item.title }}
                 </span>
               </a>
@@ -154,7 +154,7 @@
 
           <!-- Column 3: MARKETING & AUTOMATION -->
           <div>
-            <h5 class="text-[11px] font-extrabold uppercase tracking-wider text-[#64748B] mb-4">
+            <h5 class="text-[11px] font-extrabold uppercase tracking-wider text-[#8C8698] mb-4">
               MARKETING & AUTOMATION
             </h5>
             <div class="space-y-3.5">
@@ -162,12 +162,12 @@
                 v-for="(item, i) in featuresData.marketing" 
                 :key="i" 
                 :href="item.href"
-                class="group flex items-center gap-3 text-left transition-colors p-1 -mx-1 rounded-lg hover:bg-[#FAF5FF]"
+                class="group flex items-center gap-3 text-left transition-colors p-1 -mx-1 rounded-lg hover:bg-[#F8F6FC]"
               >
-                <div class="w-5 h-5 flex items-center justify-center text-[#581C87] group-hover:text-[#EC4899] transition-colors shrink-0">
+                <div class="w-5 h-5 flex items-center justify-center text-[#7C3AED] group-hover:text-[#7C3AED] transition-colors shrink-0">
                   <component :is="item.icon" class="w-4 h-4 stroke-[1.6]" />
                 </div>
-                <span class="text-[13.5px] font-medium text-[#0F172A] group-hover:text-[#581C87] transition-colors">
+                <span class="text-[13.5px] font-medium text-[#1E1B2E] group-hover:text-[#7C3AED] transition-colors">
                   {{ item.title }}
                 </span>
               </a>
@@ -176,7 +176,7 @@
 
           <!-- Column 4: MANAGEMENT -->
           <div>
-            <h5 class="text-[11px] font-extrabold uppercase tracking-wider text-[#64748B] mb-4">
+            <h5 class="text-[11px] font-extrabold uppercase tracking-wider text-[#8C8698] mb-4">
               MANAGEMENT
             </h5>
             <div class="space-y-3.5">
@@ -184,12 +184,12 @@
                 v-for="(item, i) in featuresData.management" 
                 :key="i" 
                 :href="item.href"
-                class="group flex items-center gap-3 text-left transition-colors p-1 -mx-1 rounded-lg hover:bg-[#FAF5FF]"
+                class="group flex items-center gap-3 text-left transition-colors p-1 -mx-1 rounded-lg hover:bg-[#F8F6FC]"
               >
-                <div class="w-5 h-5 flex items-center justify-center text-[#581C87] group-hover:text-[#EC4899] transition-colors shrink-0">
+                <div class="w-5 h-5 flex items-center justify-center text-[#7C3AED] group-hover:text-[#7C3AED] transition-colors shrink-0">
                   <component :is="item.icon" class="w-4 h-4 stroke-[1.6]" />
                 </div>
-                <span class="text-[13.5px] font-medium text-[#0F172A] group-hover:text-[#581C87] transition-colors">
+                <span class="text-[13.5px] font-medium text-[#1E1B2E] group-hover:text-[#7C3AED] transition-colors">
                   {{ item.title }}
                 </span>
               </a>
@@ -203,7 +203,7 @@
           
           <!-- Column 1: HAIR & BEAUTY (4 Exact Items from Screenshot) -->
           <div>
-            <h5 class="text-[12px] font-extrabold uppercase tracking-wider text-[#64748B] mb-5">
+            <h5 class="text-[12px] font-extrabold uppercase tracking-wider text-[#8C8698] mb-5">
               HAIR & BEAUTY
             </h5>
             <div class="space-y-4">
@@ -212,12 +212,12 @@
                 :key="i" 
                 :to="item.to"
                 @click="$emit('close')"
-                class="group flex items-center gap-3.5 text-left transition-colors p-1.5 -mx-1.5 rounded-xl hover:bg-[#FAF5FF]"
+                class="group flex items-center gap-3.5 text-left transition-colors p-1.5 -mx-1.5 rounded-xl hover:bg-[#F8F6FC]"
               >
-                <div class="w-6 h-6 flex items-center justify-center text-[#581C87] group-hover:text-[#EC4899] transition-colors shrink-0">
+                <div class="w-6 h-6 flex items-center justify-center text-[#7C3AED] group-hover:text-[#7C3AED] transition-colors shrink-0">
                   <component :is="item.icon" class="w-5 h-5 stroke-[1.5]" />
                 </div>
-                <span class="text-[14.5px] font-medium text-[#0F172A] group-hover:text-[#581C87] transition-colors">
+                <span class="text-[14.5px] font-medium text-[#1E1B2E] group-hover:text-[#7C3AED] transition-colors">
                   {{ item.title }}
                 </span>
               </router-link>
@@ -226,7 +226,7 @@
 
           <!-- Column 2: SPA & WELLNESS (4 Exact Items from Screenshot) -->
           <div>
-            <h5 class="text-[12px] font-extrabold uppercase tracking-wider text-[#64748B] mb-5">
+            <h5 class="text-[12px] font-extrabold uppercase tracking-wider text-[#8C8698] mb-5">
               SPA & WELLNESS
             </h5>
             <div class="space-y-4">
@@ -235,12 +235,12 @@
                 :key="i" 
                 :to="item.to"
                 @click="$emit('close')"
-                class="group flex items-center gap-3.5 text-left transition-colors p-1.5 -mx-1.5 rounded-xl hover:bg-[#FAF5FF]"
+                class="group flex items-center gap-3.5 text-left transition-colors p-1.5 -mx-1.5 rounded-xl hover:bg-[#F8F6FC]"
               >
-                <div class="w-6 h-6 flex items-center justify-center text-[#581C87] group-hover:text-[#EC4899] transition-colors shrink-0">
+                <div class="w-6 h-6 flex items-center justify-center text-[#7C3AED] group-hover:text-[#7C3AED] transition-colors shrink-0">
                   <component :is="item.icon" class="w-5 h-5 stroke-[1.5]" />
                 </div>
-                <span class="text-[14.5px] font-medium text-[#0F172A] group-hover:text-[#581C87] transition-colors">
+                <span class="text-[14.5px] font-medium text-[#1E1B2E] group-hover:text-[#7C3AED] transition-colors">
                   {{ item.title }}
                 </span>
               </router-link>
@@ -249,7 +249,7 @@
 
           <!-- Column 3: CLINICS & SPECIALTY (4 Exact Items from Screenshot) -->
           <div>
-            <h5 class="text-[12px] font-extrabold uppercase tracking-wider text-[#64748B] mb-5">
+            <h5 class="text-[12px] font-extrabold uppercase tracking-wider text-[#8C8698] mb-5">
               CLINICS & SPECIALTY
             </h5>
             <div class="space-y-4">
@@ -258,12 +258,12 @@
                 :key="i" 
                 :to="item.to"
                 @click="$emit('close')"
-                class="group flex items-center gap-3.5 text-left transition-colors p-1.5 -mx-1.5 rounded-xl hover:bg-[#FAF5FF]"
+                class="group flex items-center gap-3.5 text-left transition-colors p-1.5 -mx-1.5 rounded-xl hover:bg-[#F8F6FC]"
               >
-                <div class="w-6 h-6 flex items-center justify-center text-[#581C87] group-hover:text-[#EC4899] transition-colors shrink-0">
+                <div class="w-6 h-6 flex items-center justify-center text-[#7C3AED] group-hover:text-[#7C3AED] transition-colors shrink-0">
                   <component :is="item.icon" class="w-5 h-5 stroke-[1.5]" />
                 </div>
-                <span class="text-[14.5px] font-medium text-[#0F172A] group-hover:text-[#581C87] transition-colors">
+                <span class="text-[14.5px] font-medium text-[#1E1B2E] group-hover:text-[#7C3AED] transition-colors">
                   {{ item.title }}
                 </span>
               </router-link>

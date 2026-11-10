@@ -1,37 +1,41 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #581C87;       /* Royal Violet */
-  --color-accent: #EC4899;        /* Luxury Rose / Pink */
-  --color-background: #FAFAFD;    /* Clean Luminescent Canvas */
-  --color-canvas: #F8FAFC;
+  --color-primary: #16141F;
+  --color-secondary: #2B2237;
+  --color-accent: #7C3AED;
+  --color-accent-hover: #6D28D9;
+  --color-background: #FCFBFD;
+  --color-canvas: #F7F5FA;
   --color-card: #FFFFFF;
-  --color-border: #E2E8F0;
+  --color-border: #E9E5F0;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 :root {
-  --primary: #581C87;
-  --accent: #EC4899;
-  --background: #FAFAFD;
-  --canvas: #F8FAFC;
+  --primary: #16141F;
+  --secondary: #2B2237;
+  --accent: #7C3AED;
+  --accent-hover: #6D28D9;
+  --background: #FCFBFD;
+  --section-bg: #F7F5FA;
   --card: #FFFFFF;
-  --border: #E2E8F0;
-  --text-heading: #0F172A;
-  --text-body: #334155;
-  --text-muted: #64748B;
+  --border: #E9E5F0;
+  --text-primary: #1E1B2E;
+  --text-secondary: #5B5568;
+  --text-muted: #8C8698;
 }
 
 * {
-  border-color: #E2E8F0;
+  border-color: #E9E5F0;
   box-sizing: border-box;
 }
 
 html {
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
-  color: #0F172A;
-  background-color: #FAFAFD;
+  color: #1E1B2E;
+  background-color: #FCFBFD;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 15px;
@@ -46,8 +50,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #FAFAFD;
-  color: #334155;
+  background-color: #FCFBFD;
+  color: #5B5568;
   overflow-x: hidden;
   font-weight: 400;
   line-height: 1.62;
@@ -60,7 +64,7 @@ h1 {
   font-weight: 800;
   letter-spacing: -0.025em;
   line-height: 1.15;
-  color: #0F172A;
+  color: #1E1B2E;
 }
 
 h2 {
@@ -68,7 +72,7 @@ h2 {
   font-weight: 800;
   letter-spacing: -0.025em;
   line-height: 1.2;
-  color: #0F172A;
+  color: #1E1B2E;
 }
 
 h3 {
@@ -76,7 +80,7 @@ h3 {
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.25;
-  color: #0F172A;
+  color: #1E1B2E;
 }
 
 h4, h5, h6 {
@@ -84,12 +88,12 @@ h4, h5, h6 {
   font-weight: 700;
   letter-spacing: -0.015em;
   line-height: 1.35;
-  color: #0F172A;
+  color: #1E1B2E;
 }
 
 p {
   font-weight: 400;
-  color: #334155;
+  color: #5B5568;
   line-height: 1.65;
 }
 
@@ -99,38 +103,37 @@ button {
   letter-spacing: -0.01em;
 }
 
-/* ================= 2-COLOR CLEAN LUXURY SYSTEM ================= */
+/* ================= LUXURY BRAND COLOR SYSTEM UTILITIES ================= */
 
-/* Clean 2-Color Solid Accent for Headlines */
+/* Elegant Headline Accent */
 .text-salon-gradient {
-  color: #581C87 !important;
+  color: #2B2237 !important;
   display: inline-block;
 }
 
-.text-pink-accent {
-  color: #EC4899 !important;
-  display: inline-block;
+.text-accent {
+  color: #7C3AED !important;
 }
 
-/* Clean Minimalist Luxury Card */
+/* Luxury Card - 0 10px 40px rgba(22,20,31,.05) */
 .card-3d {
   background: #FFFFFF;
-  border: 1px solid #E2E8F0;
-  box-shadow: 0 4px 20px -2px rgba(88, 28, 135, 0.05);
+  border: 1px solid #ECE8F2;
+  box-shadow: 0 10px 40px rgba(22, 20, 31, 0.05);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .card-3d:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 32px -4px rgba(88, 28, 135, 0.12);
-  border-color: rgba(88, 28, 135, 0.3);
+  box-shadow: 0 20px 50px rgba(22, 20, 31, 0.09);
+  border-color: #D8D3E2;
 }
 
-/* 2-Color Pill Badge */
+/* Badges: Background #F3ECFF, Text #6D28D9 */
 .badge-3d {
-  background: #FDF2F8;
-  border: 1px solid #FBCFE8;
-  color: #581C87;
+  background: #F3ECFF !important;
+  border: 1px solid #E9E5F0;
+  color: #6D28D9 !important;
   transition: transform 0.2s ease;
 }
 
@@ -138,21 +141,37 @@ button {
   transform: translateY(-1px);
 }
 
-/* THE ONLY GRADIENT: Premium Action Button (2 Colors: Royal Violet -> Luxury Rose) */
+/* Primary Button: #2B2237, Hover #3B2E4F, Text #FFFFFF */
 .btn-3d-primary {
-  background: linear-gradient(135deg, #581C87 0%, #EC4899 100%) !important;
+  background-color: #2B2237 !important;
+  background-image: none !important;
   color: #FFFFFF !important;
-  box-shadow: 0 8px 20px -3px rgba(88, 28, 135, 0.35);
+  box-shadow: 0 4px 14px rgba(43, 34, 55, 0.25);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .btn-3d-primary:hover {
+  background-color: #3B2E4F !important;
   transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 14px 28px -3px rgba(236, 72, 153, 0.45);
+  box-shadow: 0 8px 24px rgba(43, 34, 55, 0.35);
 }
 
 .btn-3d-primary:active {
   transform: translateY(1px) scale(0.98);
+}
+
+/* Secondary Button: White, Border #D8D3E2, Hover #F7F5FA */
+.btn-secondary-luxury {
+  background: #FFFFFF;
+  border: 1px solid #D8D3E2;
+  color: #1E1B2E;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary-luxury:hover {
+  background: #F7F5FA;
+  border-color: #2B2237;
+  color: #2B2237;
 }
 
 /* Custom Scrollbar */
@@ -160,14 +179,14 @@ button {
   width: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #FAFAFD;
+  background: #FCFBFD;
 }
 ::-webkit-scrollbar-thumb {
-  background: #E2E8F0;
+  background: #E9E5F0;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #CBD5E1;
+  background: #8C8698;
 }
 
 /* Smooth Scroll Lenis base style */

@@ -1,9 +1,9 @@
 <template>
-  <div class="relative overflow-hidden rounded-[32px] bg-[#581C87] text-white p-10 md:p-16 lg:p-20 border border-purple-800 shadow-[0_20px_50px_rgba(88,28,135,0.2)]">
+  <div class="relative overflow-hidden rounded-[32px] bg-[#16141F] text-white p-10 md:p-16 lg:p-20 border border-[#2F2940] shadow-[0_20px_50px_rgba(22,20,31,0.25)]">
     
     <div class="relative z-10 max-w-3xl mx-auto text-center">
-      <div class="inline-flex items-center gap-2 px-4 py-1.5 mb-6 rounded-full text-xs font-bold uppercase tracking-wider bg-white/10 text-pink-200 border border-white/20 backdrop-blur-md shadow-xs">
-        <Sparkles class="w-3.5 h-3.5 text-[#EC4899]" />
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 mb-6 rounded-full text-xs font-bold uppercase tracking-wider bg-[#2B2237] text-[#C4B5FD] border border-[#2F2940] shadow-xs">
+        <Sparkles class="w-3.5 h-3.5 text-[#7C3AED]" />
         {{ badge }}
       </div>
 
@@ -11,41 +11,41 @@
         {{ title }}
       </h2>
 
-      <p class="mt-6 text-base sm:text-lg !text-purple-100 font-normal leading-relaxed max-w-2xl mx-auto">
+      <p class="mt-6 text-base sm:text-lg !text-[#BEB8CC] font-normal leading-relaxed max-w-2xl mx-auto">
         {{ subtitle }}
       </p>
 
       <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-        <!-- Button: Start Free 7-Day Trial (Gradient Royal Violet to Rose) -->
+        <!-- Button: Start Free 7-Day Trial (Primary #7C3AED with hover #6D28D9) -->
         <button 
           @click="$emit('start-trial')"
-          class="w-full sm:w-auto px-8 py-4 rounded-full bg-white text-[#581C87] font-bold text-sm hover:bg-pink-50 transition-all duration-200 shadow-xl flex items-center justify-center gap-2 hover:scale-105 active:scale-95 cursor-pointer"
+          class="w-full sm:w-auto px-8 py-4 rounded-full bg-[#7C3AED] hover:bg-[#6D28D9] text-white font-bold text-sm transition-all duration-200 shadow-xl flex items-center justify-center gap-2 hover:scale-105 active:scale-95 cursor-pointer"
         >
           <span>Start Free 7-Day Trial</span>
-          <ArrowRight class="w-4 h-4 text-[#581C87]" />
+          <ArrowRight class="w-4 h-4 text-white" />
         </button>
 
-        <!-- Button: Book A 20-Min Demo (Clean white outline) -->
+        <!-- Button: Book A 20-Min Demo (Secondary Button #2B2237) -->
         <button 
           @click="$emit('book-demo')"
-          class="w-full sm:w-auto px-8 py-4 rounded-full bg-white/10 border border-white/20 text-white font-bold text-sm hover:bg-white/20 transition-all duration-200 flex items-center justify-center gap-2 shadow-xs cursor-pointer"
+          class="w-full sm:w-auto px-8 py-4 rounded-full bg-[#2B2237] hover:bg-[#3B2E4F] border border-[#3B2E4F] text-white font-bold text-sm transition-all duration-200 flex items-center justify-center gap-2 shadow-xs cursor-pointer"
         >
           <span>Book A 20-Min Demo</span>
         </button>
       </div>
 
-      <div class="mt-8 flex flex-wrap items-center justify-center gap-6 text-xs !text-purple-200">
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-6 text-xs !text-[#928BA3]">
         <div class="flex items-center gap-2">
-          <Check class="w-4 h-4 text-[#EC4899]" />
-          <span class="!text-purple-200">No credit card required</span>
+          <Check class="w-4 h-4 text-[#7C3AED]" />
+          <span class="!text-[#BEB8CC]">No credit card required</span>
         </div>
         <div class="flex items-center gap-2">
-          <Check class="w-4 h-4 text-[#EC4899]" />
-          <span class="!text-purple-200">Unlimited staff included</span>
+          <Check class="w-4 h-4 text-[#7C3AED]" />
+          <span class="!text-[#BEB8CC]">Unlimited staff included</span>
         </div>
         <div class="flex items-center gap-2">
-          <Check class="w-4 h-4 text-[#EC4899]" />
-          <span class="!text-purple-200">Free white-glove data migration</span>
+          <Check class="w-4 h-4 text-[#7C3AED]" />
+          <span class="!text-[#BEB8CC]">Free white-glove data migration</span>
         </div>
       </div>
     </div>

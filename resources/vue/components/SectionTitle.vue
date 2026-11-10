@@ -2,14 +2,14 @@
   <div class="mb-14" :class="center ? 'text-center max-w-3xl mx-auto' : 'max-w-2xl'">
     <div 
       v-if="badge" 
-      class="inline-flex items-center gap-2 px-3 py-1 mb-3.5 rounded-full text-[11px] font-bold tracking-wider uppercase border border-[#E2E8F0] bg-[#F5F3FF] text-[#581C87] shadow-xs"
+      class="inline-flex items-center gap-2 px-3 py-1 mb-3.5 rounded-full text-[11px] font-bold tracking-wider uppercase border border-[#E9E5F0] bg-[#F3ECFF] text-[#2B2237] shadow-xs"
     >
-      <span class="w-1.5 h-1.5 rounded-full bg-[#EC4899] animate-pulse"></span>
+      <span class="w-1.5 h-1.5 rounded-full bg-[#7C3AED] animate-pulse"></span>
       {{ badge }}
     </div>
     <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-[#1E293B] leading-[1.2]">
       {{ title }}
-      <span v-if="highlight" class="block text-[#581C87] mt-1">{{ highlight }}</span>
+      <span v-if="highlight" class="block text-[#2B2237] mt-1">{{ highlight }}</span>
     </h2>
     <p v-if="subtitle" class="mt-3.5 text-sm sm:text-base text-[#4B5563] font-normal leading-relaxed max-w-2xl mx-auto">
       {{ subtitle }}

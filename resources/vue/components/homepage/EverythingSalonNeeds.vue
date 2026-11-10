@@ -1,15 +1,15 @@
 <template>
-  <section class="py-20 md:py-28 bg-[#F8F9FE] border-b border-[#E8EAF2]" id="features">
+  <section class="py-20 md:py-28 bg-[#F7F5FA] border-b border-[#E9E5F0]" id="features">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Headline & Subtitle matching Screenshot 3 -->
       <div class="text-center max-w-3xl mx-auto mb-14">
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#140B28] tracking-tight leading-[1.15]">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1E1B2E] tracking-tight leading-[1.15]">
           Everything Your Salon Needs in <br class="hidden sm:inline" />
-          <span class="text-salon-gradient">One Salon Software</span>
+          <span class="text-[#2B2237]">One Salon Software</span>
         </h2>
         
-        <p class="mt-4 text-base sm:text-[17px] text-[#484357] font-normal leading-relaxed">
+        <p class="mt-4 text-base sm:text-[17px] text-[#5B5568] font-normal leading-relaxed">
           From the first booking to the repeat visit, Salonist covers every part of running a salon or spa. No juggling apps, spreadsheets or paper diaries.
         </p>
       </div>
@@ -20,28 +20,28 @@
         <div 
           v-for="(card, i) in featureCards" 
           :key="i"
-          class="relative p-8 rounded-[24px] bg-white border border-[#E2E8F0] card-3d flex flex-col justify-between group"
+          class="relative p-8 rounded-[24px] bg-white border border-[#ECE8F2] card-3d flex flex-col justify-between group"
         >
           <div>
-            <!-- Centered Top Circle Badge: 2-Color Solid Palette -->
-            <div class="w-14 h-14 rounded-2xl bg-purple-50 border border-purple-100 flex items-center justify-center text-[#581C87] mx-auto mb-6 group-hover:bg-[#581C87] group-hover:text-white transition-all duration-300 shadow-sm group-hover:scale-105">
+            <!-- Centered Top Circle Badge: Background #F7F5FA, Icon #7C3AED -->
+            <div class="w-14 h-14 rounded-2xl bg-[#F7F5FA] border border-[#E9E5F0] flex items-center justify-center text-[#7C3AED] mx-auto mb-6 group-hover:bg-[#2B2237] group-hover:text-white transition-all duration-300 shadow-xs group-hover:scale-105">
               <component :is="card.icon" class="w-6 h-6 stroke-[1.8]" />
             </div>
 
             <!-- Title -->
-            <h3 class="text-xl font-bold text-[#0F172A] text-center mb-4 tracking-tight group-hover:text-[#581C87] transition-colors">
+            <h3 class="text-xl font-bold text-[#1E1B2E] text-center mb-4 tracking-tight group-hover:text-[#7C3AED] transition-colors">
               {{ card.title }}
             </h3>
 
             <!-- Body Description -->
-            <p class="text-sm leading-relaxed text-[#475569] text-center font-normal">
+            <p class="text-sm leading-relaxed text-[#5B5568] text-center font-normal">
               {{ card.desc }}
             </p>
           </div>
 
           <!-- Bottom micro-link -->
-          <div class="pt-6 mt-6 border-t border-[#F1F5F9] text-center">
-            <span class="text-xs font-bold text-[#581C87] group-hover:text-[#EC4899] inline-flex items-center gap-1 transition-colors">
+          <div class="pt-6 mt-6 border-t border-[#E9E5F0] text-center">
+            <span class="text-xs font-bold text-[#2B2237] group-hover:text-[#7C3AED] inline-flex items-center gap-1 transition-colors">
               <span>Learn more about {{ card.title.split('&')[0].trim() }}</span>
               <span class="group-hover:translate-x-1 transition-transform">→</span>
             </span>
