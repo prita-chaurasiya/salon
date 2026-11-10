@@ -119,3 +119,4 @@ const comparisonRows = [
   { feature: 'Free White-Glove Data Migration', desc: 'Import clients, inventory, appointment history', salonist: '100% Free VIP Service', competitor1: 'Self-Service Only', competitor2: '$500+ Setup Fee' }
 ];
 </script>
+

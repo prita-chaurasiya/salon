@@ -829,4 +829,473 @@ export const solutionsDirectory = {
       { q: 'Does it send automated alerts when the pet is ready for pickup?', a: 'Yes, one-tap SMS: "Your pup is bathed, styled, and ready for pickup!" prevents kennel overcrowding.' }
     ]
   }
+,
+  'beauty-salon': {
+  "slug": "beauty-salon",
+  "category": "Hair & Beauty",
+  "title": "Beauty Salon Software",
+  "headline": "All-in-One Beauty Salon Software for Multi-Treatment Excellence & Client Retention",
+  "heroDescription": "From skincare facials, brow shaping, and lash extensions to makeup artistry and waxing, beauty salons juggle a multitude of service categories, treatment rooms, and skilled specialists. Salonist is modern beauty salon software built to synchronize treatment rooms, staff rosters, package memberships, and online bookings into a unified, high-performing luxury experience.",
+  "heroImage": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=85",
+  "floatingTodayChairs": [
+    {
+      "name": "Room 1 — Lash Infill (Elena)",
+      "status": "In Process",
+      "color": "purple"
+    },
+    {
+      "name": "Station 2 — Brow Lamination",
+      "status": "Booked",
+      "color": "amber"
+    },
+    {
+      "name": "Room 3 — Hydrafacial Prep",
+      "status": "Ready",
+      "color": "emerald"
+    }
+  ],
+  "floatingBookingPrompt": {
+    "title": "Book Signature Facial",
+    "sub": "Today at 3:30 pm"
+  },
+  "floatingReceipt": {
+    "item1": "Lash Full Set ",
+    "item2": "Brow Tint ",
+    "total": ""
+  },
+  "trustedTitle": "Trusted by Premier Beauty Salons Nationwide",
+  "problemTitle": "What Holds Beauty Salons Back from Scaling?",
+  "problems": [
+    {
+      "title": "Room & Equipment Double-Booking",
+      "desc": "When beauty specialists and rooms are booked manually, treatment beds and laser equipment clash, leading to embarrassing delays."
+    },
+    {
+      "title": "Complex Multi-Service Booking Friction",
+      "desc": "Clients booking lashes, brows, and facials together struggle with separate time slots when systems lack intelligent stacking."
+    },
+    {
+      "title": "Lost Retail Sales on Professional Skincare",
+      "desc": "Estheticians forget product recommendations at checkout without automated post-treatment homecare prompts."
+    },
+    {
+      "title": "Frequent Late Cancellations & No-Shows",
+      "desc": "Without card capture deposits and smart WhatsApp reminders, prime weekend appointment slots go wasted."
+    },
+    {
+      "title": "Inefficient Client Intake & Allergy Forms",
+      "desc": "Paper consent forms slow down front desk check-in and risk missing critical contraindications or tint sensitivities."
+    },
+    {
+      "title": "Fragmented Client Retention & Rewards",
+      "desc": "Without automated loyalty points and anniversary perks, clients drift away to newer neighborhood studios."
+    }
+  ],
+  "feature1": {
+    "tag": "TREATMENT ROOM & SPECIALIST SCHEDULING",
+    "title": "Smart Room Allocation & Stacked Beauty Bookings",
+    "desc": "Eliminate room conflicts forever. Salonist automatically pairs qualified estheticians with the exact treatment rooms and aesthetic machines required for every service, letting clients book full beauty makeover packages in a single smooth flow.",
+    "bullets": [
+      "Automated room, equipment, and staff synchronization",
+      "Multi-service booking packages (Lash + Brow + Facial in one tap)",
+      "Buffer time management for sanitation and room turnaround",
+      "Online card deposits to eliminate salon no-shows"
+    ],
+    "image": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=85",
+    "floatingCardType": "booking"
+  },
+  "feature2": {
+    "tag": "DIGITAL CLIENT INTAKE & CONSULTATION",
+    "title": "Digital Consultation Forms & Treatment History",
+    "desc": "Deliver bespoke beauty consultations. Send digital medical intake and allergy consent forms directly to clients phones before arrival. Keep detailed client profiles with past treatment formulas, before/after photos, and allergy alerts accessible at the tap of a screen.",
+    "bullets": [
+      "Paperless digital consent forms signed on tablet or smartphone",
+      "Side-by-side before & after photo gallery in client records",
+      "Custom patch test reminders and contraindication warnings",
+      "Integrated notes on skin types, lash curl maps, and brow shades"
+    ],
+    "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=85"
+  },
+  "feature3": {
+    "tag": "LUXURY BEAUTY POS & MEMBERSHIPS",
+    "title": "Beauty POS, Homecare Skincare Retail & Loyalty Memberships",
+    "desc": "Supercharge average ticket size. Salonists point of sale enables seamless retail checkout for luxury skincare brands, automated membership recurring billing for monthly beauty subscriptions, and loyalty point redemptions.",
+    "bullets": [
+      "One-tap retail barcode scanning with automated reorder alerts",
+      "Monthly recurring membership packages for facials and lashes",
+      "Automated commission tracking for estheticians on services and retail",
+      "SMS rebooking reminders triggered 3 weeks after appointments"
+    ],
+    "image": "https://images.unsplash.com/photo-1512290900672-1f55b0a04975?auto=format&fit=crop&w=800&q=85"
+  },
+  "faqs": [
+    {
+      "q": "Can clients book bundled beauty packages like lashes and nails in one booking?",
+      "a": "Yes, Salonists multi-service booking engine stacks connected treatments with appropriate specialist assignments without overlap."
+    },
+    {
+      "q": "How does Salonist prevent equipment and room double-bookings?",
+      "a": "You can assign dedicated resources to specific services so the system prevents conflicting reservations."
+    },
+    {
+      "q": "Does Salonist support digital consent forms and patch test tracking?",
+      "a": "Yes, clients can complete digital consultation forms prior to their appointment, and records track tint patch test dates."
+    },
+    {
+      "q": "Can we offer recurring monthly beauty membership subscriptions?",
+      "a": "Yes, Salonist handles automated monthly card billing for VIP beauty club members with complimentary monthly treatments."
+    }
+  ]
+},
+  'wellness-center': {
+  "slug": "wellness-center",
+  "category": "Spa & Wellness",
+  "title": "Wellness Center Software",
+  "headline": "Unified Software for Holistic Health, Float Pods, Cryotherapy & Integrative Wellness",
+  "heroDescription": "Modern wellness centers combine multidisciplinary practices — from acupuncture, infrared saunas, and cryo chambers to sound baths, naturopathy, and yoga studios. Salonist provides the unified enterprise software platform to manage rooms, practitioners, holistic packages, group workshops, and recurring client wellness plans with effortless grace.",
+  "heroImage": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=85",
+  "floatingTodayChairs": [
+    {
+      "name": "Infrared Suite A — 45m Detox",
+      "status": "Occupied",
+      "color": "purple"
+    },
+    {
+      "name": "Float Pod 2 — Sound Immersion",
+      "status": "Ready",
+      "color": "emerald"
+    },
+    {
+      "name": "Studio B — Sound Bath (12/15)",
+      "status": "Class Active",
+      "color": "amber"
+    }
+  ],
+  "floatingBookingPrompt": {
+    "title": "Infrared Sauna + Float Session",
+    "sub": "Tomorrow at 10:00 am"
+  },
+  "floatingReceipt": {
+    "item1": "Float Therapy ",
+    "item2": "Herbal Elixir ",
+    "total": ""
+  },
+  "trustedTitle": "Trusted by Leading Integrative Wellness Centers & Sanctuaries",
+  "problemTitle": "Why Managing a Modern Wellness Center is Complex",
+  "problems": [
+    {
+      "title": "Room & High-Tech Device Conflicts",
+      "desc": "Coordinating float pods, hyperbaric chambers, and sauna suites alongside practitioner availability creates chaotic scheduling errors."
+    },
+    {
+      "title": "Disconnected Solo Practitioner Systems",
+      "desc": "Acupuncturists, massage therapists, and holistic dietitians using separate systems ruin client continuity and billing."
+    },
+    {
+      "title": "Complex Multi-Modality Wellness Memberships",
+      "desc": "Managing flexible credits across saunas, yoga classes, and bodywork requires dynamic membership software that manual tools cannot handle."
+    },
+    {
+      "title": "Lengthy Paper Intake and Health Histories",
+      "desc": "Holistic health assessments require comprehensive lifestyle intake forms that create bottlenecks at reception when done on clipboards."
+    },
+    {
+      "title": "Sanitation and Turnaround Delays",
+      "desc": "Float pods and saunas need strict cleaning protocols between guests; without automated buffer alerts, guests wait in lobbies."
+    },
+    {
+      "title": "Fragmented Retail and Natural Dispensary Tracking",
+      "desc": "Tracking herbs, supplements, essential oils, and wellness goods across multiple rooms leads to inventory shrinkage."
+    }
+  ],
+  "feature1": {
+    "tag": "MODALITY & RESOURCE COORDINATION",
+    "title": "Automated Facility Scheduling & Practitioner Allocation",
+    "desc": "Seamlessly schedule rooms, recovery equipment, and holistic therapists on one intuitive visual dashboard. Salonist guarantees that sauna suites, float tanks, and therapy rooms are never double-booked, with customizable turnaround buffers.",
+    "bullets": [
+      "Automated equipment and pod turnaround buffer times",
+      "Single client booking for multi-stage wellness journeys",
+      "Flexible practitioner room sharing and shift scheduling",
+      "Real-time facility occupancy and utilization analytics"
+    ],
+    "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=85",
+    "floatingCardType": "booking"
+  },
+  "feature2": {
+    "tag": "HOLISTIC MEMBERSHIPS & PACKAGES",
+    "title": "Recurring Wellness Memberships & Flexible Credit Passes",
+    "desc": "Build predictable monthly recurring revenue with customized wellness plans. Allow members to redeem credits for sauna sessions, cold plunge circuits, or bodywork, with automated billing and member rollover policies.",
+    "bullets": [
+      "Automated recurring credit card billing on member cycle",
+      "Multi-tier wellness passes (e.g. 4 saunas + 1 massage monthly)",
+      "Family and corporate wellness package sharing options",
+      "Member self-service portal to view credits and book sessions"
+    ],
+    "image": "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=85"
+  },
+  "feature3": {
+    "tag": "DIGITAL HEALTH HISTORIES & DISPENSARY POS",
+    "title": "Holistic Health Intake Forms & Natural Apothecary POS",
+    "desc": "Empower practitioners with secure digital charting and intake questionnaires completed prior to arrival. Ring up specialty wellness tinctures, diffusers, and supplements with integrated inventory lot tracking.",
+    "bullets": [
+      "HIPAA-ready lifestyle, dietary, and medical intake records",
+      "Practitioner charting notes with encrypted document uploads",
+      "Natural apothecary retail checkout with expiry date tracking",
+      "Integrated gift cards and digital wellness voucher redemption"
+    ],
+    "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=85"
+  },
+  "faqs": [
+    {
+      "q": "Can clients book combination packages like sauna followed by float therapy?",
+      "a": "Yes, Salonist allows custom treatment sequences with exact room transfers and cooling buffers between sessions."
+    },
+    {
+      "q": "How does Salonist handle monthly recurring wellness memberships?",
+      "a": "Our billing engine runs automated recurring monthly charges and credits client accounts with member passes instantly."
+    },
+    {
+      "q": "Can we manage both private therapy rooms and group sound baths?",
+      "a": "Yes, Salonist supports private 1-on-1 therapist bookings as well as ticketed group classes, yoga sessions, and sound healing ceremonies."
+    },
+    {
+      "q": "Is client health information kept safe and confidential?",
+      "a": "All client consultation forms and practitioner notes are securely encrypted with role-based staff permission access controls."
+    }
+  ]
+},
+  'skin-clinic': {
+  "slug": "skin-clinic",
+  "category": "Clinics & Specialty",
+  "title": "Skin Clinic Software",
+  "headline": "Advanced Skin Clinic Software for Dermatologists, Dermal Therapists & Clinical Esthetics",
+  "heroDescription": "Skin clinics require precision: detailed dermatological history, photo-documentation of skin progression, chemical peel patch testing, and laser equipment calibration logs. Salonist provides specialized skin clinic management software engineered to elevate clinical standards, protect against liability with digital consent, and drive patient lifetime value through personalized clinical treatment programs.",
+  "heroImage": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=85",
+  "floatingTodayChairs": [
+    {
+      "name": "Clinic 1 — Laser Resurfacing (Dr. K)",
+      "status": "In Procedure",
+      "color": "purple"
+    },
+    {
+      "name": "Room 2 — Microneedling RF",
+      "status": "Consultation",
+      "color": "amber"
+    },
+    {
+      "name": "Room 3 — Post-Peel LED Soothe",
+      "status": "Ready",
+      "color": "emerald"
+    }
+  ],
+  "floatingBookingPrompt": {
+    "title": "Book Clinical Skin Analysis",
+    "sub": "Thursday at 2:00 pm"
+  },
+  "floatingReceipt": {
+    "item1": "Microneedling RF ",
+    "item2": "Recovery Serum ",
+    "total": ""
+  },
+  "trustedTitle": "Trusted by Elite Skin & Laser Clinics Worldwide",
+  "problemTitle": "Key Operational Challenges for Modern Skin Clinics",
+  "problems": [
+    {
+      "title": "Strict Medical History & Contraindications",
+      "desc": "Missing active medications like Roaccutane or recent sun exposure risks adverse clinical outcomes and severe legal liability."
+    },
+    {
+      "title": "Inefficient Treatment Progress Tracking",
+      "desc": "Without side-by-side photographic comparison records, proving treatment efficacy across a 6-month acne protocol is difficult."
+    },
+    {
+      "title": "Expensive Laser & Device Conflicts",
+      "desc": "When multiple practitioners compete for high-capital laser machines, appointment bottlenecks and idle machines occur."
+    },
+    {
+      "title": "Lost High-Ticket Treatment Course Deposits",
+      "desc": "Patients booking 4-figure skin renewal packages require seamless automated installment billing and payment tracking."
+    },
+    {
+      "title": "Clunky Clinical Paperwork & Consents",
+      "desc": "Paper consent forms require physical storage, are hard to retrieve during audits, and slow down clinic reception workflows."
+    },
+    {
+      "title": "Underperforming Cosmeceutical Retail Sales",
+      "desc": "Clinics fail to maximize revenue when post-treatment cosmeceutical homecare regimens are not tracked and repurchased online."
+    }
+  ],
+  "feature1": {
+    "tag": "CLINICAL CHARTING & PHOTO RECORDS",
+    "title": "Digital Skin Assessment, Charting & Before/After Records",
+    "desc": "Capture standardized clinical photos, tag treatment areas on facial anatomies, and maintain rigorous dermatological treatment histories. Show patients their transformative skin progression over time to build undeniable clinical trust.",
+    "bullets": [
+      "Secure side-by-side before & after clinical photography records",
+      "Interactive face and body anatomical charting with treatment markers",
+      "Device energy settings, pass counts, and serum lot number logs",
+      "Automated Fitzpatrick skin typing and contraindication checks"
+    ],
+    "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=85",
+    "floatingCardType": "booking"
+  },
+  "feature2": {
+    "tag": "CLINICAL PACKAGES & INSTALLMENT PLANS",
+    "title": "Multi-Session Treatment Courses & Secure Payment Plans",
+    "desc": "Sell and manage comprehensive skin transformation courses. Track session consumption in real time (e.g. Session 3 of 6 Laser Carbon Peels) and provide flexible financing options through integrated split payment plans.",
+    "bullets": [
+      "Automated tracking of pre-paid clinical treatment packages",
+      "Support for integrated financing and installment payments",
+      "Upfront booking deposit capture to safeguard clinician time",
+      "Custom invoice generation with medical treatment item codes"
+    ],
+    "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=85"
+  },
+  "feature3": {
+    "tag": "COSMECEUTICAL DISPENSARY & RETENTION",
+    "title": "Medical-Grade Cosmeceutical Inventory & Smart Reorders",
+    "desc": "Manage regulated cosmeceutical skincare inventories with batch number and expiry tracking. Send automated replenishment reminders when a patient recommended retinal or SPF bottle is nearing empty.",
+    "bullets": [
+      "Batch tracking, expiry alerts, and supplier reorder automation",
+      "Patient homecare prescription printouts and SMS follow-ups",
+      "Integrated e-commerce portal for patient skincare refills",
+      "Post-treatment care instructions delivered via automated SMS"
+    ],
+    "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=85"
+  },
+  "faqs": [
+    {
+      "q": "Can we store before and after photos securely in client profiles?",
+      "a": "Yes, Salonist includes a dedicated photo comparison module with timestamped before and after captures stored securely in the cloud."
+    },
+    {
+      "q": "Does Salonist track laser device settings for each treatment session?",
+      "a": "Yes, practitioners can record joules, pulse duration, wavelength, and passes directly into the clients clinical session notes."
+    },
+    {
+      "q": "How does package tracking work for multi-session skin treatments?",
+      "a": "When a patient purchases a 6-session laser package, Salonist automatically tracks redeemed sessions and remaining balance."
+    },
+    {
+      "q": "Can digital medical consent forms be signed before arrival?",
+      "a": "Yes, automated pre-appointment SMS links allow patients to complete health questionnaires and electronic signatures from home."
+    }
+  ]
+},
+  'enterprise-salon': {
+  "slug": "enterprise-salon",
+  "category": "Hair & Beauty",
+  "title": "Enterprise Salon Software",
+  "headline": "Scalable Enterprise Salon & Spa Management Software for 10+ Multi-Location Chains & Franchises",
+  "heroDescription": "Running a multi-unit salon brand, nationwide spa franchise, or luxury department store beauty concession demands institutional-grade software. Salonist Enterprise delivers centralized brand control, synchronized inventory replenishment, unified customer profiles across all branches, granular role-based permissions, and custom API integrations for thriving salon groups.",
+  "heroImage": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=85",
+  "floatingTodayChairs": [
+    {
+      "name": "Flagship — Soho (18 Chairs)",
+      "status": "98% Occupied",
+      "color": "emerald"
+    },
+    {
+      "name": "Branch 2 — Brooklyn (12 Chairs)",
+      "status": "92% Occupied",
+      "color": "purple"
+    },
+    {
+      "name": "Branch 3 — Miami Beach (15 Chairs)",
+      "status": "Active",
+      "color": "amber"
+    }
+  ],
+  "floatingBookingPrompt": {
+    "title": "Enterprise Dashboard",
+    "sub": "42 Locations Live"
+  },
+  "floatingReceipt": {
+    "item1": "Group Daily Gross",
+    "item2": ",200",
+    "total": "1,420 Appts"
+  },
+  "trustedTitle": "Trusted by High-Growth Salon Chains & Global Beauty Franchises",
+  "problemTitle": "Challenges When Scaling Beyond 5+ Salon Locations",
+  "problems": [
+    {
+      "title": "Siloed Customer Data Across Locations",
+      "desc": "When clients visit different branches, their formulas, loyalty balances, and service preferences are lost in disparate location databases."
+    },
+    {
+      "title": "Fragmented Warehouse & Stock Replenishment",
+      "desc": "Without centralized supply chain control, some branches suffer costly product stockouts while others hold excessive expiring inventory."
+    },
+    {
+      "title": "Inconsistent Service Pricing & Menu Control",
+      "desc": "Franchise owners struggle to enforce brand pricing tiers, promotional codes, and standardized service durations across regional units."
+    },
+    {
+      "title": "Complex Multi-Branch Staff Payroll & Cross-Cover",
+      "desc": "Managing stylists who rotate between branches creates nightmare spreadsheet calculations for commissions, deductions, and tax withholdings."
+    },
+    {
+      "title": "Lack of Real-Time High-Level Executive Reporting",
+      "desc": "Executive teams cannot make swift data-driven decisions without consolidated multi-unit revenue, chair yield, and labor cost dashboards."
+    },
+    {
+      "title": "Security, Compliance & Data Access Vulnerabilities",
+      "desc": "Large salon groups require strict granular permission controls so branch managers only view their own store data while headquarters oversees all."
+    }
+  ],
+  "feature1": {
+    "tag": "MULTI-LOCATION CENTRALIZED CONTROL",
+    "title": "Global Master Catalog, Centralized Pricing & Brand Management",
+    "desc": "Maintain absolute brand consistency. Push service menus, retail pricing, marketing campaigns, and seasonal gift promotions across 5, 50, or 200+ branches simultaneously, with regional tax and price override capabilities.",
+    "bullets": [
+      "Centralized service menu and product catalog distribution",
+      "Universal client profiles with shared loyalty points across branches",
+      "Granular role-based permissions (Headquarters, Regional, Store Manager)",
+      "Custom branch grouping by territory, city, or franchise ownership"
+    ],
+    "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=85",
+    "floatingCardType": "booking"
+  },
+  "feature2": {
+    "tag": "ENTERPRISE INVENTORY & WAREHOUSE DISPATCH",
+    "title": "Central Warehouse Transfers & Automated Branch Replenishment",
+    "desc": "Control inventory costs across your entire network. Manage supplier purchase orders from a central distribution hub, orchestrate inter-branch stock transfers, and track shrinkage with precision barcode auditing.",
+    "bullets": [
+      "Central warehouse supply chain management and transfer logs",
+      "Automated purchase orders generated by location stock minimums",
+      "Real-time retail vs. backbar chemical usage analytics",
+      "Unified supplier catalog with bulk group purchasing discounts"
+    ],
+    "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=85"
+  },
+  "feature3": {
+    "tag": "CROSS-UNIT ANALYTICS & OPEN APIS",
+    "title": "Executive BI Dashboards, Payroll Sync & Custom Open APIs",
+    "desc": "Power strategic growth with enterprise intelligence. Compare branch performance side-by-side, benchmark chair utilization, export unified payroll into SAP or QuickBooks, and connect custom mobile apps via developer-friendly REST APIs.",
+    "bullets": [
+      "Consolidated executive revenue, profit, and retention metrics",
+      "Cross-location stylist commission and transfer payroll reconciliation",
+      "Enterprise single sign-on (SSO) and SOC-2 data compliance",
+      "Dedicated Enterprise account manager and priority 24/7 SLA"
+    ],
+    "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=85"
+  },
+  "faqs": [
+    {
+      "q": "Can clients use their gift cards and loyalty points at any location?",
+      "a": "Yes, Salonist Enterprise features universal client records and shared gift card balances that sync instantly across every branch in your network."
+    },
+    {
+      "q": "Can we manage stylists who work at different locations on different days?",
+      "a": "Yes, staff rosters accommodate multi-branch scheduling, routing booking requests to the correct branch based on daily employee locations."
+    },
+    {
+      "q": "Does Salonist Enterprise support custom integrations via API?",
+      "a": "Yes, we provide enterprise REST APIs and webhooks for ERPs, custom mobile apps, data warehouses, and marketing automation stacks."
+    },
+    {
+      "q": "How does data privacy work across franchise-owned locations?",
+      "a": "Franchise operators only see financial, staff, and customer analytics for their authorized units, while corporate executives view consolidated network performance."
+    }
+  ]
+}
 };

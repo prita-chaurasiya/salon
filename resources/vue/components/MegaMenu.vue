@@ -112,10 +112,11 @@
               SCHEDULING & PAYMENTS
             </h5>
             <div class="space-y-3.5">
-              <a 
+              <router-link 
                 v-for="(item, i) in featuresData.scheduling" 
                 :key="i" 
-                :href="item.href"
+                :to="item.to"
+                @click="$emit('close')"
                 class="group flex items-center gap-3 text-left transition-colors p-1 -mx-1 rounded-lg hover:bg-[#FBF0F6]"
               >
                 <div class="w-5 h-5 flex items-center justify-center text-[#AA4184] group-hover:text-[#AA4184] transition-colors shrink-0">
@@ -129,7 +130,7 @@
                     NEW
                   </span>
                 </div>
-              </a>
+              </router-link>
             </div>
           </div>
 
@@ -139,10 +140,11 @@
               CLIENT RELATIONSHIPS
             </h5>
             <div class="space-y-3.5">
-              <a 
+              <router-link 
                 v-for="(item, i) in featuresData.clients" 
                 :key="i" 
-                :href="item.href"
+                :to="item.to"
+                @click="$emit('close')"
                 class="group flex items-center gap-3 text-left transition-colors p-1 -mx-1 rounded-lg hover:bg-[#FBF0F6]"
               >
                 <div class="w-5 h-5 flex items-center justify-center text-[#AA4184] group-hover:text-[#AA4184] transition-colors shrink-0">
@@ -151,7 +153,7 @@
                 <span class="text-[13.5px] font-medium text-[#1C151D] group-hover:text-[#AA4184] transition-colors">
                   {{ item.title }}
                 </span>
-              </a>
+              </router-link>
             </div>
           </div>
 
@@ -161,10 +163,11 @@
               MARKETING & AUTOMATION
             </h5>
             <div class="space-y-3.5">
-              <a 
+              <router-link 
                 v-for="(item, i) in featuresData.marketing" 
                 :key="i" 
-                :href="item.href"
+                :to="item.to"
+                @click="$emit('close')"
                 class="group flex items-center gap-3 text-left transition-colors p-1 -mx-1 rounded-lg hover:bg-[#FBF0F6]"
               >
                 <div class="w-5 h-5 flex items-center justify-center text-[#AA4184] group-hover:text-[#AA4184] transition-colors shrink-0">
@@ -173,7 +176,7 @@
                 <span class="text-[13.5px] font-medium text-[#1C151D] group-hover:text-[#AA4184] transition-colors">
                   {{ item.title }}
                 </span>
-              </a>
+              </router-link>
             </div>
           </div>
 
@@ -183,10 +186,11 @@
               MANAGEMENT
             </h5>
             <div class="space-y-3.5">
-              <a 
+              <router-link 
                 v-for="(item, i) in featuresData.management" 
                 :key="i" 
-                :href="item.href"
+                :to="item.to"
+                @click="$emit('close')"
                 class="group flex items-center gap-3 text-left transition-colors p-1 -mx-1 rounded-lg hover:bg-[#FBF0F6]"
               >
                 <div class="w-5 h-5 flex items-center justify-center text-[#AA4184] group-hover:text-[#AA4184] transition-colors shrink-0">
@@ -195,7 +199,7 @@
                 <span class="text-[13.5px] font-medium text-[#1C151D] group-hover:text-[#AA4184] transition-colors">
                   {{ item.title }}
                 </span>
-              </a>
+              </router-link>
             </div>
           </div>
 
@@ -350,38 +354,38 @@ const whyUsData = {
   ],
   resources: [
     { title: 'Blog', icon: FileEdit, to: '/blog' },
-    { title: 'E-Book', icon: BookMarked, to: '/blog' },
-    { title: 'Salon Success', icon: Trophy, to: '/why-choose-salonist' },
+    { title: 'E-Book', icon: BookMarked, to: '/ebooks' },
+    { title: 'Salon Success', icon: Trophy, to: '/customer-success' },
   ]
 };
 
 /* Exact Data from Image 2: Features */
 const featuresData = {
   scheduling: [
-    { title: 'Appointment Management', icon: Calendar, href: '/features/appointment' },
-    { title: 'Online Booking', icon: MousePointerClick, href: '/features/appointment' },
-    { title: 'Point of Sale', icon: Calculator, href: '#features' },
-    { title: 'SalonistPay', icon: HandCoins, href: '#features' },
-    { title: 'Digital Ewallet', icon: Wallet, isNew: true, href: '#features' },
+    { title: 'Appointment Management', icon: Calendar, to: '/features/appointment-management' },
+    { title: 'Online Booking', icon: MousePointerClick, to: '/features/online-booking' },
+    { title: 'Point of Sale', icon: Calculator, to: '/features/point-of-sale' },
+    { title: 'SalonistPay', icon: HandCoins, to: '/features/salon-payments' },
+    { title: 'Digital Ewallet', icon: Wallet, isNew: true, to: '/features/digital-wallet' },
   ],
   clients: [
-    { title: 'Customer Management', icon: UserCheck, href: '#features' },
-    { title: 'Membership Program', icon: CreditCard, href: '#features' },
-    { title: 'Reward / Loyalty System', icon: Award, href: '#features' },
-    { title: 'Forms', icon: FileText, href: '#features' },
-    { title: 'Gift Cards', icon: Gift, href: '#features' },
+    { title: 'Customer Management', icon: UserCheck, to: '/features/customer-management' },
+    { title: 'Membership Program', icon: CreditCard, to: '/features/membership-program' },
+    { title: 'Reward / Loyalty System', icon: Award, to: '/features/rewards-loyalty' },
+    { title: 'Forms', icon: FileText, to: '/features/digital-forms' },
+    { title: 'Gift Cards', icon: Gift, to: '/features/gift-cards' },
   ],
   marketing: [
-    { title: 'Marketing Automation', icon: Megaphone, href: '#features' },
-    { title: 'Online Store', icon: ShoppingCart, href: '#features' },
-    { title: 'Integrations', icon: RefreshCw, href: '#features' },
+    { title: 'Marketing Automation', icon: Megaphone, to: '/features/marketing-automation' },
+    { title: 'Online Store', icon: ShoppingCart, to: '/features/online-store' },
+    { title: 'Integrations', icon: RefreshCw, to: '/features/integrations' },
   ],
   management: [
-    { title: 'Inventory Management', icon: ClipboardList, href: '#features' },
-    { title: 'Employee Management', icon: Users, href: '#features' },
-    { title: 'Analytics Services', icon: PieChart, href: '#features' },
-    { title: 'Locations/Branch Management', icon: Network, href: '#features' },
-    { title: 'Customize Mobile App', icon: Smartphone, href: '#features' },
+    { title: 'Inventory Management', icon: ClipboardList, to: '/features/inventory-management' },
+    { title: 'Employee Management', icon: Users, to: '/features/employee-management' },
+    { title: 'Analytics Services', icon: PieChart, to: '/features/reports-analytics' },
+    { title: 'Locations/Branch Management', icon: Network, to: '/features/multi-location' },
+    { title: 'Customize Mobile App', icon: Smartphone, to: '/features/custom-mobile-app' },
   ]
 };
 

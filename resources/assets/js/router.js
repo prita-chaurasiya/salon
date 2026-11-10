@@ -23,6 +23,11 @@ const routes = [
         component: () => import('../../vue/pages/AppointmentFeatureView.vue'),
     },
     {
+        path: '/features/:slug',
+        name: 'feature-detail',
+        component: () => import('../../vue/pages/FeatureDetailView.vue'),
+    },
+    {
         path: '/solutions',
         name: 'solutions',
         component: () => import('../../vue/pages/SolutionsView.vue'),
@@ -43,8 +48,18 @@ const routes = [
         component: () => import('../../vue/pages/WhyChooseSalonistView.vue'),
     },
     {
+        path: '/why-choose-us',
+        name: 'why-choose-us',
+        component: () => import('../../vue/pages/WhyChooseSalonistView.vue'),
+    },
+    {
         path: '/compare-salonist',
         name: 'compare-salonist',
+        component: () => import('../../vue/pages/CompareSalonistView.vue'),
+    },
+    {
+        path: '/compare-platform',
+        name: 'compare-platform',
         component: () => import('../../vue/pages/CompareSalonistView.vue'),
     },
     {
@@ -66,6 +81,16 @@ const routes = [
         path: '/blog',
         name: 'blog',
         component: () => import('../../vue/pages/BlogView.vue'),
+    },
+    {
+        path: '/ebooks',
+        name: 'ebooks',
+        component: () => import('../../vue/pages/EBooksView.vue'),
+    },
+    {
+        path: '/customer-success',
+        name: 'customer-success',
+        component: () => import('../../vue/pages/CustomerSuccessView.vue'),
     },
     {
         path: '/demo',
