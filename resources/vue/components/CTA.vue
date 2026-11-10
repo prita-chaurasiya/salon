@@ -1,9 +1,9 @@
 <template>
-  <div class="relative overflow-hidden rounded-[32px] bg-[#16141F] text-white p-10 md:p-16 lg:p-20 border border-[#2F2940] shadow-[0_20px_50px_rgba(22,20,31,0.25)]">
+  <div class="relative overflow-hidden rounded-[32px] bg-[#1F1521] text-white p-10 md:p-16 lg:p-20 border border-[#352037] shadow-[0_20px_50px_rgba(31,21,33,0.25)]">
     
     <div class="relative z-10 max-w-3xl mx-auto text-center">
-      <div class="inline-flex items-center gap-2 px-4 py-1.5 mb-6 rounded-full text-xs font-bold uppercase tracking-wider bg-[#2B2237] text-[#C4B5FD] border border-[#2F2940] shadow-xs">
-        <Sparkles class="w-3.5 h-3.5 text-[#7C3AED]" />
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 mb-6 rounded-full text-xs font-bold uppercase tracking-wider bg-[#352037] text-[#F5DDEB] border border-[#4A264D] shadow-xs">
+        <Sparkles class="w-3.5 h-3.5 text-[#AA4184]" />
         {{ badge }}
       </div>
 
@@ -11,41 +11,41 @@
         {{ title }}
       </h2>
 
-      <p class="mt-6 text-base sm:text-lg !text-[#BEB8CC] font-normal leading-relaxed max-w-2xl mx-auto">
+      <p class="mt-6 text-base sm:text-lg !text-[#E8D3DF] font-normal leading-relaxed max-w-2xl mx-auto">
         {{ subtitle }}
       </p>
 
       <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-        <!-- Button: Start Free 7-Day Trial (Primary #7C3AED with hover #6D28D9) -->
+        <!-- Button: Start Free 7-Day Trial (Primary #AA4184 with hover #923470) -->
         <button 
           @click="$emit('start-trial')"
-          class="w-full sm:w-auto px-8 py-4 rounded-full bg-[#7C3AED] hover:bg-[#6D28D9] text-white font-bold text-sm transition-all duration-200 shadow-xl flex items-center justify-center gap-2 hover:scale-105 active:scale-95 cursor-pointer"
+          class="w-full sm:w-auto px-8 py-4 rounded-full bg-[#AA4184] hover:bg-[#923470] text-white font-bold text-sm transition-all duration-200 shadow-xl flex items-center justify-center gap-2 hover:scale-105 active:scale-95 cursor-pointer"
         >
           <span>Start Free 7-Day Trial</span>
           <ArrowRight class="w-4 h-4 text-white" />
         </button>
 
-        <!-- Button: Book A 20-Min Demo (Secondary Button #2B2237) -->
+        <!-- Button: Book A 20-Min Demo (Secondary Button #352037) -->
         <button 
           @click="$emit('book-demo')"
-          class="w-full sm:w-auto px-8 py-4 rounded-full bg-[#2B2237] hover:bg-[#3B2E4F] border border-[#3B2E4F] text-white font-bold text-sm transition-all duration-200 flex items-center justify-center gap-2 shadow-xs cursor-pointer"
+          class="w-full sm:w-auto px-8 py-4 rounded-full bg-[#352037] hover:bg-[#4A264D] border border-[#4A264D] text-white font-bold text-sm transition-all duration-200 flex items-center justify-center gap-2 shadow-xs cursor-pointer"
         >
           <span>Book A 20-Min Demo</span>
         </button>
       </div>
 
-      <div class="mt-8 flex flex-wrap items-center justify-center gap-6 text-xs !text-[#928BA3]">
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-6 text-xs !text-[#B49EAF]">
         <div class="flex items-center gap-2">
-          <Check class="w-4 h-4 text-[#7C3AED]" />
-          <span class="!text-[#BEB8CC]">No credit card required</span>
+          <Check class="w-4 h-4 text-[#AA4184]" />
+          <span class="!text-[#E8D3DF]">No credit card required</span>
         </div>
         <div class="flex items-center gap-2">
-          <Check class="w-4 h-4 text-[#7C3AED]" />
-          <span class="!text-[#BEB8CC]">Unlimited staff included</span>
+          <Check class="w-4 h-4 text-[#AA4184]" />
+          <span class="!text-[#E8D3DF]">Unlimited staff included</span>
         </div>
         <div class="flex items-center gap-2">
-          <Check class="w-4 h-4 text-[#7C3AED]" />
-          <span class="!text-[#BEB8CC]">Free white-glove data migration</span>
+          <Check class="w-4 h-4 text-[#AA4184]" />
+          <span class="!text-[#E8D3DF]">Free white-glove data migration</span>
         </div>
       </div>
     </div>

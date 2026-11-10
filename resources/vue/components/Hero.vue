@@ -9,26 +9,26 @@
         <!-- Left Content (6 cols) -->
         <div class="lg:col-span-6 space-y-6 text-left">
           
-          <!-- Small pill badge: Background #F3ECFF, Text #6D28D9 -->
+          <!-- Small pill badge: Background #FBF0F6, Text #AA4184 -->
           <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-xs font-bold badge-3d">
-            <span class="w-2 h-2 rounded-full bg-[#7C3AED] animate-ping"></span>
-            <span class="text-[#6D28D9]">Trusted by 15,000+ luxury salons worldwide</span>
+            <span class="w-2 h-2 rounded-full bg-[#AA4184] animate-ping"></span>
+            <span class="text-[#AA4184]">Trusted by 15,000+ clinics, salons & spas</span>
           </div>
 
-          <!-- Large Heading: Clean Luxury Typography -->
-          <h1 class="text-3xl sm:text-5xl lg:text-[54px] font-black tracking-tight text-[#1E1B2E] leading-[1.12]">
+          <!-- Large Heading: Clean DINGG Aesthetic #1C151D with #AA4184 Accent -->
+          <h1 class="text-3xl sm:text-5xl lg:text-[54px] font-black tracking-tight text-[#1C151D] leading-[1.12]">
             Salon Software to <br class="hidden sm:inline" />
-            <span class="text-[#2B2237]">
+            <span class="text-[#AA4184]">
               Grow Your Business
             </span>
           </h1>
 
           <!-- Professional Copy -->
-          <p class="text-sm sm:text-base text-[#5B5568] font-normal leading-relaxed max-w-xl">
+          <p class="text-sm sm:text-base text-[#5C525E] font-normal leading-relaxed max-w-xl">
             Salonist is all-in-one salon management software built to run your whole business from one place. Take online bookings around the clock, check clients out at the POS, track stock, pay your staff and keep customers coming back — without juggling five different tools.
           </p>
 
-          <!-- Buttons: Primary Button #2B2237 & Secondary Button White with Border #D8D3E2 -->
+          <!-- Buttons: Primary Button #AA4184 & Secondary Button White with Border #E2CDD9 -->
           <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
             <!-- 7-Day Trial CTA (Primary Button) -->
             <button 
@@ -44,18 +44,18 @@
               @click="$emit('open-demo')"
               class="px-7 py-3.5 rounded-full btn-secondary-luxury font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-xs cursor-pointer"
             >
-              <Calendar class="w-4 h-4 text-[#7C3AED]" />
+              <Calendar class="w-4 h-4 text-[#AA4184]" />
               <span>Book A 20-Min Demo</span>
             </button>
           </div>
 
           <!-- Subtext under buttons -->
-          <div class="pt-2 text-xs text-[#8C8698] font-medium flex items-center gap-2">
-            <span class="text-[#2B2237] font-semibold">Free 7 days</span>
+          <div class="pt-2 text-xs text-[#8E8291] font-medium flex items-center gap-2">
+            <span class="text-[#AA4184] font-semibold">Free 7 days</span>
             <span>•</span>
             <span>Unlimited staff, one price</span>
             <span>•</span>
-            <span class="text-[#7C3AED] font-semibold">Instant data migration</span>
+            <span class="text-[#AA4184] font-semibold">Instant data migration</span>
           </div>
 
         </div>
