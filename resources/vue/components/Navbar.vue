@@ -7,8 +7,8 @@
         : 'bg-[#FCFCFB] py-0'
     ]"
   >
-    <!-- Top Announcement Bar -->
-    <div class="bg-gradient-to-r from-[#3B0764] via-[#581C87] to-[#831843] text-white text-[12px] py-2 px-4 transition-all duration-300 border-b border-purple-900/40">
+    <!-- Top Announcement Bar (Solid Royal Violet with Rose pulse) -->
+    <div class="bg-[#581C87] text-white text-[12px] py-2 px-4 transition-all duration-300 border-b border-purple-900/30">
       <div class="max-w-7xl mx-auto flex items-center justify-between">
         <div class="flex items-center gap-2">
           <span class="w-2 h-2 rounded-full bg-[#EC4899] animate-pulse"></span>
@@ -17,8 +17,8 @@
         </div>
 
         <div class="flex items-center gap-4 text-[11px]">
-          <span class="text-[#F472B6] font-semibold hidden md:inline">24/7 VIP Concierge Support</span>
-          <a href="#pricing" class="font-bold underline text-white hover:text-[#F472B6] transition-colors">
+          <span class="text-pink-200 font-semibold hidden md:inline">24/7 VIP Concierge Support</span>
+          <a href="#pricing" class="font-bold underline text-white hover:text-pink-200 transition-colors">
             View Tiers →
           </a>
         </div>
@@ -29,10 +29,10 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5">
       <div class="flex items-center justify-between">
         
-        <!-- Logo on Left with 3D Vibrant Emblem -->
+        <!-- Logo on Left with 2-Color Clean Emblem -->
         <a href="/" class="flex items-center gap-2.5 group shrink-0">
           <div class="flex items-center gap-2">
-            <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-[#7E22CE] to-[#EC4899] flex items-center justify-center text-white font-black text-sm font-sans shadow-md group-hover:scale-105 transition-transform">
+            <div class="w-8 h-8 rounded-lg bg-[#581C87] flex items-center justify-center text-white font-black text-sm font-sans shadow-sm group-hover:bg-[#EC4899] transition-colors">
               S
             </div>
             <span class="text-2xl font-black tracking-tight text-[#0F172A] font-sans">Salonist</span>
@@ -44,37 +44,37 @@
           
           <div class="relative" @mouseenter="openMenu('why-us')">
             <button 
-              class="px-3.5 py-2 text-[14px] font-bold text-[#334155] hover:text-[#7E22CE] transition-colors rounded-full flex items-center gap-1 group"
-              :class="{ 'text-[#7E22CE] bg-purple-50': activeMenu === 'why-us' }"
+              class="px-3.5 py-2 text-[14px] font-bold text-[#334155] hover:text-[#581C87] transition-colors rounded-full flex items-center gap-1 group"
+              :class="{ 'text-[#581C87] bg-purple-50': activeMenu === 'why-us' }"
             >
               <span>Why Salonist</span>
-              <ChevronDown class="w-3.5 h-3.5 transition-transform duration-200 text-[#64748B] group-hover:text-[#7E22CE]" :class="{ 'rotate-180 text-[#7E22CE]': activeMenu === 'why-us' }" />
+              <ChevronDown class="w-3.5 h-3.5 transition-transform duration-200 text-[#64748B] group-hover:text-[#581C87]" :class="{ 'rotate-180 text-[#581C87]': activeMenu === 'why-us' }" />
             </button>
           </div>
 
           <div class="relative" @mouseenter="openMenu('features')">
             <button 
-              class="px-3.5 py-2 text-[14px] font-bold text-[#334155] hover:text-[#7E22CE] transition-colors rounded-full flex items-center gap-1 group"
-              :class="{ 'text-[#7E22CE] bg-purple-50': activeMenu === 'features' }"
+              class="px-3.5 py-2 text-[14px] font-bold text-[#334155] hover:text-[#581C87] transition-colors rounded-full flex items-center gap-1 group"
+              :class="{ 'text-[#581C87] bg-purple-50': activeMenu === 'features' }"
             >
               <span>Features</span>
-              <ChevronDown class="w-3.5 h-3.5 transition-transform duration-200 text-[#64748B] group-hover:text-[#7E22CE]" :class="{ 'rotate-180 text-[#7E22CE]': activeMenu === 'features' }" />
+              <ChevronDown class="w-3.5 h-3.5 transition-transform duration-200 text-[#64748B] group-hover:text-[#581C87]" :class="{ 'rotate-180 text-[#581C87]': activeMenu === 'features' }" />
             </button>
           </div>
 
           <div class="relative" @mouseenter="openMenu('solutions')">
             <button 
-              class="px-3.5 py-2 text-[14px] font-bold text-[#334155] hover:text-[#7E22CE] transition-colors rounded-full flex items-center gap-1 group"
-              :class="{ 'text-[#7E22CE] bg-purple-50': activeMenu === 'solutions' }"
+              class="px-3.5 py-2 text-[14px] font-bold text-[#334155] hover:text-[#581C87] transition-colors rounded-full flex items-center gap-1 group"
+              :class="{ 'text-[#581C87] bg-purple-50': activeMenu === 'solutions' }"
             >
               <span>Solutions</span>
-              <ChevronDown class="w-3.5 h-3.5 transition-transform duration-200 text-[#64748B] group-hover:text-[#7E22CE]" :class="{ 'rotate-180 text-[#7E22CE]': activeMenu === 'solutions' }" />
+              <ChevronDown class="w-3.5 h-3.5 transition-transform duration-200 text-[#64748B] group-hover:text-[#581C87]" :class="{ 'rotate-180 text-[#581C87]': activeMenu === 'solutions' }" />
             </button>
           </div>
 
           <router-link 
             to="/pricing" 
-            class="px-3.5 py-2 text-[14px] font-bold text-[#334155] hover:text-[#7E22CE] transition-colors rounded-full"
+            class="px-3.5 py-2 text-[14px] font-bold text-[#334155] hover:text-[#581C87] transition-colors rounded-full"
           >
             Pricing
           </router-link>
@@ -85,28 +85,28 @@
         <div class="hidden lg:flex items-center gap-3 shrink-0">
           
           <!-- Circular Language Flag ENG Badge -->
-          <div class="w-8 h-8 rounded-full border border-[#E2E8F0] bg-white flex items-center justify-center text-[10px] font-extrabold text-[#7E22CE] shadow-xs cursor-pointer hover:bg-purple-50">
+          <div class="w-8 h-8 rounded-full border border-[#E2E8F0] bg-white flex items-center justify-center text-[10px] font-extrabold text-[#581C87] shadow-xs cursor-pointer hover:bg-purple-50">
             ENG
           </div>
 
           <!-- Marketplace Pill Button with Storefront Icon -->
           <a 
             href="#features"
-            class="px-4 py-2 text-[13px] font-bold text-[#334155] bg-white border border-[#E2E8F0] hover:border-[#7E22CE] hover:text-[#7E22CE] hover:bg-purple-50/50 rounded-full transition-all duration-200 flex items-center gap-2 shadow-xs"
+            class="px-4 py-2 text-[13px] font-bold text-[#334155] bg-white border border-[#E2E8F0] hover:border-[#581C87] hover:text-[#581C87] hover:bg-purple-50/50 rounded-full transition-all duration-200 flex items-center gap-2 shadow-xs"
           >
-            <Store class="w-4 h-4 text-[#7E22CE]" />
+            <Store class="w-4 h-4 text-[#581C87]" />
             <span>Marketplace</span>
           </a>
 
           <!-- Log In -->
           <router-link 
             to="/login"
-            class="px-3 py-2 text-[13.5px] font-bold text-[#334155] hover:text-[#7E22CE] transition-colors cursor-pointer"
+            class="px-3 py-2 text-[13.5px] font-bold text-[#334155] hover:text-[#581C87] transition-colors cursor-pointer"
           >
             Log In
           </router-link>
 
-          <!-- Start Free Trial button (3D Vibrant Style) -->
+          <!-- Start Free Trial button (The ONLY Gradient: Royal Violet to Luxury Rose) -->
           <button 
             @click="$emit('start-trial')"
             class="px-6 py-2.5 text-[13.5px] font-bold rounded-full btn-3d-primary cursor-pointer"

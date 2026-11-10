@@ -1,35 +1,29 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #581C87;       /* Royal Deep Violet */
-  --color-primary-light: #7E22CE; /* Bright Purple Accent */
-  --color-accent: #EC4899;        /* Vivid Rose / Fuchsia */
-  --color-accent-amber: #F59E0B;  /* Radiant Gold Glow */
-  --color-secondary: #3B82F6;     /* Electric Indigo */
-  --color-background: #FAFAFD;    /* Ultra Clean Pure Luminescent Canvas */
-  --color-canvas: #F3F4F9;
+  --color-primary: #581C87;       /* Royal Violet */
+  --color-accent: #EC4899;        /* Luxury Rose / Pink */
+  --color-background: #FAFAFD;    /* Clean Luminescent Canvas */
+  --color-canvas: #F8FAFC;
   --color-card: #FFFFFF;
-  --color-border: #E8EAF2;
+  --color-border: #E2E8F0;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 :root {
   --primary: #581C87;
-  --primary-light: #7E22CE;
   --accent: #EC4899;
-  --accent-amber: #F59E0B;
-  --secondary: #3B82F6;
   --background: #FAFAFD;
-  --canvas: #F3F4F9;
+  --canvas: #F8FAFC;
   --card: #FFFFFF;
-  --border: #E8EAF2;
+  --border: #E2E8F0;
   --text-heading: #0F172A;
   --text-body: #334155;
   --text-muted: #64748B;
 }
 
 * {
-  border-color: #E8EAF2;
+  border-color: #E2E8F0;
   box-sizing: border-box;
 }
 
@@ -105,86 +99,60 @@ button {
   letter-spacing: -0.01em;
 }
 
-/* ================= 3D ANIMATION & VIBRANT LUXURY UTILITIES ================= */
+/* ================= 2-COLOR CLEAN LUXURY SYSTEM ================= */
 
-/* Radiant Luxury Shimmer Gradient Headlines */
+/* Clean 2-Color Solid Accent for Headlines */
 .text-salon-gradient {
-  background: linear-gradient(135deg, #581C87 0%, #9333EA 45%, #EC4899 85%, #F59E0B 100%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
+  color: #581C87 !important;
   display: inline-block;
 }
 
-.text-pink-gradient {
-  background: linear-gradient(135deg, #7E22CE 0%, #EC4899 100%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
+.text-pink-accent {
+  color: #EC4899 !important;
   display: inline-block;
 }
 
-/* 3D Depth Card Elevations */
+/* Clean Minimalist Luxury Card */
 .card-3d {
   background: #FFFFFF;
-  border: 1px solid rgba(232, 234, 242, 0.85);
-  box-shadow: 0 10px 30px -5px rgba(88, 28, 135, 0.06), 0 20px 40px -10px rgba(236, 72, 153, 0.08);
-  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-  transform-style: preserve-3d;
-  perspective: 1000px;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 4px 20px -2px rgba(88, 28, 135, 0.05);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .card-3d:hover {
-  transform: translateY(-6px) rotateX(1.5deg) scale(1.015);
-  box-shadow: 0 20px 45px -5px rgba(88, 28, 135, 0.14), 0 30px 60px -10px rgba(236, 72, 153, 0.16);
-  border-color: rgba(147, 51, 234, 0.35);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -4px rgba(88, 28, 135, 0.12);
+  border-color: rgba(88, 28, 135, 0.3);
 }
 
-/* 3D Interactive Floating Badge */
+/* 2-Color Pill Badge */
 .badge-3d {
-  background: linear-gradient(135deg, #FDF4FF 0%, #F5F3FF 100%);
-  border: 1px solid rgba(216, 180, 254, 0.5);
-  box-shadow: 0 4px 14px rgba(126, 34, 206, 0.12);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  background: #FDF2F8;
+  border: 1px solid #FBCFE8;
+  color: #581C87;
+  transition: transform 0.2s ease;
 }
 
 .badge-3d:hover {
-  transform: translateY(-2px) scale(1.04);
-  box-shadow: 0 6px 20px rgba(236, 72, 153, 0.2);
+  transform: translateY(-1px);
 }
 
-/* 3D Premium Action Button */
+/* THE ONLY GRADIENT: Premium Action Button (2 Colors: Royal Violet -> Luxury Rose) */
 .btn-3d-primary {
-  background: linear-gradient(135deg, #581C87 0%, #7E22CE 50%, #EC4899 100%);
+  background: linear-gradient(135deg, #581C87 0%, #EC4899 100%) !important;
   color: #FFFFFF !important;
-  box-shadow: 0 10px 25px -3px rgba(126, 34, 206, 0.35), 0 4px 10px -2px rgba(236, 72, 153, 0.2);
+  box-shadow: 0 8px 20px -3px rgba(88, 28, 135, 0.35);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .btn-3d-primary:hover {
-  transform: translateY(-2px) scale(1.03);
-  box-shadow: 0 16px 35px -2px rgba(126, 34, 206, 0.45), 0 6px 16px -2px rgba(236, 72, 153, 0.3);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 14px 28px -3px rgba(236, 72, 153, 0.45);
 }
 
 .btn-3d-primary:active {
   transform: translateY(1px) scale(0.98);
-}
-
-/* Atmospheric 3D Floating Orbs */
-@keyframes floatOrb1 {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(30px, -25px) scale(1.08); }
-}
-
-@keyframes floatOrb2 {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(-25px, 35px) scale(1.1); }
-}
-
-.animate-orb-1 {
-  animation: floatOrb1 9s ease-in-out infinite;
-}
-
-.animate-orb-2 {
-  animation: floatOrb2 11s ease-in-out infinite;
 }
 
 /* Custom Scrollbar */
@@ -195,11 +163,11 @@ button {
   background: #FAFAFD;
 }
 ::-webkit-scrollbar-thumb {
-  background: #D8B4FE;
+  background: #E2E8F0;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #9333EA;
+  background: #CBD5E1;
 }
 
 /* Smooth Scroll Lenis base style */

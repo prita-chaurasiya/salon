@@ -1,13 +1,8 @@
 <template>
-  <div class="relative overflow-hidden rounded-[32px] bg-gradient-to-br from-[#2E1065] via-[#4C1D95] to-[#1E1B4B] text-white p-10 md:p-16 lg:p-20 border border-purple-500/30 shadow-[0_25px_60px_rgba(88,28,135,0.25)] card-3d">
+  <div class="relative overflow-hidden rounded-[32px] bg-[#581C87] text-white p-10 md:p-16 lg:p-20 border border-purple-800 shadow-[0_20px_50px_rgba(88,28,135,0.2)]">
     
-    <!-- 3D Glow Orbs behind content -->
-    <div class="absolute -top-20 -left-20 w-80 h-80 bg-pink-500/30 rounded-full blur-3xl pointer-events-none animate-orb-1"></div>
-    <div class="absolute -bottom-20 -right-20 w-96 h-96 bg-purple-500/30 rounded-full blur-3xl pointer-events-none animate-orb-2"></div>
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-amber-400/20 rounded-full blur-3xl pointer-events-none"></div>
-
     <div class="relative z-10 max-w-3xl mx-auto text-center">
-      <div class="inline-flex items-center gap-2 px-4 py-1.5 mb-6 rounded-full text-xs font-bold uppercase tracking-wider bg-white/10 text-pink-300 border border-pink-400/30 backdrop-blur-md shadow-xs">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 mb-6 rounded-full text-xs font-bold uppercase tracking-wider bg-white/10 text-pink-200 border border-white/20 backdrop-blur-md shadow-xs">
         <Sparkles class="w-3.5 h-3.5 text-[#EC4899]" />
         {{ badge }}
       </div>
@@ -21,17 +16,19 @@
       </p>
 
       <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <!-- Button: Start Free 7-Day Trial (Gradient Royal Violet to Rose) -->
         <button 
           @click="$emit('start-trial')"
-          class="w-full sm:w-auto px-8 py-4 rounded-full bg-white text-[#581C87] font-extrabold text-sm hover:bg-purple-50 transition-all duration-200 shadow-xl flex items-center justify-center gap-2 hover:scale-105 active:scale-95 cursor-pointer"
+          class="w-full sm:w-auto px-8 py-4 rounded-full bg-white text-[#581C87] font-bold text-sm hover:bg-pink-50 transition-all duration-200 shadow-xl flex items-center justify-center gap-2 hover:scale-105 active:scale-95 cursor-pointer"
         >
           <span>Start Free 7-Day Trial</span>
-          <ArrowRight class="w-4 h-4 text-[#7E22CE]" />
+          <ArrowRight class="w-4 h-4 text-[#581C87]" />
         </button>
 
+        <!-- Button: Book A 20-Min Demo (Clean white outline) -->
         <button 
           @click="$emit('book-demo')"
-          class="w-full sm:w-auto px-8 py-4 rounded-full bg-white/10 border border-white/20 text-white font-extrabold text-sm hover:bg-white/20 transition-all duration-200 flex items-center justify-center gap-2 shadow-xs cursor-pointer"
+          class="w-full sm:w-auto px-8 py-4 rounded-full bg-white/10 border border-white/20 text-white font-bold text-sm hover:bg-white/20 transition-all duration-200 flex items-center justify-center gap-2 shadow-xs cursor-pointer"
         >
           <span>Book A 20-Min Demo</span>
         </button>

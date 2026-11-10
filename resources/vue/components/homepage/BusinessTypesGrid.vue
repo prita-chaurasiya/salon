@@ -20,10 +20,10 @@
           v-for="(item, idx) in businessTypes" 
           :key="idx"
           href="#pricing"
-          class="group p-4 px-6 rounded-full bg-white border border-[#E2E8F0] hover:border-purple-300 hover:bg-gradient-to-r hover:from-purple-50/70 hover:to-pink-50/70 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 flex items-center gap-4 shadow-xs cursor-pointer"
+          class="group p-4 px-6 rounded-full bg-white border border-[#E2E8F0] hover:border-purple-300 hover:bg-purple-50/50 hover:shadow-sm hover:-translate-y-0.5 transition-all duration-200 flex items-center gap-4 shadow-xs cursor-pointer"
         >
           <!-- Icon -->
-          <div class="w-8 h-8 rounded-full bg-purple-50 flex items-center justify-center text-[#7E22CE] group-hover:scale-110 group-hover:bg-[#7E22CE] group-hover:text-white transition-all shrink-0">
+          <div class="w-8 h-8 rounded-full bg-purple-50 flex items-center justify-center text-[#581C87] group-hover:scale-110 group-hover:bg-[#581C87] group-hover:text-white transition-all shrink-0">
             <component :is="item.icon" class="w-4 h-4 stroke-[2]" />
           </div>
 
