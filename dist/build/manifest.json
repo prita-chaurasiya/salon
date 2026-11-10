@@ -115,7 +115,7 @@
     "isDynamicEntry": true
   },
   "resources/assets/css/app.css": {
-    "file": "assets/app-8NYc38Em.css",
+    "file": "assets/app-BrSoKyu1.css",
     "name": "app",
     "names": [
       "app.css",
@@ -125,7 +125,7 @@
     "isEntry": true
   },
   "resources/assets/js/app.js": {
-    "file": "assets/app-CMS6D79m.js",
+    "file": "assets/app-BW06HOnV.js",
     "name": "app",
     "src": "resources/assets/js/app.js",
     "isEntry": true,
@@ -158,7 +158,7 @@
     ]
   },
   "resources/css/app.css": {
-    "file": "assets/app-8NYc38Em.css",
+    "file": "assets/app-BrSoKyu1.css",
     "name": "app",
     "names": [
       "app.css",
@@ -186,7 +186,7 @@
     ]
   },
   "resources/vue/pages/AppointmentFeatureView.vue": {
-    "file": "assets/AppointmentFeatureView-vjy4xiCn.js",
+    "file": "assets/AppointmentFeatureView-DyDljxmE.js",
     "name": "AppointmentFeatureView",
     "src": "resources/vue/pages/AppointmentFeatureView.vue",
     "isDynamicEntry": true,
@@ -203,7 +203,7 @@
     ]
   },
   "resources/vue/pages/BarbershopSolutionView.vue": {
-    "file": "assets/BarbershopSolutionView-C2fRie2Q.js",
+    "file": "assets/BarbershopSolutionView-DF6pwDqJ.js",
     "name": "BarbershopSolutionView",
     "src": "resources/vue/pages/BarbershopSolutionView.vue",
     "isDynamicEntry": true,
@@ -237,7 +237,7 @@
     ]
   },
   "resources/vue/pages/FeaturesView.vue": {
-    "file": "assets/FeaturesView-H_6h_2lF.js",
+    "file": "assets/FeaturesView-Cl3EF6A5.js",
     "name": "FeaturesView",
     "src": "resources/vue/pages/FeaturesView.vue",
     "isDynamicEntry": true,
@@ -249,7 +249,7 @@
     ]
   },
   "resources/vue/pages/LoginView.vue": {
-    "file": "assets/LoginView-Dh5G6g9T.js",
+    "file": "assets/LoginView-DmeKDUSB.js",
     "name": "LoginView",
     "src": "resources/vue/pages/LoginView.vue",
     "isDynamicEntry": true,
@@ -262,7 +262,7 @@
     ]
   },
   "resources/vue/pages/PricingView.vue": {
-    "file": "assets/PricingView-DitwnsRT.js",
+    "file": "assets/PricingView-BcqSswe8.js",
     "name": "PricingView",
     "src": "resources/vue/pages/PricingView.vue",
     "isDynamicEntry": true,
@@ -275,7 +275,7 @@
     ]
   },
   "resources/vue/pages/SolutionDetailView.vue": {
-    "file": "assets/SolutionDetailView-C2Lw0zTt.js",
+    "file": "assets/SolutionDetailView-BVgcr-M3.js",
     "name": "SolutionDetailView",
     "src": "resources/vue/pages/SolutionDetailView.vue",
     "isDynamicEntry": true,
@@ -289,7 +289,7 @@
     ]
   },
   "resources/vue/pages/SolutionsView.vue": {
-    "file": "assets/SolutionsView-uOskoVqq.js",
+    "file": "assets/SolutionsView-39sr2C8w.js",
     "name": "SolutionsView",
     "src": "resources/vue/pages/SolutionsView.vue",
     "isDynamicEntry": true,

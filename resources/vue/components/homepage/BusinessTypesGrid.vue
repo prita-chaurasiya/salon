@@ -20,19 +20,19 @@
           v-for="(item, idx) in businessTypes" 
           :key="idx"
           href="#pricing"
-          class="group p-4 px-6 rounded-full bg-[#FAFAFB] border border-[#E8EAF2] hover:border-[#681FA8] hover:bg-[#F1ECF9] transition-all duration-200 flex items-center gap-4 shadow-2xs hover:shadow-sm cursor-pointer"
+          class="group p-4 px-6 rounded-full bg-white border border-[#E2E8F0] hover:border-purple-300 hover:bg-gradient-to-r hover:from-purple-50/70 hover:to-pink-50/70 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 flex items-center gap-4 shadow-xs cursor-pointer"
         >
           <!-- Icon -->
-          <div class="w-8 h-8 rounded-full flex items-center justify-center text-[#681FA8] group-hover:scale-110 transition-transform shrink-0">
-            <component :is="item.icon" class="w-5 h-5 stroke-[1.8]" />
+          <div class="w-8 h-8 rounded-full bg-purple-50 flex items-center justify-center text-[#7E22CE] group-hover:scale-110 group-hover:bg-[#7E22CE] group-hover:text-white transition-all shrink-0">
+            <component :is="item.icon" class="w-4 h-4 stroke-[2]" />
           </div>
 
           <!-- Title -->
-          <span class="text-sm font-bold text-[#140B28] group-hover:text-[#681FA8] transition-colors">
+          <span class="text-sm font-bold text-[#0F172A] group-hover:text-[#581C87] transition-colors">
             {{ item.name }}
           </span>
 
-          <ArrowRight class="w-4 h-4 text-[#681FA8] ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
+          <ArrowRight class="w-4 h-4 text-[#EC4899] ml-auto opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
         </a>
       </div>
 

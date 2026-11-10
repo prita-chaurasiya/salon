@@ -20,30 +20,30 @@
         <div 
           v-for="(card, i) in featureCards" 
           :key="i"
-          class="relative p-8 rounded-[24px] bg-white border border-[#E8EAF2] hover:border-[#681FA8]/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group"
+          class="relative p-8 rounded-[24px] bg-white border border-[#E2E8F0] card-3d flex flex-col justify-between group"
         >
           <div>
-            <!-- Centered Top Circle Badge with Icon -->
-            <div class="w-14 h-14 rounded-full bg-[#FAF5EE] border border-[#E8EAF2] flex items-center justify-center text-[#681FA8] mx-auto mb-6 group-hover:bg-[#12072B] group-hover:text-white transition-colors duration-300 shadow-xs">
+            <!-- Centered Top Circle Badge with 3D Gradient Icon -->
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-[#FAF5FF] to-[#FDF4FF] border border-purple-200/60 flex items-center justify-center text-[#7E22CE] mx-auto mb-6 group-hover:bg-gradient-to-tr group-hover:from-[#581C87] group-hover:to-[#EC4899] group-hover:text-white transition-all duration-300 shadow-sm group-hover:scale-110">
               <component :is="card.icon" class="w-6 h-6 stroke-[1.8]" />
             </div>
 
             <!-- Title -->
-            <h3 class="text-xl font-bold text-[#140B28] text-center mb-4 tracking-tight group-hover:text-[#681FA8] transition-colors">
+            <h3 class="text-xl font-bold text-[#0F172A] text-center mb-4 tracking-tight group-hover:text-[#7E22CE] transition-colors">
               {{ card.title }}
             </h3>
 
-            <!-- Body Description exactly from Screenshot 3 -->
-            <p class="text-sm leading-relaxed text-[#484357] text-center font-normal">
+            <!-- Body Description -->
+            <p class="text-sm leading-relaxed text-[#475569] text-center font-normal">
               {{ card.desc }}
             </p>
           </div>
 
           <!-- Bottom micro-link -->
-          <div class="pt-6 mt-6 border-t border-[#F0F2F8] text-center">
-            <span class="text-xs font-bold text-[#681FA8] group-hover:underline inline-flex items-center gap-1">
+          <div class="pt-6 mt-6 border-t border-[#F1F5F9] text-center">
+            <span class="text-xs font-bold text-[#7E22CE] group-hover:text-[#EC4899] inline-flex items-center gap-1 transition-colors">
               <span>Learn more about {{ card.title.split('&')[0].trim() }}</span>
-              <span>→</span>
+              <span class="group-hover:translate-x-1 transition-transform">→</span>
             </span>
           </div>
         </div>
