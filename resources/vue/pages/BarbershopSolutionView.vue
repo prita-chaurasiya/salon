@@ -16,7 +16,7 @@
           <!-- Left Column Content -->
           <div class="lg:col-span-7 space-y-6">
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-[#1E293B] tracking-tight leading-[1.1]">
-              Barbershop <span class="text-[#0F3D3E]">Software</span>
+              Barbershop <span class="text-[#581C87]">Software</span>
             </h1>
 
             <p class="text-base sm:text-lg text-[#4B5563] leading-relaxed max-w-2xl font-normal">
@@ -27,7 +27,7 @@
             <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
               <button 
                 @click="trialOnboardingOpen = true"
-                class="px-8 py-4 rounded-full bg-[#0F3D3E] text-white font-extrabold text-sm hover:bg-[#134A4C] transition-all duration-200 shadow-md hover:scale-105 active:scale-95 flex items-center justify-center gap-2"
+                class="px-8 py-4 rounded-full bg-[#581C87] text-white font-extrabold text-sm hover:bg-[#7E22CE] transition-all duration-200 shadow-md hover:scale-105 active:scale-95 flex items-center justify-center gap-2"
               >
                 <span>Start Free 7-Day Trial</span>
                 <span>→</span>
@@ -35,9 +35,9 @@
 
               <button 
                 @click="demoOpen = true"
-                class="px-8 py-4 rounded-full border border-[#D9E2E1] bg-white text-[#1E293B] font-extrabold text-sm hover:border-[#0F3D3E] hover:text-[#0F3D3E] hover:bg-[#F5F7F6] transition-all duration-200 flex items-center justify-center gap-2 shadow-xs"
+                class="px-8 py-4 rounded-full border border-[#E2E8F0] bg-white text-[#1E293B] font-extrabold text-sm hover:border-[#581C87] hover:text-[#581C87] hover:bg-[#FAF5FF] transition-all duration-200 flex items-center justify-center gap-2 shadow-xs"
               >
-                <Calendar class="w-4 h-4 text-[#0F3D3E]" />
+                <Calendar class="w-4 h-4 text-[#581C87]" />
                 <span>Book A 20-Min Demo</span>
               </button>
             </div>
@@ -56,7 +56,7 @@
             <div class="relative mx-auto max-w-md">
               
               <!-- Barber Cutting Hair Image -->
-              <div class="rounded-3xl overflow-hidden shadow-xl border border-[#E5E7E6] aspect-[4/5] bg-neutral-900">
+              <div class="rounded-3xl overflow-hidden shadow-xl border border-[#E2E8F0] aspect-[4/5] bg-neutral-900">
                 <img 
                   src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=85" 
                   alt="Barbershop Haircut & Styling"
@@ -65,48 +65,48 @@
               </div>
 
               <!-- Floating Card 1: Today's Chairs (Top Right) -->
-              <div class="absolute -top-6 -right-6 sm:-right-8 w-64 rounded-2xl bg-white/95 backdrop-blur-md p-4 shadow-lg border border-[#E5E7E6] text-xs space-y-2 z-20">
-                <div class="flex items-center justify-between pb-1.5 border-b border-[#E5E7E6]">
+              <div class="absolute -top-6 -right-6 sm:-right-8 w-64 rounded-2xl bg-white/95 backdrop-blur-md p-4 shadow-lg border border-[#E2E8F0] text-xs space-y-2 z-20">
+                <div class="flex items-center justify-between pb-1.5 border-b border-[#E2E8F0]">
                   <span class="font-extrabold text-[#1E293B]">Today's Chairs</span>
                   <span class="text-[10px] text-[#6B7280]">Friday, 3:15 pm</span>
                 </div>
 
-                <div class="flex items-center justify-between p-1.5 rounded-lg bg-[#F5F7F6]">
+                <div class="flex items-center justify-between p-1.5 rounded-lg bg-[#FAF5FF]">
                   <div class="flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-[#5FA8A9]"></span>
+                    <span class="w-2 h-2 rounded-full bg-[#EC4899]"></span>
                     <span class="font-bold text-[#1E293B] text-[11px]">Chair 1 — Marco</span>
                   </div>
-                  <span class="px-2 py-0.5 rounded-full bg-[#E8F4F3] text-[#0F3D3E] text-[9px] font-bold">Walk-in</span>
+                  <span class="px-2 py-0.5 rounded-full bg-[#F5F3FF] text-[#581C87] text-[9px] font-bold">Walk-in</span>
                 </div>
 
-                <div class="flex items-center justify-between p-1.5 rounded-lg bg-[#F5F7F6]">
+                <div class="flex items-center justify-between p-1.5 rounded-lg bg-[#FAF5FF]">
                   <div class="flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-[#365A5B]"></span>
+                    <span class="w-2 h-2 rounded-full bg-[#9333EA]"></span>
                     <span class="font-bold text-[#1E293B] text-[11px]">Chair 2 — Dre</span>
                   </div>
-                  <span class="px-2 py-0.5 rounded-full bg-[#E8F4F3] text-[#0F3D3E] text-[9px] font-bold">Booked</span>
+                  <span class="px-2 py-0.5 rounded-full bg-[#F5F3FF] text-[#581C87] text-[9px] font-bold">Booked</span>
                 </div>
 
-                <div class="flex items-center justify-between p-1.5 rounded-lg bg-[#F5F7F6]">
+                <div class="flex items-center justify-between p-1.5 rounded-lg bg-[#FAF5FF]">
                   <div class="flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-[#0F3D3E]"></span>
+                    <span class="w-2 h-2 rounded-full bg-[#581C87]"></span>
                     <span class="font-bold text-[#1E293B] text-[11px]">Chair 3 — Sam</span>
                   </div>
-                  <span class="px-2 py-0.5 rounded-full bg-[#E8F4F3] text-[#0F3D3E] text-[9px] font-bold">Open</span>
+                  <span class="px-2 py-0.5 rounded-full bg-[#F5F3FF] text-[#581C87] text-[9px] font-bold">Open</span>
                 </div>
               </div>
 
               <!-- Floating Card 2: Book with Marco (Middle Left) -->
-              <div class="absolute top-1/2 -left-6 sm:-left-8 -translate-y-1/2 rounded-2xl bg-white/95 backdrop-blur-md p-3.5 shadow-lg border border-[#E5E7E6] text-xs z-20">
+              <div class="absolute top-1/2 -left-6 sm:-left-8 -translate-y-1/2 rounded-2xl bg-white/95 backdrop-blur-md p-3.5 shadow-lg border border-[#E2E8F0] text-xs z-20">
                 <p class="font-extrabold text-[#1E293B]">Book with Marco</p>
                 <p class="text-[10px] text-[#6B7280] mb-2">Next slot 4:00 pm</p>
-                <button class="w-full py-1.5 px-3 rounded-lg bg-[#0F3D3E] text-white text-[10px] font-bold shadow-xs hover:bg-[#134A4C] transition-colors">
+                <button class="w-full py-1.5 px-3 rounded-lg bg-[#581C87] text-white text-[10px] font-bold shadow-xs hover:bg-[#7E22CE] transition-colors">
                   Book now
                 </button>
               </div>
 
               <!-- Floating Card 3: Checkout Total (Bottom Right) -->
-              <div class="absolute -bottom-5 right-4 rounded-2xl bg-white/95 backdrop-blur-md p-3.5 shadow-lg border border-[#E5E7E6] text-xs z-20 w-48">
+              <div class="absolute -bottom-5 right-4 rounded-2xl bg-white/95 backdrop-blur-md p-3.5 shadow-lg border border-[#E2E8F0] text-xs z-20 w-48">
                 <div class="flex justify-between text-[11px] text-[#4B5563]">
                   <span>Skin fade</span>
                   <span class="font-bold text-[#1E293B]">$35</span>
@@ -115,9 +115,9 @@
                   <span>Beard trim</span>
                   <span class="font-bold text-[#1E293B]">$15</span>
                 </div>
-                <div class="flex justify-between text-xs font-black text-[#1E293B] border-t border-[#E5E7E6] pt-1.5 mt-1.5">
+                <div class="flex justify-between text-xs font-black text-[#1E293B] border-t border-[#E2E8F0] pt-1.5 mt-1.5">
                   <span>Total</span>
-                  <span class="text-[#0F3D3E] font-extrabold">$50</span>
+                  <span class="text-[#581C87] font-extrabold">$50</span>
                 </div>
               </div>
 
@@ -147,8 +147,8 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           
           <!-- Card 1 -->
-          <div class="rounded-3xl bg-white border border-[#E5E7E6] p-8 text-center flex flex-col items-center hover:shadow-lg hover:border-[#5FA8A9] transition-all duration-300">
-            <div class="w-14 h-14 rounded-full bg-[#E8F4F3] border border-[#E5E7E6] flex items-center justify-center text-[#5FA8A9] mb-6 shadow-xs">
+          <div class="rounded-3xl bg-white border border-[#E2E8F0] p-8 text-center flex flex-col items-center hover:shadow-lg hover:border-[#EC4899] transition-all duration-300">
+            <div class="w-14 h-14 rounded-full bg-[#F5F3FF] border border-[#E2E8F0] flex items-center justify-center text-[#EC4899] mb-6 shadow-xs">
               <Calendar class="w-6 h-6 stroke-[1.8]" />
             </div>
             <h3 class="text-lg font-bold text-[#1E293B] mb-3">
@@ -160,8 +160,8 @@
           </div>
 
           <!-- Card 2 -->
-          <div class="rounded-3xl bg-white border border-[#E5E7E6] p-8 text-center flex flex-col items-center hover:shadow-lg hover:border-[#5FA8A9] transition-all duration-300">
-            <div class="w-14 h-14 rounded-full bg-[#E8F4F3] border border-[#E5E7E6] flex items-center justify-center text-[#5FA8A9] mb-6 shadow-xs">
+          <div class="rounded-3xl bg-white border border-[#E2E8F0] p-8 text-center flex flex-col items-center hover:shadow-lg hover:border-[#EC4899] transition-all duration-300">
+            <div class="w-14 h-14 rounded-full bg-[#F5F3FF] border border-[#E2E8F0] flex items-center justify-center text-[#EC4899] mb-6 shadow-xs">
               <RefreshCw class="w-6 h-6 stroke-[1.8]" />
             </div>
             <h3 class="text-lg font-bold text-[#1E293B] mb-3">
@@ -173,8 +173,8 @@
           </div>
 
           <!-- Card 3 -->
-          <div class="rounded-3xl bg-white border border-[#E5E7E6] p-8 text-center flex flex-col items-center hover:shadow-lg hover:border-[#5FA8A9] transition-all duration-300">
-            <div class="w-14 h-14 rounded-full bg-[#E8F4F3] border border-[#E5E7E6] flex items-center justify-center text-[#5FA8A9] mb-6 shadow-xs">
+          <div class="rounded-3xl bg-white border border-[#E2E8F0] p-8 text-center flex flex-col items-center hover:shadow-lg hover:border-[#EC4899] transition-all duration-300">
+            <div class="w-14 h-14 rounded-full bg-[#F5F3FF] border border-[#E2E8F0] flex items-center justify-center text-[#EC4899] mb-6 shadow-xs">
               <Users class="w-6 h-6 stroke-[1.8]" />
             </div>
             <h3 class="text-lg font-bold text-[#1E293B] mb-3">
@@ -186,8 +186,8 @@
           </div>
 
           <!-- Card 4 -->
-          <div class="rounded-3xl bg-white border border-[#E5E7E6] p-8 text-center flex flex-col items-center hover:shadow-lg hover:border-[#5FA8A9] transition-all duration-300">
-            <div class="w-14 h-14 rounded-full bg-[#E8F4F3] border border-[#E5E7E6] flex items-center justify-center text-[#5FA8A9] mb-6 shadow-xs">
+          <div class="rounded-3xl bg-white border border-[#E2E8F0] p-8 text-center flex flex-col items-center hover:shadow-lg hover:border-[#EC4899] transition-all duration-300">
+            <div class="w-14 h-14 rounded-full bg-[#F5F3FF] border border-[#E2E8F0] flex items-center justify-center text-[#EC4899] mb-6 shadow-xs">
               <Megaphone class="w-6 h-6 stroke-[1.8]" />
             </div>
             <h3 class="text-lg font-bold text-[#1E293B] mb-3">
@@ -199,8 +199,8 @@
           </div>
 
           <!-- Card 5 -->
-          <div class="rounded-3xl bg-white border border-[#E5E7E6] p-8 text-center flex flex-col items-center hover:shadow-lg hover:border-[#5FA8A9] transition-all duration-300">
-            <div class="w-14 h-14 rounded-full bg-[#E8F4F3] border border-[#E5E7E6] flex items-center justify-center text-[#5FA8A9] mb-6 shadow-xs">
+          <div class="rounded-3xl bg-white border border-[#E2E8F0] p-8 text-center flex flex-col items-center hover:shadow-lg hover:border-[#EC4899] transition-all duration-300">
+            <div class="w-14 h-14 rounded-full bg-[#F5F3FF] border border-[#E2E8F0] flex items-center justify-center text-[#EC4899] mb-6 shadow-xs">
               <UserMinus class="w-6 h-6 stroke-[1.8]" />
             </div>
             <h3 class="text-lg font-bold text-[#1E293B] mb-3">
@@ -212,8 +212,8 @@
           </div>
 
           <!-- Card 6 -->
-          <div class="rounded-3xl bg-white border border-[#E5E7E6] p-8 text-center flex flex-col items-center hover:shadow-lg hover:border-[#5FA8A9] transition-all duration-300">
-            <div class="w-14 h-14 rounded-full bg-[#E8F4F3] border border-[#E5E7E6] flex items-center justify-center text-[#5FA8A9] mb-6 shadow-xs">
+          <div class="rounded-3xl bg-white border border-[#E2E8F0] p-8 text-center flex flex-col items-center hover:shadow-lg hover:border-[#EC4899] transition-all duration-300">
+            <div class="w-14 h-14 rounded-full bg-[#F5F3FF] border border-[#E2E8F0] flex items-center justify-center text-[#EC4899] mb-6 shadow-xs">
               <CreditCard class="w-6 h-6 stroke-[1.8]" />
             </div>
             <h3 class="text-lg font-bold text-[#1E293B] mb-3">
@@ -241,14 +241,14 @@
         </div>
 
         <!-- Alternating Feature 1: Barber Booking App -->
-        <div class="rounded-3xl bg-[#F5F7F6] border border-[#E5E7E6] p-8 sm:p-12 lg:p-16 mb-12">
+        <div class="rounded-3xl bg-[#FAF5FF] border border-[#E2E8F0] p-8 sm:p-12 lg:p-16 mb-12">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
             <!-- Left Mockup: Barber Booking App Screen Preview with Tattooed Barber -->
             <div class="lg:col-span-5 relative">
               <div class="relative mx-auto max-w-sm">
                 <!-- Barber Photo -->
-                <div class="rounded-3xl overflow-hidden shadow-xl border border-[#E5E7E6] aspect-[4/5] bg-neutral-900">
+                <div class="rounded-3xl overflow-hidden shadow-xl border border-[#E2E8F0] aspect-[4/5] bg-neutral-900">
                   <img 
                     src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=800&q=85" 
                     alt="Tattooed Master Barber"
@@ -257,11 +257,11 @@
                 </div>
 
                 <!-- Floating Choose Your Barber Card -->
-                <div class="absolute -top-6 -right-6 w-64 rounded-2xl bg-white p-4 shadow-lg border border-[#E5E7E6] text-xs z-10">
+                <div class="absolute -top-6 -right-6 w-64 rounded-2xl bg-white p-4 shadow-lg border border-[#E2E8F0] text-xs z-10">
                   <p class="text-[10px] font-bold uppercase tracking-wider text-[#6B7280] mb-2">CHOOSE YOUR BARBER</p>
                   <div class="flex items-center justify-between mb-3">
                     <div class="text-center">
-                      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=60&q=80" class="w-8 h-8 rounded-full mx-auto ring-2 ring-[#0F3D3E]" />
+                      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=60&q=80" class="w-8 h-8 rounded-full mx-auto ring-2 ring-[#581C87]" />
                       <span class="text-[9px] font-bold mt-1 block text-[#1E293B]">Marco</span>
                     </div>
                     <div class="text-center">
@@ -274,20 +274,20 @@
                     </div>
                   </div>
 
-                  <div class="p-2 rounded-xl bg-[#F5F7F6] border border-[#E5E7E6] mb-2 flex justify-between items-center text-[10px]">
+                  <div class="p-2 rounded-xl bg-[#FAF5FF] border border-[#E2E8F0] mb-2 flex justify-between items-center text-[10px]">
                     <span class="font-bold text-[#1E293B]">Skin Fade</span>
                     <span class="text-[#6B7280]">30 min • $35</span>
                   </div>
 
                   <div class="grid grid-cols-3 gap-1 text-[9px] font-mono text-center">
-                    <span class="p-1 rounded bg-white border border-[#E5E7E6]">3:00</span>
-                    <span class="p-1 rounded bg-[#0F3D3E] text-white font-bold">3:30</span>
-                    <span class="p-1 rounded bg-white border border-[#E5E7E6]">4:00</span>
+                    <span class="p-1 rounded bg-white border border-[#E2E8F0]">3:00</span>
+                    <span class="p-1 rounded bg-[#581C87] text-white font-bold">3:30</span>
+                    <span class="p-1 rounded bg-white border border-[#E2E8F0]">4:00</span>
                   </div>
                 </div>
 
                 <!-- Floating Channels Card (Bottom Left) -->
-                <div class="absolute -bottom-4 -left-6 rounded-2xl bg-white p-3 shadow-lg border border-[#E5E7E6] text-xs z-10">
+                <div class="absolute -bottom-4 -left-6 rounded-2xl bg-white p-3 shadow-lg border border-[#E2E8F0] text-xs z-10">
                   <p class="text-[9px] font-bold uppercase text-[#6B7280] mb-1">BOOK FROM</p>
                   <div class="space-y-1 text-[11px] font-semibold text-[#1E293B]">
                     <div class="flex items-center gap-1.5"><span>🌐</span> Website</div>
@@ -311,19 +311,19 @@
               <!-- Exact Bullet Points from Screenshot 4 -->
               <div class="space-y-2.5 pt-2">
                 <div class="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-[#1E293B]">
-                  <CheckCircle2 class="w-4 h-4 text-[#5FA8A9] shrink-0" />
+                  <CheckCircle2 class="w-4 h-4 text-[#EC4899] shrink-0" />
                   <span>Book a barber in seconds, 24/7</span>
                 </div>
                 <div class="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-[#1E293B]">
-                  <CheckCircle2 class="w-4 h-4 text-[#5FA8A9] shrink-0" />
+                  <CheckCircle2 class="w-4 h-4 text-[#EC4899] shrink-0" />
                   <span>Automatic SMS & email reminders</span>
                 </div>
                 <div class="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-[#1E293B]">
-                  <CheckCircle2 class="w-4 h-4 text-[#5FA8A9] shrink-0" />
+                  <CheckCircle2 class="w-4 h-4 text-[#EC4899] shrink-0" />
                   <span>Client picks their preferred barber</span>
                 </div>
                 <div class="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-[#1E293B]">
-                  <CheckCircle2 class="w-4 h-4 text-[#5FA8A9] shrink-0" />
+                  <CheckCircle2 class="w-4 h-4 text-[#EC4899] shrink-0" />
                   <span>Fewer no-shows, fuller calendar</span>
                 </div>
               </div>
@@ -331,7 +331,7 @@
               <div class="pt-4">
                 <button 
                   @click="trialOnboardingOpen = true"
-                  class="px-8 py-3.5 rounded-full bg-[#0F3D3E] text-white font-bold text-xs hover:bg-[#134A4C] transition-all duration-200 shadow-md"
+                  class="px-8 py-3.5 rounded-full bg-[#581C87] text-white font-bold text-xs hover:bg-[#7E22CE] transition-all duration-200 shadow-md"
                 >
                   Get Barber Booking App →
                 </button>
@@ -342,7 +342,7 @@
         </div>
 
         <!-- Alternating Feature 2: Smart POS & Quick Checkout -->
-        <div class="rounded-3xl bg-white border border-[#E5E7E6] p-8 sm:p-12 lg:p-16 mb-12 shadow-sm">
+        <div class="rounded-3xl bg-white border border-[#E2E8F0] p-8 sm:p-12 lg:p-16 mb-12 shadow-sm">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
             <div class="lg:col-span-7 space-y-5 order-2 lg:order-1">
@@ -354,26 +354,26 @@
               </p>
               <div class="space-y-2.5 pt-2">
                 <div class="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-[#1E293B]">
-                  <CheckCircle2 class="w-4 h-4 text-[#5FA8A9] shrink-0" />
+                  <CheckCircle2 class="w-4 h-4 text-[#EC4899] shrink-0" />
                   <span>Split payments between cash, card, and digital wallets</span>
                 </div>
                 <div class="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-[#1E293B]">
-                  <CheckCircle2 class="w-4 h-4 text-[#5FA8A9] shrink-0" />
+                  <CheckCircle2 class="w-4 h-4 text-[#EC4899] shrink-0" />
                   <span>Quick tip percentage prompts at terminal (15%, 20%, 25%)</span>
                 </div>
                 <div class="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-[#1E293B]">
-                  <CheckCircle2 class="w-4 h-4 text-[#5FA8A9] shrink-0" />
+                  <CheckCircle2 class="w-4 h-4 text-[#EC4899] shrink-0" />
                   <span>Automatic commission calculation per barber per cut</span>
                 </div>
                 <div class="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-[#1E293B]">
-                  <CheckCircle2 class="w-4 h-4 text-[#5FA8A9] shrink-0" />
+                  <CheckCircle2 class="w-4 h-4 text-[#EC4899] shrink-0" />
                   <span>Instant digital SMS receipts with rebooking link</span>
                 </div>
               </div>
               <div class="pt-4">
                 <button 
                   @click="demoOpen = true"
-                  class="px-8 py-3.5 rounded-full border border-[#D9E2E1] bg-white text-[#1E293B] font-bold text-xs hover:border-[#0F3D3E] hover:text-[#0F3D3E] hover:bg-[#F5F7F6] transition-all duration-200 shadow-xs"
+                  class="px-8 py-3.5 rounded-full border border-[#E2E8F0] bg-white text-[#1E293B] font-bold text-xs hover:border-[#581C87] hover:text-[#581C87] hover:bg-[#FAF5FF] transition-all duration-200 shadow-xs"
                 >
                   Book A 20-Min Demo
                 </button>
@@ -382,7 +382,7 @@
 
             <!-- Right Visual Mockup -->
             <div class="lg:col-span-5 relative order-1 lg:order-2">
-              <div class="rounded-3xl overflow-hidden shadow-xl border border-[#E5E7E6] aspect-[4/5] bg-neutral-900 mx-auto max-w-sm">
+              <div class="rounded-3xl overflow-hidden shadow-xl border border-[#E2E8F0] aspect-[4/5] bg-neutral-900 mx-auto max-w-sm">
                 <img 
                   src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=85" 
                   alt="Barbershop POS Checkout"
@@ -395,11 +395,11 @@
         </div>
 
         <!-- Alternating Feature 3: Staff & Commissions -->
-        <div class="rounded-3xl bg-[#F5F7F6] border border-[#E5E7E6] p-8 sm:p-12 lg:p-16">
+        <div class="rounded-3xl bg-[#FAF5FF] border border-[#E2E8F0] p-8 sm:p-12 lg:p-16">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
             <div class="lg:col-span-5 relative">
-              <div class="rounded-3xl overflow-hidden shadow-xl border border-[#E5E7E6] aspect-[4/5] bg-neutral-900 mx-auto max-w-sm">
+              <div class="rounded-3xl overflow-hidden shadow-xl border border-[#E2E8F0] aspect-[4/5] bg-neutral-900 mx-auto max-w-sm">
                 <img 
                   src="https://images.unsplash.com/photo-1517832606589-715753d4f323?auto=format&fit=crop&w=800&q=85" 
                   alt="Barbershop Staff and Team"
@@ -417,26 +417,26 @@
               </p>
               <div class="space-y-2.5 pt-2">
                 <div class="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-[#1E293B]">
-                  <CheckCircle2 class="w-4 h-4 text-[#5FA8A9] shrink-0" />
+                  <CheckCircle2 class="w-4 h-4 text-[#EC4899] shrink-0" />
                   <span>Automated sliding-scale commission percentages</span>
                 </div>
                 <div class="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-[#1E293B]">
-                  <CheckCircle2 class="w-4 h-4 text-[#5FA8A9] shrink-0" />
+                  <CheckCircle2 class="w-4 h-4 text-[#EC4899] shrink-0" />
                   <span>Weekly chair rent deductions from gross receipts</span>
                 </div>
                 <div class="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-[#1E293B]">
-                  <CheckCircle2 class="w-4 h-4 text-[#5FA8A9] shrink-0" />
+                  <CheckCircle2 class="w-4 h-4 text-[#EC4899] shrink-0" />
                   <span>Transparent barber mobile app to view personal earnings</span>
                 </div>
                 <div class="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-[#1E293B]">
-                  <CheckCircle2 class="w-4 h-4 text-[#5FA8A9] shrink-0" />
+                  <CheckCircle2 class="w-4 h-4 text-[#EC4899] shrink-0" />
                   <span>End-of-day cash drawer reconciliation</span>
                 </div>
               </div>
               <div class="pt-4">
                 <button 
                   @click="trialOnboardingOpen = true"
-                  class="px-8 py-3.5 rounded-full bg-[#0F3D3E] text-white font-bold text-xs hover:bg-[#134A4C] transition-all duration-200 shadow-md"
+                  class="px-8 py-3.5 rounded-full bg-[#581C87] text-white font-bold text-xs hover:bg-[#7E22CE] transition-all duration-200 shadow-md"
                 >
                   Start 7-Day Free Trial →
                 </button>
@@ -463,10 +463,10 @@
           <div 
             v-for="(faq, fIdx) in barbershopFaqs" 
             :key="fIdx"
-            class="rounded-2xl bg-white border border-[#E5E7E6] p-6 shadow-xs"
+            class="rounded-2xl bg-white border border-[#E2E8F0] p-6 shadow-xs"
           >
             <h4 class="font-extrabold text-base text-[#1E293B] mb-2 flex items-center gap-3">
-              <span class="w-6 h-6 rounded-full bg-[#E8F4F3] text-[#0F3D3E] flex items-center justify-center text-xs font-black shrink-0">Q</span>
+              <span class="w-6 h-6 rounded-full bg-[#F5F3FF] text-[#581C87] flex items-center justify-center text-xs font-black shrink-0">Q</span>
               <span>{{ faq.q }}</span>
             </h4>
             <p class="text-xs sm:text-sm text-[#4B5563] leading-relaxed pl-9">

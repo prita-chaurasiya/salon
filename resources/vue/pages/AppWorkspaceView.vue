@@ -1,8 +1,8 @@
 <template>
-  <div class="min-h-screen bg-[#F5F7F6] text-[#1E293B] flex flex-col font-sans">
+  <div class="min-h-screen bg-[#FAF5FF] text-[#1E293B] flex flex-col font-sans">
     
     <!-- Top Salonist Navigation Bar -->
-    <header class="h-16 bg-[#0F3D3E] text-white flex items-center justify-between px-4 sm:px-6 shadow-md z-30 shrink-0">
+    <header class="h-16 bg-[#581C87] text-white flex items-center justify-between px-4 sm:px-6 shadow-md z-30 shrink-0">
       
       <!-- Left: Logo & Branch Switcher -->
       <div class="flex items-center gap-4">
@@ -11,14 +11,14 @@
             S
           </div>
           <span class="text-xl font-black tracking-tight text-white hidden sm:inline">Salonist</span>
-          <span class="px-2 py-0.5 rounded-full bg-[#E8F4F3] text-[#0F3D3E] text-[10px] font-black uppercase tracking-wider">
+          <span class="px-2 py-0.5 rounded-full bg-[#F5F3FF] text-[#581C87] text-[10px] font-black uppercase tracking-wider">
             Workspace
           </span>
         </router-link>
 
         <!-- Location Switcher Pill -->
         <div class="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs text-white">
-          <MapPin class="w-3.5 h-3.5 text-[#5FA8A9]" />
+          <MapPin class="w-3.5 h-3.5 text-[#EC4899]" />
           <span class="font-bold">Downtown Flagship Suite</span>
           <ChevronDown class="w-3.5 h-3.5 text-white/70" />
         </div>
@@ -41,7 +41,7 @@
         <!-- Quick Sale POS Button -->
         <button 
           @click="activeTab = 'pos'"
-          class="px-3.5 py-1.5 rounded-full bg-[#5FA8A9] text-[#0F3D3E] font-extrabold text-xs hover:bg-[#4EA0A1] transition-all flex items-center gap-1.5 shadow-xs"
+          class="px-3.5 py-1.5 rounded-full bg-[#EC4899] text-[#581C87] font-extrabold text-xs hover:bg-[#4EA0A1] transition-all flex items-center gap-1.5 shadow-xs"
         >
           <CreditCard class="w-3.5 h-3.5" />
           <span>Quick Sale POS</span>
@@ -50,7 +50,7 @@
         <!-- New Appointment Trigger -->
         <button 
           @click="openNewBookingModal"
-          class="px-3.5 py-1.5 rounded-full bg-white text-[#0F3D3E] font-extrabold text-xs hover:bg-[#F5F7F6] transition-all flex items-center gap-1.5 shadow-xs"
+          class="px-3.5 py-1.5 rounded-full bg-white text-[#581C87] font-extrabold text-xs hover:bg-[#FAF5FF] transition-all flex items-center gap-1.5 shadow-xs"
         >
           <Plus class="w-3.5 h-3.5" />
           <span class="hidden sm:inline">New Booking</span>
@@ -59,7 +59,7 @@
         <!-- Notification Bell -->
         <button class="relative w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors">
           <Bell class="w-4 h-4" />
-          <span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-[#5FA8A9]"></span>
+          <span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-[#EC4899]"></span>
         </button>
 
         <!-- Stylist / Owner Profile -->
@@ -67,11 +67,11 @@
           <img 
             src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80" 
             alt="Elena"
-            class="w-8 h-8 rounded-full object-cover ring-2 ring-[#5FA8A9]"
+            class="w-8 h-8 rounded-full object-cover ring-2 ring-[#EC4899]"
           />
           <div class="hidden xl:block text-left text-xs leading-tight">
             <p class="font-bold text-white">Elena Vance</p>
-            <p class="text-[10px] text-[#D7E4E3]">Salon Director</p>
+            <p class="text-[10px] text-[#E9D5FF]">Salon Director</p>
           </div>
         </div>
 
@@ -83,7 +83,7 @@
     <div class="flex-1 flex overflow-hidden">
       
       <!-- Left Vertical Module Sidebar -->
-      <aside class="w-16 sm:w-60 bg-white border-r border-[#E5E7E6] flex flex-col justify-between shrink-0 select-none">
+      <aside class="w-16 sm:w-60 bg-white border-r border-[#E2E8F0] flex flex-col justify-between shrink-0 select-none">
         <div class="p-2 sm:p-3 space-y-1">
           
           <button 
@@ -92,10 +92,10 @@
             @click="activeTab = item.id"
             class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold transition-all"
             :class="activeTab === item.id 
-              ? 'bg-[#E8F4F3] text-[#0F3D3E] shadow-xs' 
-              : 'text-[#4B5563] hover:bg-[#F5F7F6] hover:text-[#1E293B]'"
+              ? 'bg-[#F5F3FF] text-[#581C87] shadow-xs' 
+              : 'text-[#4B5563] hover:bg-[#FAF5FF] hover:text-[#1E293B]'"
           >
-            <component :is="item.icon" class="w-5 h-5 shrink-0" :class="activeTab === item.id ? 'text-[#0F3D3E]' : 'text-[#6B7280]'" />
+            <component :is="item.icon" class="w-5 h-5 shrink-0" :class="activeTab === item.id ? 'text-[#581C87]' : 'text-[#6B7280]'" />
             <span class="hidden sm:inline">{{ item.label }}</span>
             <span v-if="item.badge" class="hidden sm:inline ml-auto px-1.5 py-0.5 rounded-full text-[9px] font-black uppercase" :class="item.badgeColor">
               {{ item.badge }}
@@ -105,14 +105,14 @@
         </div>
 
         <!-- Sidebar Footer Status -->
-        <div class="p-3 border-t border-[#E5E7E6] hidden sm:block">
-          <div class="p-2.5 rounded-xl bg-[#F5F7F6] border border-[#E5E7E6] space-y-1 text-[11px]">
+        <div class="p-3 border-t border-[#E2E8F0] hidden sm:block">
+          <div class="p-2.5 rounded-xl bg-[#FAF5FF] border border-[#E2E8F0] space-y-1 text-[11px]">
             <div class="flex items-center justify-between text-[#1E293B] font-bold">
               <span>Today's Chairs</span>
-              <span class="text-[#0F3D3E]">88% Full</span>
+              <span class="text-[#581C87]">88% Full</span>
             </div>
-            <div class="w-full bg-[#E5E7E6] h-1.5 rounded-full overflow-hidden">
-              <div class="bg-[#0F3D3E] h-full rounded-full" style="width: 88%"></div>
+            <div class="w-full bg-[#E2E8F0] h-1.5 rounded-full overflow-hidden">
+              <div class="bg-[#581C87] h-full rounded-full" style="width: 88%"></div>
             </div>
             <p class="text-[10px] text-[#6B7280]">14 completed • 4 in-chair</p>
           </div>
@@ -120,17 +120,17 @@
       </aside>
 
       <!-- Main Stage Container -->
-      <main class="flex-1 overflow-y-auto p-4 sm:p-6 lg:p-8 bg-[#F5F7F6]">
+      <main class="flex-1 overflow-y-auto p-4 sm:p-6 lg:p-8 bg-[#FAF5FF]">
         
         <!-- MODULE 1: APPOINTMENT MASTER CALENDAR -->
         <div v-if="activeTab === 'calendar'" class="space-y-6">
           
           <!-- Calendar Controls Bar -->
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-white p-4 rounded-2xl border border-[#E5E7E6] shadow-xs">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-white p-4 rounded-2xl border border-[#E2E8F0] shadow-xs">
             <div class="flex items-center gap-3">
-              <div class="flex items-center gap-1 bg-[#F5F7F6] p-1 rounded-xl border border-[#E5E7E6]">
+              <div class="flex items-center gap-1 bg-[#FAF5FF] p-1 rounded-xl border border-[#E2E8F0]">
                 <button class="p-1 rounded-lg hover:bg-white text-[#1E293B] transition-colors"><ChevronLeft class="w-4 h-4" /></button>
-                <button class="px-3 py-1 rounded-lg bg-white font-bold text-xs shadow-xs text-[#0F3D3E]">Today</button>
+                <button class="px-3 py-1 rounded-lg bg-white font-bold text-xs shadow-xs text-[#581C87]">Today</button>
                 <button class="p-1 rounded-lg hover:bg-white text-[#1E293B] transition-colors"><ChevronRight class="w-4 h-4" /></button>
               </div>
               <h2 class="text-base sm:text-lg font-black text-[#1E293B]">
@@ -145,7 +145,7 @@
                 v-for="(stylist, sIdx) in stylists" 
                 :key="sIdx"
                 class="px-2.5 py-1 rounded-full text-xs font-bold border flex items-center gap-1.5 shrink-0 cursor-pointer"
-                :class="stylist.active ? 'bg-[#E8F4F3] text-[#0F3D3E] border-[#E5E7E6]' : 'bg-white text-[#6B7280] border-[#E5E7E6]'"
+                :class="stylist.active ? 'bg-[#F5F3FF] text-[#581C87] border-[#E2E8F0]' : 'bg-white text-[#6B7280] border-[#E2E8F0]'"
               >
                 <span class="w-2 h-2 rounded-full" :style="{ backgroundColor: stylist.color }"></span>
                 <span>{{ stylist.name }}</span>
@@ -154,8 +154,8 @@
           </div>
 
           <!-- Multi-Staff Timeline Matrix -->
-          <div class="bg-white rounded-2xl border border-[#E5E7E6] shadow-xs overflow-hidden">
-            <div class="grid grid-cols-12 border-b border-[#E5E7E6] bg-[#FCFCFB] text-xs font-bold text-[#1E293B] p-3 text-center">
+          <div class="bg-white rounded-2xl border border-[#E2E8F0] shadow-xs overflow-hidden">
+            <div class="grid grid-cols-12 border-b border-[#E2E8F0] bg-[#FCFCFB] text-xs font-bold text-[#1E293B] p-3 text-center">
               <div class="col-span-2 text-left pl-3 text-[#6B7280]">Time Slot</div>
               <div class="col-span-2">Chair 1 &bull; Marco (Barber)</div>
               <div class="col-span-3">Chair 2 &bull; Chloe (Colorist)</div>
@@ -163,19 +163,19 @@
               <div class="col-span-2">Spa Suite &bull; Sam</div>
             </div>
 
-            <div class="divide-y divide-[#E5E7E6]">
+            <div class="divide-y divide-[#E2E8F0]">
               <div 
                 v-for="(slot, idx) in timeSlots" 
                 :key="idx"
-                class="grid grid-cols-12 min-h-[72px] text-xs transition-colors hover:bg-[#F5F7F6]/50"
+                class="grid grid-cols-12 min-h-[72px] text-xs transition-colors hover:bg-[#FAF5FF]/50"
               >
                 <!-- Time Label -->
-                <div class="col-span-2 p-3 font-mono font-bold text-[#6B7280] border-r border-[#E5E7E6] bg-[#FCFCFB]/60 flex items-center">
+                <div class="col-span-2 p-3 font-mono font-bold text-[#6B7280] border-r border-[#E2E8F0] bg-[#FCFCFB]/60 flex items-center">
                   {{ slot.time }}
                 </div>
 
                 <!-- Marco's Column -->
-                <div class="col-span-2 p-1.5 border-r border-[#E5E7E6] relative">
+                <div class="col-span-2 p-1.5 border-r border-[#E2E8F0] relative">
                   <div 
                     v-if="slot.marco"
                     @click="viewAppointment(slot.marco)"
@@ -191,14 +191,14 @@
                   <div 
                     v-else 
                     @click="quickBookSlot('Marco', slot.time)"
-                    class="h-full rounded-xl border border-dashed border-transparent hover:border-[#5FA8A9] flex items-center justify-center text-transparent hover:text-[#0F3D3E] text-[10px] font-bold cursor-pointer"
+                    class="h-full rounded-xl border border-dashed border-transparent hover:border-[#EC4899] flex items-center justify-center text-transparent hover:text-[#581C87] text-[10px] font-bold cursor-pointer"
                   >
                     + Open Slot
                   </div>
                 </div>
 
                 <!-- Chloe's Column (With Processing Buffer Highlight) -->
-                <div class="col-span-3 p-1.5 border-r border-[#E5E7E6] relative">
+                <div class="col-span-3 p-1.5 border-r border-[#E2E8F0] relative">
                   <div 
                     v-if="slot.chloe"
                     @click="viewAppointment(slot.chloe)"
@@ -217,14 +217,14 @@
                   <div 
                     v-else 
                     @click="quickBookSlot('Chloe', slot.time)"
-                    class="h-full rounded-xl border border-dashed border-transparent hover:border-[#5FA8A9] flex items-center justify-center text-transparent hover:text-[#0F3D3E] text-[10px] font-bold cursor-pointer"
+                    class="h-full rounded-xl border border-dashed border-transparent hover:border-[#EC4899] flex items-center justify-center text-transparent hover:text-[#581C87] text-[10px] font-bold cursor-pointer"
                   >
                     + Open Chair
                   </div>
                 </div>
 
                 <!-- Liam's Column -->
-                <div class="col-span-3 p-1.5 border-r border-[#E5E7E6] relative">
+                <div class="col-span-3 p-1.5 border-r border-[#E2E8F0] relative">
                   <div 
                     v-if="slot.liam"
                     @click="viewAppointment(slot.liam)"
@@ -240,7 +240,7 @@
                   <div 
                     v-else 
                     @click="quickBookSlot('Liam', slot.time)"
-                    class="h-full rounded-xl border border-dashed border-transparent hover:border-[#5FA8A9] flex items-center justify-center text-transparent hover:text-[#0F3D3E] text-[10px] font-bold cursor-pointer"
+                    class="h-full rounded-xl border border-dashed border-transparent hover:border-[#EC4899] flex items-center justify-center text-transparent hover:text-[#581C87] text-[10px] font-bold cursor-pointer"
                   >
                     + Open Chair
                   </div>
@@ -263,7 +263,7 @@
                   <div 
                     v-else 
                     @click="quickBookSlot('Sam', slot.time)"
-                    class="h-full rounded-xl border border-dashed border-transparent hover:border-[#5FA8A9] flex items-center justify-center text-transparent hover:text-[#0F3D3E] text-[10px] font-bold cursor-pointer"
+                    class="h-full rounded-xl border border-dashed border-transparent hover:border-[#EC4899] flex items-center justify-center text-transparent hover:text-[#581C87] text-[10px] font-bold cursor-pointer"
                   >
                     + Open Suite
                   </div>
@@ -290,8 +290,8 @@
                 @click="selectedPosCategory = cat"
                 class="px-4 py-2 rounded-xl font-bold transition-all shrink-0 shadow-xs"
                 :class="selectedPosCategory === cat 
-                  ? 'bg-[#0F3D3E] text-white' 
-                  : 'bg-white text-[#4B5563] border border-[#E5E7E6] hover:bg-[#F5F7F6]'"
+                  ? 'bg-[#581C87] text-white' 
+                  : 'bg-white text-[#4B5563] border border-[#E2E8F0] hover:bg-[#FAF5FF]'"
               >
                 {{ cat }}
               </button>
@@ -303,21 +303,21 @@
                 v-for="item in filteredPosItems" 
                 :key="item.id"
                 @click="addToCart(item)"
-                class="p-4 rounded-2xl bg-white border border-[#E5E7E6] hover:border-[#0F3D3E] hover:shadow-md cursor-pointer transition-all duration-200 group flex flex-col justify-between"
+                class="p-4 rounded-2xl bg-white border border-[#E2E8F0] hover:border-[#581C87] hover:shadow-md cursor-pointer transition-all duration-200 group flex flex-col justify-between"
               >
                 <div>
-                  <span class="px-2 py-0.5 rounded-full text-[9px] font-black uppercase bg-[#E8F4F3] text-[#0F3D3E] mb-2 inline-block">
+                  <span class="px-2 py-0.5 rounded-full text-[9px] font-black uppercase bg-[#F5F3FF] text-[#581C87] mb-2 inline-block">
                     {{ item.category }}
                   </span>
-                  <h4 class="font-bold text-sm text-[#1E293B] group-hover:text-[#0F3D3E] transition-colors leading-snug">
+                  <h4 class="font-bold text-sm text-[#1E293B] group-hover:text-[#581C87] transition-colors leading-snug">
                     {{ item.name }}
                   </h4>
                   <p class="text-xs text-[#6B7280] mt-1">{{ item.timeOrSize }}</p>
                 </div>
 
-                <div class="pt-4 mt-3 border-t border-[#E5E7E6] flex items-center justify-between">
+                <div class="pt-4 mt-3 border-t border-[#E2E8F0] flex items-center justify-between">
                   <span class="font-black text-base text-[#1E293B]">${{ item.price }}</span>
-                  <span class="w-6 h-6 rounded-full bg-[#F5F7F6] group-hover:bg-[#0F3D3E] group-hover:text-white flex items-center justify-center text-xs transition-colors font-bold">+</span>
+                  <span class="w-6 h-6 rounded-full bg-[#FAF5FF] group-hover:bg-[#581C87] group-hover:text-white flex items-center justify-center text-xs transition-colors font-bold">+</span>
                 </div>
               </div>
             </div>
@@ -325,10 +325,10 @@
           </div>
 
           <!-- Right: Interactive Live Register Cart (4 cols) -->
-          <div class="lg:col-span-4 bg-white rounded-2xl border border-[#E5E7E6] p-5 shadow-sm space-y-5 sticky top-6">
+          <div class="lg:col-span-4 bg-white rounded-2xl border border-[#E2E8F0] p-5 shadow-sm space-y-5 sticky top-6">
             
             <!-- Cart Header & Client Selector -->
-            <div class="flex items-center justify-between pb-3 border-b border-[#E5E7E6]">
+            <div class="flex items-center justify-between pb-3 border-b border-[#E2E8F0]">
               <div>
                 <h3 class="font-black text-base text-[#1E293B]">Live Checkout Register</h3>
                 <p class="text-[11px] text-[#6B7280]">Order #SAL-84920</p>
@@ -337,15 +337,15 @@
             </div>
 
             <!-- Client Assignment -->
-            <div class="p-2.5 rounded-xl bg-[#F5F7F6] border border-[#E5E7E6] flex items-center justify-between text-xs">
+            <div class="p-2.5 rounded-xl bg-[#FAF5FF] border border-[#E2E8F0] flex items-center justify-between text-xs">
               <div class="flex items-center gap-2">
-                <UserCheck class="w-4 h-4 text-[#0F3D3E]" />
+                <UserCheck class="w-4 h-4 text-[#581C87]" />
                 <div>
                   <p class="font-bold text-[#1E293B]">Sophia Martinez</p>
                   <p class="text-[10px] text-[#6B7280]">VIP Regular &bull; 440 Loyalty Pts</p>
                 </div>
               </div>
-              <button class="text-[11px] font-bold text-[#0F3D3E] hover:underline">Change</button>
+              <button class="text-[11px] font-bold text-[#581C87] hover:underline">Change</button>
             </div>
 
             <!-- Line Items Scroll -->
@@ -353,7 +353,7 @@
               <div 
                 v-for="(cItem, cIdx) in cartItems" 
                 :key="cIdx"
-                class="flex items-center justify-between p-2 rounded-xl bg-[#FCFCFB] border border-[#E5E7E6]"
+                class="flex items-center justify-between p-2 rounded-xl bg-[#FCFCFB] border border-[#E2E8F0]"
               >
                 <div>
                   <p class="font-bold text-[#1E293B]">{{ cItem.name }}</p>
@@ -371,7 +371,7 @@
             </div>
 
             <!-- Gratuity / Tip Prompt -->
-            <div class="pt-2 border-t border-[#E5E7E6]">
+            <div class="pt-2 border-t border-[#E2E8F0]">
               <p class="text-[11px] font-bold text-[#6B7280] uppercase mb-1.5">Add Gratuity / Tip:</p>
               <div class="grid grid-cols-4 gap-1.5 text-xs text-center font-bold">
                 <button 
@@ -380,8 +380,8 @@
                   @click="selectedTipPercent = tip"
                   class="py-1 rounded-lg border transition-all"
                   :class="selectedTipPercent === tip 
-                    ? 'bg-[#0F3D3E] text-white border-[#0F3D3E]' 
-                    : 'bg-[#F5F7F6] text-[#4B5563] border-[#E5E7E6] hover:bg-white'"
+                    ? 'bg-[#581C87] text-white border-[#581C87]' 
+                    : 'bg-[#FAF5FF] text-[#4B5563] border-[#E2E8F0] hover:bg-white'"
                 >
                   {{ tip }}%
                 </button>
@@ -389,7 +389,7 @@
             </div>
 
             <!-- Bill Totals -->
-            <div class="space-y-1.5 pt-2 border-t border-[#E5E7E6] text-xs">
+            <div class="space-y-1.5 pt-2 border-t border-[#E2E8F0] text-xs">
               <div class="flex justify-between text-[#4B5563]">
                 <span>Subtotal</span>
                 <span class="font-bold text-[#1E293B]">${{ cartSubtotal.toFixed(2) }}</span>
@@ -400,11 +400,11 @@
               </div>
               <div class="flex justify-between text-[#4B5563]">
                 <span>Gratuity ({{ selectedTipPercent }}%)</span>
-                <span class="text-[#0F3D3E] font-bold">+${{ cartTip.toFixed(2) }}</span>
+                <span class="text-[#581C87] font-bold">+${{ cartTip.toFixed(2) }}</span>
               </div>
-              <div class="flex justify-between text-base font-black text-[#1E293B] pt-2 border-t border-[#E5E7E6]">
+              <div class="flex justify-between text-base font-black text-[#1E293B] pt-2 border-t border-[#E2E8F0]">
                 <span>Total Due</span>
-                <span class="text-[#0F3D3E]">${{ cartGrandTotal.toFixed(2) }}</span>
+                <span class="text-[#581C87]">${{ cartGrandTotal.toFixed(2) }}</span>
               </div>
             </div>
 
@@ -412,7 +412,7 @@
             <div class="space-y-2 pt-2">
               <button 
                 @click="processPayment('card')"
-                class="w-full py-3.5 rounded-xl bg-[#0F3D3E] text-white font-black text-xs hover:bg-[#134A4C] transition-all flex items-center justify-center gap-2 shadow-md hover:scale-[1.01]"
+                class="w-full py-3.5 rounded-xl bg-[#581C87] text-white font-black text-xs hover:bg-[#7E22CE] transition-all flex items-center justify-center gap-2 shadow-md hover:scale-[1.01]"
               >
                 <CreditCard class="w-4 h-4" />
                 <span>Tap Card / Terminal Payment</span>
@@ -421,13 +421,13 @@
               <div class="grid grid-cols-2 gap-2 text-xs font-bold">
                 <button 
                   @click="processPayment('cash')"
-                  class="py-2.5 rounded-xl border border-[#D9E2E1] bg-white text-[#1E293B] hover:bg-[#F5F7F6] transition-colors"
+                  class="py-2.5 rounded-xl border border-[#E2E8F0] bg-white text-[#1E293B] hover:bg-[#FAF5FF] transition-colors"
                 >
                   💵 Cash Drawer
                 </button>
                 <button 
                   @click="processPayment('split')"
-                  class="py-2.5 rounded-xl border border-[#D9E2E1] bg-white text-[#1E293B] hover:bg-[#F5F7F6] transition-colors"
+                  class="py-2.5 rounded-xl border border-[#E2E8F0] bg-white text-[#1E293B] hover:bg-[#FAF5FF] transition-colors"
                 >
                   Split / Deposit
                 </button>
@@ -445,16 +445,16 @@
               <h2 class="text-xl font-black text-[#1E293B]">Client Database & Formula Vault</h2>
               <p class="text-xs text-[#6B7280]">1,480 active client records with formulation histories.</p>
             </div>
-            <button class="px-4 py-2 rounded-full bg-[#0F3D3E] text-white font-bold text-xs hover:bg-[#134A4C] flex items-center gap-1.5 shadow-xs">
+            <button class="px-4 py-2 rounded-full bg-[#581C87] text-white font-bold text-xs hover:bg-[#7E22CE] flex items-center gap-1.5 shadow-xs">
               <Plus class="w-3.5 h-3.5" />
               <span>Add New Client</span>
             </button>
           </div>
 
           <!-- Clients Table -->
-          <div class="bg-white rounded-2xl border border-[#E5E7E6] shadow-xs overflow-hidden">
+          <div class="bg-white rounded-2xl border border-[#E2E8F0] shadow-xs overflow-hidden">
             <table class="w-full text-left text-xs">
-              <thead class="bg-[#FCFCFB] text-[#6B7280] font-bold border-b border-[#E5E7E6] uppercase text-[10px] tracking-wider">
+              <thead class="bg-[#FCFCFB] text-[#6B7280] font-bold border-b border-[#E2E8F0] uppercase text-[10px] tracking-wider">
                 <tr>
                   <th class="p-3.5 pl-4">Client Name</th>
                   <th class="p-3.5">Contact</th>
@@ -465,10 +465,10 @@
                   <th class="p-3.5 text-right pr-4">Actions</th>
                 </tr>
               </thead>
-              <tbody class="divide-y divide-[#E5E7E6] text-[#4B5563]">
-                <tr v-for="(client, cIdx) in clientsList" :key="cIdx" class="hover:bg-[#F5F7F6]/60 transition-colors">
+              <tbody class="divide-y divide-[#E2E8F0] text-[#4B5563]">
+                <tr v-for="(client, cIdx) in clientsList" :key="cIdx" class="hover:bg-[#FAF5FF]/60 transition-colors">
                   <td class="p-3.5 pl-4 font-bold text-[#1E293B] flex items-center gap-2.5">
-                    <div class="w-7 h-7 rounded-full bg-[#E8F4F3] text-[#0F3D3E] font-black flex items-center justify-center text-xs">
+                    <div class="w-7 h-7 rounded-full bg-[#F5F3FF] text-[#581C87] font-black flex items-center justify-center text-xs">
                       {{ client.name[0] }}
                     </div>
                     <span>{{ client.name }}</span>
@@ -476,14 +476,14 @@
                   </td>
                   <td class="p-3.5 font-mono text-[#6B7280]">{{ client.phone }}</td>
                   <td class="p-3.5 font-bold text-[#1E293B]">{{ client.stylist }}</td>
-                  <td class="p-3.5 max-w-xs truncate font-mono text-[11px] text-[#0F3D3E] bg-[#E8F4F3]/40 rounded px-2">
+                  <td class="p-3.5 max-w-xs truncate font-mono text-[11px] text-[#581C87] bg-[#F5F3FF]/40 rounded px-2">
                     {{ client.formula }}
                   </td>
                   <td class="p-3.5 font-bold text-[#1E293B]">${{ client.totalSpent }}</td>
                   <td class="p-3.5 text-[#6B7280]">{{ client.lastVisit }}</td>
                   <td class="p-3.5 text-right pr-4 space-x-2">
-                    <button @click="openClientDossier(client)" class="text-[#0F3D3E] font-bold hover:underline">Dossier</button>
-                    <button @click="bookForClient(client)" class="text-[#5FA8A9] font-bold hover:underline">Book</button>
+                    <button @click="openClientDossier(client)" class="text-[#581C87] font-bold hover:underline">Dossier</button>
+                    <button @click="bookForClient(client)" class="text-[#EC4899] font-bold hover:underline">Book</button>
                   </td>
                 </tr>
               </tbody>
@@ -498,24 +498,24 @@
               <h2 class="text-xl font-black text-[#1E293B]">Inventory & Backbar Depletion</h2>
               <p class="text-xs text-[#6B7280]">Real-time stock alerts across retail shelf and developer dispensary.</p>
             </div>
-            <button class="px-4 py-2 rounded-full bg-[#0F3D3E] text-white font-bold text-xs hover:bg-[#134A4C] flex items-center gap-1.5 shadow-xs">
+            <button class="px-4 py-2 rounded-full bg-[#581C87] text-white font-bold text-xs hover:bg-[#7E22CE] flex items-center gap-1.5 shadow-xs">
               <Plus class="w-3.5 h-3.5" />
               <span>Receive New Stock</span>
             </button>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-            <div class="p-5 rounded-2xl bg-white border border-[#E5E7E6] shadow-xs">
+            <div class="p-5 rounded-2xl bg-white border border-[#E2E8F0] shadow-xs">
               <p class="text-xs font-bold text-[#6B7280] uppercase">Retail Stock Value</p>
               <p class="text-2xl font-black text-[#1E293B] mt-1">$24,850.00</p>
               <p class="text-[11px] text-emerald-600 font-bold mt-1">✓ 142 SKUs fully stocked</p>
             </div>
-            <div class="p-5 rounded-2xl bg-white border border-[#E5E7E6] shadow-xs">
+            <div class="p-5 rounded-2xl bg-white border border-[#E2E8F0] shadow-xs">
               <p class="text-xs font-bold text-[#6B7280] uppercase">Backbar Chemical Usage</p>
               <p class="text-2xl font-black text-[#1E293B] mt-1">4.2 kg / day</p>
-              <p class="text-[11px] text-[#0F3D3E] font-bold mt-1">Standard dispensary yield</p>
+              <p class="text-[11px] text-[#581C87] font-bold mt-1">Standard dispensary yield</p>
             </div>
-            <div class="p-5 rounded-2xl bg-white border border-[#E5E7E6] shadow-xs">
+            <div class="p-5 rounded-2xl bg-white border border-[#E2E8F0] shadow-xs">
               <p class="text-xs font-bold text-[#6B7280] uppercase">Low Stock Warnings</p>
               <p class="text-2xl font-black text-amber-600 mt-1">3 Items</p>
               <p class="text-[11px] text-amber-700 font-bold mt-1">Needs reorder before Friday</p>
@@ -523,9 +523,9 @@
           </div>
 
           <!-- Inventory List -->
-          <div class="bg-white rounded-2xl border border-[#E5E7E6] shadow-xs overflow-hidden">
+          <div class="bg-white rounded-2xl border border-[#E2E8F0] shadow-xs overflow-hidden">
             <table class="w-full text-left text-xs">
-              <thead class="bg-[#FCFCFB] text-[#6B7280] font-bold border-b border-[#E5E7E6] uppercase text-[10px] tracking-wider">
+              <thead class="bg-[#FCFCFB] text-[#6B7280] font-bold border-b border-[#E2E8F0] uppercase text-[10px] tracking-wider">
                 <tr>
                   <th class="p-3.5 pl-4">Product Name</th>
                   <th class="p-3.5">Category</th>
@@ -536,8 +536,8 @@
                   <th class="p-3.5 text-right pr-4">Quick Adjust</th>
                 </tr>
               </thead>
-              <tbody class="divide-y divide-[#E5E7E6] text-[#4B5563]">
-                <tr v-for="(prod, pIdx) in inventoryList" :key="pIdx" class="hover:bg-[#F5F7F6]/60 transition-colors">
+              <tbody class="divide-y divide-[#E2E8F0] text-[#4B5563]">
+                <tr v-for="(prod, pIdx) in inventoryList" :key="pIdx" class="hover:bg-[#FAF5FF]/60 transition-colors">
                   <td class="p-3.5 pl-4 font-bold text-[#1E293B]">{{ prod.name }}</td>
                   <td class="p-3.5">{{ prod.category }}</td>
                   <td class="p-3.5 font-mono text-[#6B7280]">{{ prod.sku }}</td>
@@ -554,8 +554,8 @@
                     </span>
                   </td>
                   <td class="p-3.5 text-right pr-4 space-x-1.5 font-bold font-mono">
-                    <button @click="prod.stock--" class="px-2 py-0.5 rounded bg-[#F5F7F6] border hover:bg-white text-xs">-</button>
-                    <button @click="prod.stock++" class="px-2 py-0.5 rounded bg-[#F5F7F6] border hover:bg-white text-xs">+</button>
+                    <button @click="prod.stock--" class="px-2 py-0.5 rounded bg-[#FAF5FF] border hover:bg-white text-xs">-</button>
+                    <button @click="prod.stock++" class="px-2 py-0.5 rounded bg-[#FAF5FF] border hover:bg-white text-xs">+</button>
                   </td>
                 </tr>
               </tbody>
@@ -570,7 +570,7 @@
               <h2 class="text-xl font-black text-[#1E293B]">Staff Rota, Commissions & Tips</h2>
               <p class="text-xs text-[#6B7280]">Daily chair yield and calculated payroll bonuses.</p>
             </div>
-            <button class="px-4 py-2 rounded-full bg-[#0F3D3E] text-white font-bold text-xs hover:bg-[#134A4C] flex items-center gap-1.5 shadow-xs">
+            <button class="px-4 py-2 rounded-full bg-[#581C87] text-white font-bold text-xs hover:bg-[#7E22CE] flex items-center gap-1.5 shadow-xs">
               <Plus class="w-3.5 h-3.5" />
               <span>Add Staff Profile</span>
             </button>
@@ -580,32 +580,32 @@
             <div 
               v-for="(st, stIdx) in staffRoster" 
               :key="stIdx"
-              class="p-5 rounded-2xl bg-white border border-[#E5E7E6] shadow-xs space-y-4"
+              class="p-5 rounded-2xl bg-white border border-[#E2E8F0] shadow-xs space-y-4"
             >
               <div class="flex items-center gap-3">
-                <img :src="st.avatar" :alt="st.name" class="w-10 h-10 rounded-full object-cover ring-2 ring-[#0F3D3E]" />
+                <img :src="st.avatar" :alt="st.name" class="w-10 h-10 rounded-full object-cover ring-2 ring-[#581C87]" />
                 <div>
                   <h4 class="font-bold text-sm text-[#1E293B]">{{ st.name }}</h4>
                   <p class="text-[11px] text-[#6B7280]">{{ st.role }}</p>
                 </div>
               </div>
 
-              <div class="space-y-2 text-xs border-t border-[#E5E7E6] pt-3">
+              <div class="space-y-2 text-xs border-t border-[#E2E8F0] pt-3">
                 <div class="flex justify-between text-[#4B5563]">
                   <span>Today's Sales</span>
                   <span class="font-bold text-[#1E293B]">${{ st.sales }}</span>
                 </div>
                 <div class="flex justify-between text-[#4B5563]">
                   <span>Commission Rate</span>
-                  <span class="font-bold text-[#0F3D3E]">{{ st.commissionRate }}%</span>
+                  <span class="font-bold text-[#581C87]">{{ st.commissionRate }}%</span>
                 </div>
                 <div class="flex justify-between text-[#4B5563]">
                   <span>Tips Collected</span>
                   <span class="font-bold text-emerald-600">${{ st.tips }}</span>
                 </div>
-                <div class="flex justify-between text-[#1E293B] font-black pt-2 border-t border-[#E5E7E6]">
+                <div class="flex justify-between text-[#1E293B] font-black pt-2 border-t border-[#E2E8F0]">
                   <span>Est. Daily Payout</span>
-                  <span class="text-[#0F3D3E]">${{ st.estimatedPayout }}</span>
+                  <span class="text-[#581C87]">${{ st.estimatedPayout }}</span>
                 </div>
               </div>
             </div>
@@ -621,8 +621,8 @@
       v-if="bookingModalOpen"
       class="fixed inset-0 bg-black/50 backdrop-blur-xs flex items-center justify-center p-4 z-50"
     >
-      <div class="w-full max-w-lg bg-white rounded-3xl p-6 shadow-2xl border border-[#E5E7E6] space-y-4">
-        <div class="flex items-center justify-between pb-3 border-b border-[#E5E7E6]">
+      <div class="w-full max-w-lg bg-white rounded-3xl p-6 shadow-2xl border border-[#E2E8F0] space-y-4">
+        <div class="flex items-center justify-between pb-3 border-b border-[#E2E8F0]">
           <h3 class="font-black text-base text-[#1E293B]">Create Salon Appointment</h3>
           <button @click="bookingModalOpen = false" class="text-xl font-bold text-neutral-400 hover:text-neutral-800">&times;</button>
         </div>
@@ -634,14 +634,14 @@
               v-model="newBooking.client"
               type="text" 
               placeholder="e.g. Jessica Alba" 
-              class="w-full p-2.5 rounded-xl border border-[#E5E7E6] focus:border-[#0F3D3E] focus:outline-none" 
+              class="w-full p-2.5 rounded-xl border border-[#E2E8F0] focus:border-[#581C87] focus:outline-none" 
             />
           </div>
 
           <div class="grid grid-cols-2 gap-3">
             <div>
               <label class="block font-bold text-[#1E293B] mb-1">Stylist / Chair:</label>
-              <select v-model="newBooking.stylist" class="w-full p-2.5 rounded-xl border border-[#E5E7E6] focus:border-[#0F3D3E] focus:outline-none bg-white">
+              <select v-model="newBooking.stylist" class="w-full p-2.5 rounded-xl border border-[#E2E8F0] focus:border-[#581C87] focus:outline-none bg-white">
                 <option value="Marco">Marco (Barber)</option>
                 <option value="Chloe">Chloe (Colorist)</option>
                 <option value="Liam">Liam (Stylist)</option>
@@ -650,7 +650,7 @@
             </div>
             <div>
               <label class="block font-bold text-[#1E293B] mb-1">Time Slot:</label>
-              <select v-model="newBooking.time" class="w-full p-2.5 rounded-xl border border-[#E5E7E6] focus:border-[#0F3D3E] focus:outline-none bg-white">
+              <select v-model="newBooking.time" class="w-full p-2.5 rounded-xl border border-[#E2E8F0] focus:border-[#581C87] focus:outline-none bg-white">
                 <option>9:00 AM</option>
                 <option>10:00 AM</option>
                 <option>11:00 AM</option>
@@ -665,7 +665,7 @@
 
           <div>
             <label class="block font-bold text-[#1E293B] mb-1">Select Service:</label>
-            <select v-model="newBooking.service" class="w-full p-2.5 rounded-xl border border-[#E5E7E6] focus:border-[#0F3D3E] focus:outline-none bg-white">
+            <select v-model="newBooking.service" class="w-full p-2.5 rounded-xl border border-[#E2E8F0] focus:border-[#581C87] focus:outline-none bg-white">
               <option value="Precision Haircut & Style ($65)">Precision Haircut & Style ($65)</option>
               <option value="Balayage & Gloss Toner ($220)">Balayage & Gloss Toner ($220)</option>
               <option value="Hot Shave & Beard Trim ($45)">Hot Shave & Beard Trim ($45)</option>
@@ -677,13 +677,13 @@
         <div class="pt-3 flex gap-2">
           <button 
             @click="bookingModalOpen = false" 
-            class="flex-1 py-2.5 rounded-full border border-[#E5E7E6] text-xs font-bold hover:bg-[#F5F7F6]"
+            class="flex-1 py-2.5 rounded-full border border-[#E2E8F0] text-xs font-bold hover:bg-[#FAF5FF]"
           >
             Cancel
           </button>
           <button 
             @click="confirmBooking" 
-            class="flex-1 py-2.5 rounded-full bg-[#0F3D3E] text-white text-xs font-bold hover:bg-[#134A4C]"
+            class="flex-1 py-2.5 rounded-full bg-[#581C87] text-white text-xs font-bold hover:bg-[#7E22CE]"
           >
             Save to Master Calendar
           </button>
@@ -717,9 +717,9 @@ const navModules = [
 ];
 
 const stylists = [
-  { name: 'Marco', color: '#0F3D3E', active: true },
-  { name: 'Chloe', color: '#365A5B', active: true },
-  { name: 'Liam', color: '#5FA8A9', active: true },
+  { name: 'Marco', color: '#581C87', active: true },
+  { name: 'Chloe', color: '#9333EA', active: true },
+  { name: 'Liam', color: '#EC4899', active: true },
   { name: 'Sam', color: '#D97706', active: true }
 ];
 
@@ -727,43 +727,43 @@ const stylists = [
 const timeSlots = ref([
   {
     time: '9:00 AM',
-    marco: { client: 'David Miller', service: 'Fade & Lineup', price: '$35', statusClass: 'bg-[#E8F4F3] border border-[#5FA8A9]/30 text-[#0F3D3E]' },
-    chloe: { client: 'Emma Watson', service: 'Full Balayage', price: '$225', isProcessing: true, statusClass: 'bg-[#F5F7F6] border border-[#E5E7E6] text-[#1E293B]' },
+    marco: { client: 'David Miller', service: 'Fade & Lineup', price: '$35', statusClass: 'bg-[#F5F3FF] border border-[#EC4899]/30 text-[#581C87]' },
+    chloe: { client: 'Emma Watson', service: 'Full Balayage', price: '$225', isProcessing: true, statusClass: 'bg-[#FAF5FF] border border-[#E2E8F0] text-[#1E293B]' },
     liam: null,
     sam: null
   },
   {
     time: '10:00 AM',
-    marco: { client: 'Marcus Vance', service: 'Hot Shave', price: '$40', statusClass: 'bg-[#E8F4F3] border border-[#5FA8A9]/30 text-[#0F3D3E]' },
+    marco: { client: 'Marcus Vance', service: 'Hot Shave', price: '$40', statusClass: 'bg-[#F5F3FF] border border-[#EC4899]/30 text-[#581C87]' },
     chloe: { client: 'Express Cut (Gap)', service: 'Blowout', price: '$55', statusClass: 'bg-emerald-50 border border-emerald-200 text-emerald-800' },
-    liam: { client: 'Sophia Lauren', service: 'Layered Cut', price: '$75', statusClass: 'bg-[#E8F4F3] border border-[#5FA8A9]/30 text-[#0F3D3E]' },
+    liam: { client: 'Sophia Lauren', service: 'Layered Cut', price: '$75', statusClass: 'bg-[#F5F3FF] border border-[#EC4899]/30 text-[#581C87]' },
     sam: { client: 'Elena Rostova', service: 'Swedish 60m', price: '$120', statusClass: 'bg-purple-50 border border-purple-200 text-purple-800' }
   },
   {
     time: '11:00 AM',
     marco: null,
-    chloe: { client: 'Emma (Wash & Tone)', service: 'Gloss Toner', price: '$45', statusClass: 'bg-[#F5F7F6] border border-[#E5E7E6] text-[#1E293B]' },
-    liam: { client: 'Lucas Gray', service: 'Beard Trim', price: '$30', statusClass: 'bg-[#E8F4F3] border border-[#5FA8A9]/30 text-[#0F3D3E]' },
+    chloe: { client: 'Emma (Wash & Tone)', service: 'Gloss Toner', price: '$45', statusClass: 'bg-[#FAF5FF] border border-[#E2E8F0] text-[#1E293B]' },
+    liam: { client: 'Lucas Gray', service: 'Beard Trim', price: '$30', statusClass: 'bg-[#F5F3FF] border border-[#EC4899]/30 text-[#581C87]' },
     sam: null
   },
   {
     time: '12:00 PM',
-    marco: { client: 'Tyler Durden', service: 'Buzz & Fade', price: '$35', statusClass: 'bg-[#E8F4F3] border border-[#5FA8A9]/30 text-[#0F3D3E]' },
+    marco: { client: 'Tyler Durden', service: 'Buzz & Fade', price: '$35', statusClass: 'bg-[#F5F3FF] border border-[#EC4899]/30 text-[#581C87]' },
     chloe: null,
-    liam: { client: 'Olivia Wilde', service: 'Silk Press', price: '$95', statusClass: 'bg-[#E8F4F3] border border-[#5FA8A9]/30 text-[#0F3D3E]' },
+    liam: { client: 'Olivia Wilde', service: 'Silk Press', price: '$95', statusClass: 'bg-[#F5F3FF] border border-[#EC4899]/30 text-[#581C87]' },
     sam: { client: 'Sarah Jenkins', service: 'Hydrafacial', price: '$150', statusClass: 'bg-purple-50 border border-purple-200 text-purple-800' }
   },
   {
     time: '1:00 PM',
     marco: null,
-    chloe: { client: 'Rachel Green', service: 'Root Touchup', price: '$90', statusClass: 'bg-[#E8F4F3] border border-[#5FA8A9]/30 text-[#0F3D3E]' },
+    chloe: { client: 'Rachel Green', service: 'Root Touchup', price: '$90', statusClass: 'bg-[#F5F3FF] border border-[#EC4899]/30 text-[#581C87]' },
     liam: null,
     sam: null
   },
   {
     time: '2:00 PM',
-    marco: { client: 'Alex Turner', service: 'Signature Fade', price: '$45', statusClass: 'bg-[#E8F4F3] border border-[#5FA8A9]/30 text-[#0F3D3E]' },
-    chloe: { client: 'Nina Dobrev', service: 'Keratin Infusion', price: '$260', statusClass: 'bg-[#F5F7F6] border border-[#E5E7E6] text-[#1E293B]' },
+    marco: { client: 'Alex Turner', service: 'Signature Fade', price: '$45', statusClass: 'bg-[#F5F3FF] border border-[#EC4899]/30 text-[#581C87]' },
+    chloe: { client: 'Nina Dobrev', service: 'Keratin Infusion', price: '$260', statusClass: 'bg-[#FAF5FF] border border-[#E2E8F0] text-[#1E293B]' },
     liam: { client: 'Zendaya Coleman', service: 'Gloss Blowout', price: '$85', statusClass: 'bg-emerald-50 border border-emerald-200 text-emerald-800' },
     sam: { client: 'Jessica Alba', service: 'Deep Tissue', price: '$140', statusClass: 'bg-purple-50 border border-purple-200 text-purple-800' }
   }

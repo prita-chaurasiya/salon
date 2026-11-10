@@ -8,17 +8,17 @@
     ]"
   >
     <!-- Top Announcement Bar -->
-    <div class="bg-[#0F3D3E] text-white text-[12px] py-2 px-4 transition-all duration-300 border-b border-[#134A4C]">
+    <div class="bg-gradient-to-r from-[#3B0764] via-[#581C87] to-[#831843] text-white text-[12px] py-2 px-4 transition-all duration-300 border-b border-purple-900/40">
       <div class="max-w-7xl mx-auto flex items-center justify-between">
         <div class="flex items-center gap-2">
-          <span class="w-2 h-2 rounded-full bg-[#5FA8A9] animate-pulse"></span>
+          <span class="w-2 h-2 rounded-full bg-[#EC4899] animate-pulse"></span>
           <span class="text-white font-bold">New Release:</span>
-          <span class="text-[#D7E4E3] hidden sm:inline">Unlimited staff with zero per-seat fees.</span>
+          <span class="text-purple-100 hidden sm:inline">Unlimited staff with zero per-seat fees.</span>
         </div>
 
         <div class="flex items-center gap-4 text-[11px]">
-          <span class="text-[#5FA8A9] font-semibold hidden md:inline">24/7 Concierge Support</span>
-          <a href="#pricing" class="font-bold underline text-white hover:text-[#5FA8A9] transition-colors">
+          <span class="text-[#F472B6] font-semibold hidden md:inline">24/7 VIP Concierge Support</span>
+          <a href="#pricing" class="font-bold underline text-white hover:text-[#F472B6] transition-colors">
             View Tiers →
           </a>
         </div>
@@ -29,13 +29,13 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5">
       <div class="flex items-center justify-between">
         
-        <!-- Logo on Left with Luxury Monogram Emblem -->
+        <!-- Logo on Left with 3D Vibrant Emblem -->
         <a href="/" class="flex items-center gap-2.5 group shrink-0">
           <div class="flex items-center gap-2">
-            <div class="w-8 h-8 rounded-lg bg-[#0F3D3E] flex items-center justify-center text-white font-extrabold text-sm font-sans shadow-xs">
+            <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-[#7E22CE] to-[#EC4899] flex items-center justify-center text-white font-black text-sm font-sans shadow-md group-hover:scale-105 transition-transform">
               S
             </div>
-            <span class="text-2xl font-extrabold tracking-tight text-[#1E293B] font-sans">Salonist</span>
+            <span class="text-2xl font-black tracking-tight text-[#0F172A] font-sans">Salonist</span>
           </div>
         </a>
 
@@ -44,37 +44,37 @@
           
           <div class="relative" @mouseenter="openMenu('why-us')">
             <button 
-              class="px-3.5 py-2 text-[14px] font-bold text-[#1E293B] hover:text-[#0F3D3E] transition-colors rounded-full flex items-center gap-1 group"
-              :class="{ 'text-[#0F3D3E] bg-[#E8F4F3]': activeMenu === 'why-us' }"
+              class="px-3.5 py-2 text-[14px] font-bold text-[#334155] hover:text-[#7E22CE] transition-colors rounded-full flex items-center gap-1 group"
+              :class="{ 'text-[#7E22CE] bg-purple-50': activeMenu === 'why-us' }"
             >
               <span>Why Salonist</span>
-              <ChevronDown class="w-3.5 h-3.5 transition-transform duration-200 text-[#6B7280] group-hover:text-[#0F3D3E]" :class="{ 'rotate-180 text-[#0F3D3E]': activeMenu === 'why-us' }" />
+              <ChevronDown class="w-3.5 h-3.5 transition-transform duration-200 text-[#64748B] group-hover:text-[#7E22CE]" :class="{ 'rotate-180 text-[#7E22CE]': activeMenu === 'why-us' }" />
             </button>
           </div>
 
           <div class="relative" @mouseenter="openMenu('features')">
             <button 
-              class="px-3.5 py-2 text-[14px] font-bold text-[#1E293B] hover:text-[#0F3D3E] transition-colors rounded-full flex items-center gap-1 group"
-              :class="{ 'text-[#0F3D3E] bg-[#E8F4F3]': activeMenu === 'features' }"
+              class="px-3.5 py-2 text-[14px] font-bold text-[#334155] hover:text-[#7E22CE] transition-colors rounded-full flex items-center gap-1 group"
+              :class="{ 'text-[#7E22CE] bg-purple-50': activeMenu === 'features' }"
             >
               <span>Features</span>
-              <ChevronDown class="w-3.5 h-3.5 transition-transform duration-200 text-[#6B7280] group-hover:text-[#0F3D3E]" :class="{ 'rotate-180 text-[#0F3D3E]': activeMenu === 'features' }" />
+              <ChevronDown class="w-3.5 h-3.5 transition-transform duration-200 text-[#64748B] group-hover:text-[#7E22CE]" :class="{ 'rotate-180 text-[#7E22CE]': activeMenu === 'features' }" />
             </button>
           </div>
 
           <div class="relative" @mouseenter="openMenu('solutions')">
             <button 
-              class="px-3.5 py-2 text-[14px] font-bold text-[#1E293B] hover:text-[#0F3D3E] transition-colors rounded-full flex items-center gap-1 group"
-              :class="{ 'text-[#0F3D3E] bg-[#E8F4F3]': activeMenu === 'solutions' }"
+              class="px-3.5 py-2 text-[14px] font-bold text-[#334155] hover:text-[#7E22CE] transition-colors rounded-full flex items-center gap-1 group"
+              :class="{ 'text-[#7E22CE] bg-purple-50': activeMenu === 'solutions' }"
             >
               <span>Solutions</span>
-              <ChevronDown class="w-3.5 h-3.5 transition-transform duration-200 text-[#6B7280] group-hover:text-[#0F3D3E]" :class="{ 'rotate-180 text-[#0F3D3E]': activeMenu === 'solutions' }" />
+              <ChevronDown class="w-3.5 h-3.5 transition-transform duration-200 text-[#64748B] group-hover:text-[#7E22CE]" :class="{ 'rotate-180 text-[#7E22CE]': activeMenu === 'solutions' }" />
             </button>
           </div>
 
           <router-link 
             to="/pricing" 
-            class="px-3.5 py-2 text-[14px] font-bold text-[#1E293B] hover:text-[#0F3D3E] transition-colors rounded-full"
+            class="px-3.5 py-2 text-[14px] font-bold text-[#334155] hover:text-[#7E22CE] transition-colors rounded-full"
           >
             Pricing
           </router-link>
@@ -85,31 +85,31 @@
         <div class="hidden lg:flex items-center gap-3 shrink-0">
           
           <!-- Circular Language Flag ENG Badge -->
-          <div class="w-8 h-8 rounded-full border border-[#E5E7E6] bg-white flex items-center justify-center text-[10px] font-extrabold text-[#0F3D3E] shadow-xs cursor-pointer hover:bg-[#F5F7F6]">
+          <div class="w-8 h-8 rounded-full border border-[#E2E8F0] bg-white flex items-center justify-center text-[10px] font-extrabold text-[#7E22CE] shadow-xs cursor-pointer hover:bg-purple-50">
             ENG
           </div>
 
           <!-- Marketplace Pill Button with Storefront Icon -->
           <a 
             href="#features"
-            class="px-4 py-2 text-[13px] font-bold text-[#1E293B] bg-white border border-[#E5E7E6] hover:border-[#0F3D3E] hover:bg-[#F5F7F6] rounded-full transition-all duration-200 flex items-center gap-2 shadow-xs"
+            class="px-4 py-2 text-[13px] font-bold text-[#334155] bg-white border border-[#E2E8F0] hover:border-[#7E22CE] hover:text-[#7E22CE] hover:bg-purple-50/50 rounded-full transition-all duration-200 flex items-center gap-2 shadow-xs"
           >
-            <Store class="w-4 h-4 text-[#0F3D3E]" />
+            <Store class="w-4 h-4 text-[#7E22CE]" />
             <span>Marketplace</span>
           </a>
 
           <!-- Log In -->
           <router-link 
             to="/login"
-            class="px-3 py-2 text-[13.5px] font-bold text-[#1E293B] hover:text-[#0F3D3E] transition-colors cursor-pointer"
+            class="px-3 py-2 text-[13.5px] font-bold text-[#334155] hover:text-[#7E22CE] transition-colors cursor-pointer"
           >
             Log In
           </router-link>
 
-          <!-- Start Free Trial button -->
+          <!-- Start Free Trial button (3D Vibrant Style) -->
           <button 
             @click="$emit('start-trial')"
-            class="px-6 py-2.5 text-[13.5px] font-bold rounded-full bg-[#0F3D3E] text-white hover:bg-[#134A4C] transition-all duration-200 shadow-sm hover:scale-[1.02]"
+            class="px-6 py-2.5 text-[13.5px] font-bold rounded-full btn-3d-primary cursor-pointer"
           >
             Start Free Trial
           </button>
@@ -147,20 +147,20 @@
     >
       <div 
         v-if="mobileOpen"
-        class="lg:hidden fixed inset-x-0 top-[108px] bottom-0 bg-[#FCFCFB] border-t border-[#E5E7E6] p-5 shadow-2xl overflow-y-auto z-50 flex flex-col justify-between"
+        class="lg:hidden fixed inset-x-0 top-[108px] bottom-0 bg-[#FAFAFD] border-t border-[#E2E8F0] p-5 shadow-2xl overflow-y-auto z-50 flex flex-col justify-between"
       >
         <div class="space-y-2">
           
           <!-- Accordion 1: Why Salonist -->
-          <div class="border-b border-[#E5E7E6] pb-2">
+          <div class="border-b border-[#E2E8F0] pb-2">
             <button 
               @click="toggleMobileSection('why-us')"
-              class="w-full flex items-center justify-between py-3 text-base font-bold text-[#1E293B] hover:text-[#0F3D3E]"
+              class="w-full flex items-center justify-between py-3 text-base font-bold text-[#0F172A] hover:text-[#7E22CE]"
             >
               <span>Why Salonist</span>
               <ChevronDown 
-                class="w-4 h-4 text-[#6B7280] transition-transform duration-200" 
-                :class="{ 'rotate-180 text-[#0F3D3E]': mobileSection === 'why-us' }" 
+                class="w-4 h-4 text-[#64748B] transition-transform duration-200" 
+                :class="{ 'rotate-180 text-[#7E22CE]': mobileSection === 'why-us' }" 
               />
             </button>
             <div v-show="mobileSection === 'why-us'" class="pl-3 pb-3 space-y-2.5 pt-1">
@@ -169,24 +169,24 @@
                 :key="i" 
                 :href="item.href"
                 @click="mobileOpen = false"
-                class="flex items-center gap-2.5 py-1.5 text-sm text-[#4B5563] hover:text-[#0F3D3E]"
+                class="flex items-center gap-2.5 py-1.5 text-sm text-[#475569] hover:text-[#7E22CE]"
               >
-                <component :is="item.icon" class="w-4 h-4 text-[#5FA8A9]" />
+                <component :is="item.icon" class="w-4 h-4 text-[#EC4899]" />
                 <span>{{ item.title }}</span>
               </a>
             </div>
           </div>
 
           <!-- Accordion 2: Features -->
-          <div class="border-b border-[#E5E7E6] pb-2">
+          <div class="border-b border-[#E2E8F0] pb-2">
             <button 
               @click="toggleMobileSection('features')"
-              class="w-full flex items-center justify-between py-3 text-base font-bold text-[#1E293B] hover:text-[#0F3D3E]"
+              class="w-full flex items-center justify-between py-3 text-base font-bold text-[#0F172A] hover:text-[#7E22CE]"
             >
               <span>Features</span>
               <ChevronDown 
-                class="w-4 h-4 text-[#6B7280] transition-transform duration-200" 
-                :class="{ 'rotate-180 text-[#0F3D3E]': mobileSection === 'features' }" 
+                class="w-4 h-4 text-[#64748B] transition-transform duration-200" 
+                :class="{ 'rotate-180 text-[#7E22CE]': mobileSection === 'features' }" 
               />
             </button>
             <div v-show="mobileSection === 'features'" class="pl-3 pb-3 space-y-2.5 pt-1">
@@ -195,27 +195,27 @@
                 :key="i" 
                 :to="item.to"
                 @click="mobileOpen = false"
-                class="flex items-center gap-2.5 py-1.5 text-sm text-[#4B5563] hover:text-[#0F3D3E]"
+                class="flex items-center gap-2.5 py-1.5 text-sm text-[#475569] hover:text-[#7E22CE]"
               >
-                <component :is="item.icon" class="w-4 h-4 text-[#5FA8A9]" />
+                <component :is="item.icon" class="w-4 h-4 text-[#EC4899]" />
                 <span>{{ item.title }}</span>
               </router-link>
             </div>
           </div>
 
           <!-- Accordion 3: Solutions & Industries (All 12 Dedicated Pages) -->
-          <div class="border-b border-[#E5E7E6] pb-2">
+          <div class="border-b border-[#E2E8F0] pb-2">
             <button 
               @click="toggleMobileSection('solutions')"
-              class="w-full flex items-center justify-between py-3 text-base font-bold text-[#1E293B] hover:text-[#0F3D3E]"
+              class="w-full flex items-center justify-between py-3 text-base font-bold text-[#0F172A] hover:text-[#7E22CE]"
             >
               <div class="flex items-center gap-2">
                 <span>Solutions & Industries</span>
-                <span class="px-2 py-0.5 rounded-full bg-[#E8F4F3] text-[#0F3D3E] text-[10px] font-black uppercase">12</span>
+                <span class="px-2 py-0.5 rounded-full bg-purple-100 text-[#7E22CE] text-[10px] font-black uppercase">12</span>
               </div>
               <ChevronDown 
-                class="w-4 h-4 text-[#6B7280] transition-transform duration-200" 
-                :class="{ 'rotate-180 text-[#0F3D3E]': mobileSection === 'solutions' }" 
+                class="w-4 h-4 text-[#64748B] transition-transform duration-200" 
+                :class="{ 'rotate-180 text-[#7E22CE]': mobileSection === 'solutions' }" 
               />
             </button>
             
@@ -223,16 +223,16 @@
               
               <!-- Group 1: Hair & Beauty -->
               <div>
-                <p class="text-[11px] font-black uppercase tracking-wider text-[#6B7280] mb-2">Hair & Beauty</p>
+                <p class="text-[11px] font-black uppercase tracking-wider text-[#94A3B8] mb-2">Hair & Beauty</p>
                 <div class="space-y-1.5 pl-2">
                   <router-link 
                     v-for="(sol, s) in solutionsList.hairBeauty" 
                     :key="s"
                     :to="sol.to"
                     @click="mobileOpen = false"
-                    class="flex items-center gap-2.5 py-1.5 text-sm text-[#4B5563] hover:text-[#0F3D3E]"
+                    class="flex items-center gap-2.5 py-1.5 text-sm text-[#475569] hover:text-[#7E22CE]"
                   >
-                    <component :is="sol.icon" class="w-4 h-4 text-[#5FA8A9]" />
+                    <component :is="sol.icon" class="w-4 h-4 text-[#EC4899]" />
                     <span>{{ sol.title }}</span>
                   </router-link>
                 </div>
@@ -240,16 +240,16 @@
 
               <!-- Group 2: Spa & Wellness -->
               <div>
-                <p class="text-[11px] font-black uppercase tracking-wider text-[#6B7280] mb-2">Spa & Wellness</p>
+                <p class="text-[11px] font-black uppercase tracking-wider text-[#94A3B8] mb-2">Spa & Wellness</p>
                 <div class="space-y-1.5 pl-2">
                   <router-link 
                     v-for="(sol, s) in solutionsList.spaWellness" 
                     :key="s"
                     :to="sol.to"
                     @click="mobileOpen = false"
-                    class="flex items-center gap-2.5 py-1.5 text-sm text-[#4B5563] hover:text-[#0F3D3E]"
+                    class="flex items-center gap-2.5 py-1.5 text-sm text-[#475569] hover:text-[#7E22CE]"
                   >
-                    <component :is="sol.icon" class="w-4 h-4 text-[#5FA8A9]" />
+                    <component :is="sol.icon" class="w-4 h-4 text-[#EC4899]" />
                     <span>{{ sol.title }}</span>
                   </router-link>
                 </div>
@@ -257,16 +257,16 @@
 
               <!-- Group 3: Clinics & Specialty -->
               <div>
-                <p class="text-[11px] font-black uppercase tracking-wider text-[#6B7280] mb-2">Clinics & Specialty</p>
+                <p class="text-[11px] font-black uppercase tracking-wider text-[#94A3B8] mb-2">Clinics & Specialty</p>
                 <div class="space-y-1.5 pl-2">
                   <router-link 
                     v-for="(sol, s) in solutionsList.clinicsSpecialty" 
                     :key="s"
                     :to="sol.to"
                     @click="mobileOpen = false"
-                    class="flex items-center gap-2.5 py-1.5 text-sm text-[#4B5563] hover:text-[#0F3D3E]"
+                    class="flex items-center gap-2.5 py-1.5 text-sm text-[#475569] hover:text-[#7E22CE]"
                   >
-                    <component :is="sol.icon" class="w-4 h-4 text-[#5FA8A9]" />
+                    <component :is="sol.icon" class="w-4 h-4 text-[#EC4899]" />
                     <span>{{ sol.title }}</span>
                   </router-link>
                 </div>
@@ -279,7 +279,7 @@
           <router-link 
             to="/pricing" 
             @click="mobileOpen = false" 
-            class="block py-3 text-base font-bold text-[#1E293B] hover:text-[#0F3D3E] border-b border-[#E5E7E6]"
+            class="block py-3 text-base font-bold text-[#0F172A] hover:text-[#7E22CE] border-b border-[#E2E8F0]"
           >
             Pricing
           </router-link>
@@ -287,7 +287,7 @@
           <a 
             href="#how-it-works" 
             @click="mobileOpen = false" 
-            class="block py-3 text-base font-bold text-[#1E293B] hover:text-[#0F3D3E] border-b border-[#E5E7E6]"
+            class="block py-3 text-base font-bold text-[#0F172A] hover:text-[#7E22CE] border-b border-[#E2E8F0]"
           >
             How It Works
           </a>
@@ -295,7 +295,7 @@
           <a 
             href="#faq" 
             @click="mobileOpen = false" 
-            class="block py-3 text-base font-bold text-[#1E293B] hover:text-[#0F3D3E] border-b border-[#E5E7E6]"
+            class="block py-3 text-base font-bold text-[#0F172A] hover:text-[#7E22CE] border-b border-[#E2E8F0]"
           >
             FAQ
           </a>
@@ -303,7 +303,7 @@
           <router-link 
             to="/contact" 
             @click="mobileOpen = false" 
-            class="block py-3 text-base font-bold text-[#1E293B] hover:text-[#0F3D3E] border-b border-[#E5E7E6]"
+            class="block py-3 text-base font-bold text-[#0F172A] hover:text-[#7E22CE] border-b border-[#E2E8F0]"
           >
             Contact & Support
           </router-link>
@@ -315,13 +315,13 @@
           <router-link 
             to="/login"
             @click="mobileOpen = false" 
-            class="w-full py-3.5 rounded-full border border-[#D9E2E1] text-sm font-bold text-[#1E293B] bg-white hover:bg-[#F5F7F6] flex items-center justify-center transition-colors"
+            class="w-full py-3.5 rounded-full border border-[#E2E8F0] text-sm font-bold text-[#0F172A] bg-white hover:bg-purple-50 flex items-center justify-center transition-colors"
           >
             Log In
           </router-link>
           <button 
             @click="mobileOpen = false; $emit('start-trial')" 
-            class="w-full py-3.5 rounded-full bg-[#0F3D3E] text-white text-sm font-extrabold hover:bg-[#134A4C] shadow-md transition-all"
+            class="w-full py-3.5 rounded-full btn-3d-primary text-white text-sm font-extrabold cursor-pointer"
           >
             Start Free 7-Day Trial →
           </button>

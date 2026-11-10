@@ -1,42 +1,46 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #0F3D3E;
-  --color-secondary: #365A5B;
-  --color-accent: #5FA8A9;
-  --color-background: #FCFCFB;
-  --color-canvas: #F5F7F6;
+  --color-primary: #581C87;       /* Royal Deep Violet */
+  --color-primary-light: #7E22CE; /* Bright Purple Accent */
+  --color-accent: #EC4899;        /* Vivid Rose / Fuchsia */
+  --color-accent-amber: #F59E0B;  /* Radiant Gold Glow */
+  --color-secondary: #3B82F6;     /* Electric Indigo */
+  --color-background: #FAFAFD;    /* Ultra Clean Pure Luminescent Canvas */
+  --color-canvas: #F3F4F9;
   --color-card: #FFFFFF;
-  --color-border: #E5E7E6;
+  --color-border: #E8EAF2;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 :root {
-  --primary: #0F3D3E;
-  --secondary: #365A5B;
-  --accent: #5FA8A9;
-  --background: #FCFCFB;
-  --canvas: #F5F7F6;
+  --primary: #581C87;
+  --primary-light: #7E22CE;
+  --accent: #EC4899;
+  --accent-amber: #F59E0B;
+  --secondary: #3B82F6;
+  --background: #FAFAFD;
+  --canvas: #F3F4F9;
   --card: #FFFFFF;
-  --border: #E5E7E6;
-  --text-heading: #1E293B;
-  --text-body: #4B5563;
-  --text-muted: #6B7280;
+  --border: #E8EAF2;
+  --text-heading: #0F172A;
+  --text-body: #334155;
+  --text-muted: #64748B;
 }
 
 * {
-  border-color: #E5E7E6;
+  border-color: #E8EAF2;
   box-sizing: border-box;
 }
 
 html {
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
-  color: #1E293B;
-  background-color: #FCFCFB;
+  color: #0F172A;
+  background-color: #FAFAFD;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 15px; /* Harmonized base root size */
+  font-size: 15px;
 }
 
 @media (min-width: 640px) {
@@ -48,21 +52,21 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #FCFCFB;
-  color: #4B5563;
+  background-color: #FAFAFD;
+  color: #334155;
   overflow-x: hidden;
   font-weight: 400;
   line-height: 1.62;
   font-size: 1rem;
 }
 
-/* Balanced Proportional Typography Scale */
+/* Typography Hierarchy */
 h1 {
   font-family: 'Inter', sans-serif;
   font-weight: 800;
   letter-spacing: -0.025em;
   line-height: 1.15;
-  color: #1E293B;
+  color: #0F172A;
 }
 
 h2 {
@@ -70,7 +74,7 @@ h2 {
   font-weight: 800;
   letter-spacing: -0.025em;
   line-height: 1.2;
-  color: #1E293B;
+  color: #0F172A;
 }
 
 h3 {
@@ -78,7 +82,7 @@ h3 {
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.25;
-  color: #1E293B;
+  color: #0F172A;
 }
 
 h4, h5, h6 {
@@ -86,12 +90,12 @@ h4, h5, h6 {
   font-weight: 700;
   letter-spacing: -0.015em;
   line-height: 1.35;
-  color: #1E293B;
+  color: #0F172A;
 }
 
 p {
   font-weight: 400;
-  color: #4B5563;
+  color: #334155;
   line-height: 1.65;
 }
 
@@ -101,21 +105,86 @@ button {
   letter-spacing: -0.01em;
 }
 
-/* Luxury Tone Headlines - Clean, Flat */
-.text-salon-gradient,
+/* ================= 3D ANIMATION & VIBRANT LUXURY UTILITIES ================= */
+
+/* Radiant Luxury Shimmer Gradient Headlines */
+.text-salon-gradient {
+  background: linear-gradient(135deg, #581C87 0%, #9333EA 45%, #EC4899 85%, #F59E0B 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  display: inline-block;
+}
+
 .text-pink-gradient {
-  color: #0F3D3E;
-  background: none !important;
-  -webkit-background-clip: unset !important;
-  -webkit-text-fill-color: #0F3D3E !important;
+  background: linear-gradient(135deg, #7E22CE 0%, #EC4899 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  display: inline-block;
 }
 
-.bg-salon-dark {
-  background-color: #0F3D3E;
+/* 3D Depth Card Elevations */
+.card-3d {
+  background: #FFFFFF;
+  border: 1px solid rgba(232, 234, 242, 0.85);
+  box-shadow: 0 10px 30px -5px rgba(88, 28, 135, 0.06), 0 20px 40px -10px rgba(236, 72, 153, 0.08);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-style: preserve-3d;
+  perspective: 1000px;
 }
 
-.bg-salon-pill {
-  background-color: #E8F4F3;
+.card-3d:hover {
+  transform: translateY(-6px) rotateX(1.5deg) scale(1.015);
+  box-shadow: 0 20px 45px -5px rgba(88, 28, 135, 0.14), 0 30px 60px -10px rgba(236, 72, 153, 0.16);
+  border-color: rgba(147, 51, 234, 0.35);
+}
+
+/* 3D Interactive Floating Badge */
+.badge-3d {
+  background: linear-gradient(135deg, #FDF4FF 0%, #F5F3FF 100%);
+  border: 1px solid rgba(216, 180, 254, 0.5);
+  box-shadow: 0 4px 14px rgba(126, 34, 206, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.badge-3d:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 6px 20px rgba(236, 72, 153, 0.2);
+}
+
+/* 3D Premium Action Button */
+.btn-3d-primary {
+  background: linear-gradient(135deg, #581C87 0%, #7E22CE 50%, #EC4899 100%);
+  color: #FFFFFF !important;
+  box-shadow: 0 10px 25px -3px rgba(126, 34, 206, 0.35), 0 4px 10px -2px rgba(236, 72, 153, 0.2);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-3d-primary:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 16px 35px -2px rgba(126, 34, 206, 0.45), 0 6px 16px -2px rgba(236, 72, 153, 0.3);
+}
+
+.btn-3d-primary:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+/* Atmospheric 3D Floating Orbs */
+@keyframes floatOrb1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(30px, -25px) scale(1.08); }
+}
+
+@keyframes floatOrb2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-25px, 35px) scale(1.1); }
+}
+
+.animate-orb-1 {
+  animation: floatOrb1 9s ease-in-out infinite;
+}
+
+.animate-orb-2 {
+  animation: floatOrb2 11s ease-in-out infinite;
 }
 
 /* Custom Scrollbar */
@@ -123,14 +192,14 @@ button {
   width: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #FCFCFB;
+  background: #FAFAFD;
 }
 ::-webkit-scrollbar-thumb {
-  background: #D9E2E1;
+  background: #D8B4FE;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #5FA8A9;
+  background: #9333EA;
 }
 
 /* Smooth Scroll Lenis base style */
