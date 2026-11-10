@@ -356,3 +356,4 @@ const trialOnboardingOpen = ref(false);
 const loginOpen = ref(false);
 const demoOpen = ref(false);
 </script>
+

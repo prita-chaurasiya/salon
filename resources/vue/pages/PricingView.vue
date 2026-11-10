@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-white text-[#0A0D17] flex flex-col justify-between">
+  <div class="min-h-screen bg-[#FCFBFD] text-[#5C525E] flex flex-col justify-between">
     <!-- Navbar -->
     <Navbar 
       @open-login="loginOpen = true"
@@ -11,31 +11,32 @@
       
       <!-- 1. HERO HEADER: Simple, Transparent, Unlimited Staff -->
       <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16 relative">
-        <!-- Ambient luxury glow -->
-        <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-gradient-to-r from-[#0F766E]/12 via-[#0284C7]/15 to-[#D97706]/10 blur-3xl pointer-events-none rounded-full"></div>
+        <!-- Ambient luxury glow matching DINGG #AA4184 -->
+        <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-gradient-to-r from-[#AA4184]/12 via-[#923470]/10 to-[#AA4184]/8 blur-3xl pointer-events-none rounded-full"></div>
 
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#CCFBF1] text-[#0F766E] font-extrabold text-xs uppercase tracking-wider mb-5 shadow-xs">
-          <Sparkles class="w-3.5 h-3.5" />
-          <span>New Simplified Pricing: Unlimited Staff On All Plans</span>
+        <!-- Category Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FBF0F6] text-[#AA4184] font-extrabold text-xs uppercase tracking-wider mb-5 border border-[#F5DDEB] shadow-xs">
+          <Sparkles class="w-3.5 h-3.5 text-[#AA4184]" />
+          <span>Unlimited Staff & Free Data Migration On All Plans</span>
         </div>
 
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-[#0A0D17] tracking-tight leading-[1.12]">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-[#1C151D] tracking-tight leading-[1.12]">
           Simple, Transparent Plans. <br />
-          <span class="bg-gradient-to-r from-[#0F766E] via-[#0284C7] to-[#D97706] bg-clip-text text-transparent">
+          <span class="text-[#AA4184]">
             No Per-Staff Fees.
           </span>
         </h1>
 
-        <p class="mt-4 text-base sm:text-lg text-[#64748B] max-w-2xl mx-auto leading-relaxed">
+        <p class="mt-4 text-base sm:text-lg text-[#5C525E] max-w-2xl mx-auto leading-relaxed">
           Hire as many stylists, therapists, and front-desk coordinators as you want. Enjoy unlimited calendar seats, free data migration, and zero contract lock-in.
         </p>
 
-        <!-- Monthly vs Annual Billing Toggle (Save 17%) -->
+        <!-- Monthly vs Annual Billing Toggle (Save ~17%) -->
         <div class="mt-10 flex items-center justify-center gap-4">
           <button 
             @click="isAnnual = false"
             class="text-xs sm:text-sm font-bold transition-colors cursor-pointer"
-            :class="!isAnnual ? 'text-[#0A0D17]' : 'text-[#64748B] hover:text-[#0A0D17]'"
+            :class="!isAnnual ? 'text-[#1C151D]' : 'text-[#8E8291] hover:text-[#1C151D]'"
           >
             Monthly Billing
           </button>
@@ -43,10 +44,10 @@
           <!-- Toggle switch -->
           <div 
             @click="isAnnual = !isAnnual"
-            class="w-14 h-8 rounded-full bg-[#0A0D17] p-1 cursor-pointer transition-colors relative flex items-center shadow-inner"
+            class="w-14 h-8 rounded-full bg-[#1C151D] p-1 cursor-pointer transition-colors relative flex items-center shadow-inner"
           >
             <div 
-              class="w-6 h-6 rounded-full bg-gradient-to-r from-[#0F766E] to-[#0284C7] shadow-md transform transition-transform duration-300"
+              class="w-6 h-6 rounded-full bg-[#AA4184] shadow-md transform transition-transform duration-300"
               :class="isAnnual ? 'translate-x-6' : 'translate-x-0'"
             ></div>
           </div>
@@ -54,10 +55,10 @@
           <button 
             @click="isAnnual = true"
             class="text-xs sm:text-sm font-bold transition-colors flex items-center gap-2 cursor-pointer"
-            :class="isAnnual ? 'text-[#0A0D17]' : 'text-[#64748B] hover:text-[#0A0D17]'"
+            :class="isAnnual ? 'text-[#1C151D]' : 'text-[#8E8291] hover:text-[#1C151D]'"
           >
             <span>Annual Billing</span>
-            <span class="px-2 py-0.5 rounded-full bg-[#0F766E] text-white text-[10px] font-extrabold uppercase shadow-xs">
+            <span class="px-2.5 py-0.5 rounded-full bg-[#AA4184] text-white text-[10px] font-extrabold uppercase shadow-xs">
               Save ~17% (2 Months Free)
             </span>
           </button>
@@ -68,36 +69,36 @@
       <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
           
-          <!-- TIER 1: Free Marketplace Listing -->
-          <div class="rounded-[28px] bg-white border border-[#E2E8F0] p-6 sm:p-7 flex flex-col justify-between hover:shadow-xl hover:border-[#0F766E]/40 transition-all duration-300 group">
+          <!-- TIER 1: Free Starter -->
+          <div class="rounded-[28px] bg-white border border-[#F0E6EC] p-6 sm:p-7 flex flex-col justify-between hover:shadow-xl hover:border-[#AA4184]/40 transition-all duration-300 group">
             <div>
               <div class="mb-4">
-                <span class="text-[11px] font-extrabold text-[#64748B] uppercase tracking-wider">Free Starter</span>
-                <h3 class="text-xl font-black text-[#0A0D17] mt-1">Marketplace Listing</h3>
-                <p class="text-xs text-[#64748B] mt-1">Basic exposure and appointment listing for solopreneurs.</p>
+                <span class="text-[11px] font-extrabold text-[#8E8291] uppercase tracking-wider">Free Starter</span>
+                <h3 class="text-xl font-black text-[#1C151D] mt-1">Marketplace Listing</h3>
+                <p class="text-xs text-[#5C525E] mt-1">Basic exposure and appointment listing for solopreneurs.</p>
               </div>
 
               <div class="my-6">
                 <div class="flex items-baseline gap-1">
-                  <span class="text-4xl sm:text-5xl font-black text-[#0A0D17]">$0</span>
-                  <span class="text-xs text-[#64748B] font-semibold">/month</span>
+                  <span class="text-4xl sm:text-5xl font-black text-[#1C151D]">$0</span>
+                  <span class="text-xs text-[#8E8291] font-semibold">/month</span>
                 </div>
-                <p class="text-[11px] text-[#0F766E] font-bold mt-1">Free forever • No credit card</p>
+                <p class="text-[11px] text-[#AA4184] font-bold mt-1">Free forever • No credit card</p>
               </div>
 
-              <div class="pt-5 border-t border-[#F1F5F9] space-y-3 text-xs">
-                <p class="text-[11px] font-bold uppercase tracking-wider text-[#64748B]">Key Capabilities:</p>
+              <div class="pt-5 border-t border-[#F0E6EC] space-y-3 text-xs">
+                <p class="text-[11px] font-bold uppercase tracking-wider text-[#8E8291]">Key Capabilities:</p>
                 <div v-for="(feat, f) in freeFeatures" :key="f" class="flex items-start gap-2.5">
-                  <Check class="w-4 h-4 text-[#0F766E] shrink-0 mt-0.5" />
-                  <span class="text-[#334155] leading-tight">{{ feat }}</span>
+                  <Check class="w-4 h-4 text-[#AA4184] shrink-0 mt-0.5" />
+                  <span class="text-[#5C525E] leading-tight">{{ feat }}</span>
                 </div>
               </div>
             </div>
 
-            <div class="pt-6 mt-6 border-t border-[#F1F5F9]">
+            <div class="pt-6 mt-6 border-t border-[#F0E6EC]">
               <button 
                 @click="trialOnboardingOpen = true"
-                class="w-full py-3.5 rounded-full border-2 border-[#0A0D17] text-[#0A0D17] font-bold text-xs hover:bg-[#0A0D17] hover:text-white transition-all shadow-xs"
+                class="w-full py-3.5 rounded-full border border-[#D8D3E2] bg-white text-[#1C151D] font-bold text-xs hover:bg-[#FAF7F9] hover:border-[#AA4184] hover:text-[#AA4184] transition-all shadow-xs cursor-pointer"
               >
                 Get Started Free
               </button>
@@ -105,117 +106,117 @@
           </div>
 
           <!-- TIER 2: Essential ($59/mo) -->
-          <div class="rounded-[28px] bg-white border border-[#E2E8F0] p-6 sm:p-7 flex flex-col justify-between hover:shadow-xl hover:border-[#0F766E]/40 transition-all duration-300 group">
+          <div class="rounded-[28px] bg-white border border-[#F0E6EC] p-6 sm:p-7 flex flex-col justify-between hover:shadow-xl hover:border-[#AA4184]/40 transition-all duration-300 group">
             <div>
               <div class="mb-4">
-                <span class="text-[11px] font-extrabold text-[#0F766E] uppercase tracking-wider">Independent Salons</span>
-                <h3 class="text-xl font-black text-[#0A0D17] mt-1">Essential Plan</h3>
-                <p class="text-xs text-[#64748B] mt-1">Complete salon POS, online scheduling, and product inventory.</p>
+                <span class="text-[11px] font-extrabold text-[#AA4184] uppercase tracking-wider">Independent Salons</span>
+                <h3 class="text-xl font-black text-[#1C151D] mt-1">Essential Plan</h3>
+                <p class="text-xs text-[#5C525E] mt-1">Complete salon POS, online scheduling, and product inventory.</p>
               </div>
 
               <div class="my-6">
                 <div class="flex items-baseline gap-1">
-                  <span class="text-4xl sm:text-5xl font-black text-[#0A0D17]">${{ isAnnual ? '49' : '59' }}</span>
-                  <span class="text-xs text-[#64748B] font-semibold">/month</span>
+                  <span class="text-4xl sm:text-5xl font-black text-[#1C151D]">${{ isAnnual ? '49' : '59' }}</span>
+                  <span class="text-xs text-[#8E8291] font-semibold">/month</span>
                 </div>
-                <p class="text-[11px] text-[#0F766E] font-bold mt-1">
+                <p class="text-[11px] text-[#AA4184] font-bold mt-1">
                   {{ isAnnual ? 'Billed annually ($588/yr)' : 'Billed monthly' }}
                 </p>
               </div>
 
-              <div class="pt-5 border-t border-[#F1F5F9] space-y-3 text-xs">
-                <p class="text-[11px] font-bold uppercase tracking-wider text-[#64748B]">Includes Free Tier, plus:</p>
+              <div class="pt-5 border-t border-[#F0E6EC] space-y-3 text-xs">
+                <p class="text-[11px] font-bold uppercase tracking-wider text-[#8E8291]">Includes Free Tier, plus:</p>
                 <div v-for="(feat, f) in essentialFeatures" :key="f" class="flex items-start gap-2.5">
-                  <Check class="w-4 h-4 text-[#0F766E] shrink-0 mt-0.5" />
-                  <span class="text-[#334155] leading-tight">{{ feat }}</span>
+                  <Check class="w-4 h-4 text-[#AA4184] shrink-0 mt-0.5" />
+                  <span class="text-[#5C525E] leading-tight">{{ feat }}</span>
                 </div>
               </div>
             </div>
 
-            <div class="pt-6 mt-6 border-t border-[#F1F5F9]">
+            <div class="pt-6 mt-6 border-t border-[#F0E6EC]">
               <button 
                 @click="trialOnboardingOpen = true"
-                class="w-full py-3.5 rounded-full bg-[#0A0D17] text-white font-bold text-xs hover:bg-[#0F766E] transition-all shadow-md hover:scale-[1.02]"
+                class="w-full py-3.5 rounded-full bg-[#1C151D] text-white font-bold text-xs hover:bg-[#AA4184] transition-all shadow-md hover:scale-[1.02] cursor-pointer"
               >
                 Start 7-Day Free Trial
               </button>
             </div>
           </div>
 
-          <!-- TIER 3: Advance ($109/mo) - MOST POPULAR -->
-          <div class="rounded-[28px] bg-[#0A0D17] text-white border-2 border-[#0F766E] p-6 sm:p-7 flex flex-col justify-between shadow-2xl relative lg:-translate-y-3">
-            <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-[#0F766E] via-[#0284C7] to-[#D97706] text-white text-[10px] font-black uppercase tracking-wider shadow-md">
+          <!-- TIER 3: Advance ($109/mo) - MOST POPULAR with DINGG #AA4184 Styling -->
+          <div class="rounded-[28px] bg-white border-2 border-[#AA4184] p-6 sm:p-7 flex flex-col justify-between shadow-[0_20px_50px_rgba(170,65,132,0.15)] relative lg:-translate-y-3">
+            <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-[#AA4184] text-white text-[10px] font-black uppercase tracking-wider shadow-md">
               Most Popular Choice
             </div>
 
             <div>
               <div class="mb-4">
-                <span class="text-[11px] font-extrabold text-[#2DD4BF] uppercase tracking-wider">High-Growth Studios</span>
-                <h3 class="text-xl font-black text-white mt-1">Advance Plan</h3>
-                <p class="text-xs text-[#94A3B8] mt-1">Marketing automation, customer surveys, packages, and loyalty.</p>
+                <span class="text-[11px] font-extrabold text-[#AA4184] uppercase tracking-wider">High-Growth Studios</span>
+                <h3 class="text-xl font-black text-[#1C151D] mt-1">Advance Plan</h3>
+                <p class="text-xs text-[#5C525E] mt-1">Marketing automation, customer surveys, packages, and loyalty.</p>
               </div>
 
               <div class="my-6">
                 <div class="flex items-baseline gap-1">
-                  <span class="text-4xl sm:text-5xl font-black text-white">${{ isAnnual ? '89' : '109' }}</span>
-                  <span class="text-xs text-[#94A3B8] font-semibold">/month</span>
+                  <span class="text-4xl sm:text-5xl font-black text-[#AA4184]">${{ isAnnual ? '89' : '109' }}</span>
+                  <span class="text-xs text-[#8E8291] font-semibold">/month</span>
                 </div>
-                <p class="text-[11px] text-[#2DD4BF] font-bold mt-1">
+                <p class="text-[11px] text-[#AA4184] font-bold mt-1">
                   {{ isAnnual ? 'Billed annually ($1,068/yr)' : 'Billed monthly' }}
                 </p>
               </div>
 
-              <div class="pt-5 border-t border-white/10 space-y-3 text-xs">
-                <p class="text-[11px] font-bold uppercase tracking-wider text-[#94A3B8]">Includes Essential, plus:</p>
+              <div class="pt-5 border-t border-[#F0E6EC] space-y-3 text-xs">
+                <p class="text-[11px] font-bold uppercase tracking-wider text-[#8E8291]">Includes Essential, plus:</p>
                 <div v-for="(feat, f) in advanceFeatures" :key="f" class="flex items-start gap-2.5">
-                  <Check class="w-4 h-4 text-[#2DD4BF] shrink-0 mt-0.5" />
-                  <span class="text-[#E2E8F0] leading-tight">{{ feat }}</span>
+                  <Check class="w-4 h-4 text-[#AA4184] shrink-0 mt-0.5" />
+                  <span class="text-[#1C151D] font-medium leading-tight">{{ feat }}</span>
                 </div>
               </div>
             </div>
 
-            <div class="pt-6 mt-6 border-t border-white/10">
+            <div class="pt-6 mt-6 border-t border-[#F0E6EC]">
               <button 
                 @click="trialOnboardingOpen = true"
-                class="w-full py-4 rounded-full bg-gradient-to-r from-[#0F766E] via-[#0284C7] to-[#D97706] text-white font-extrabold text-xs hover:opacity-95 transition-all shadow-xl hover:scale-[1.02]"
+                class="w-full py-4 rounded-full bg-[#AA4184] hover:bg-[#923470] text-white font-extrabold text-xs transition-all shadow-lg shadow-[#AA4184]/25 hover:scale-[1.02] cursor-pointer"
               >
                 Start 7-Day Free Trial
               </button>
             </div>
           </div>
 
-          <!-- TIER 4: Expert ($179/mo or Custom Enterprise) -->
-          <div class="rounded-[28px] bg-white border border-[#E2E8F0] p-6 sm:p-7 flex flex-col justify-between hover:shadow-xl hover:border-[#0F766E]/40 transition-all duration-300 group">
+          <!-- TIER 4: Expert ($179/mo) -->
+          <div class="rounded-[28px] bg-white border border-[#F0E6EC] p-6 sm:p-7 flex flex-col justify-between hover:shadow-xl hover:border-[#AA4184]/40 transition-all duration-300 group">
             <div>
               <div class="mb-4">
-                <span class="text-[11px] font-extrabold text-[#0284C7] uppercase tracking-wider">Multi-Branch Clinics</span>
-                <h3 class="text-xl font-black text-[#0A0D17] mt-1">Expert Plan</h3>
-                <p class="text-xs text-[#64748B] mt-1">Enterprise multi-location HQ, custom forms, and dedicated account manager.</p>
+                <span class="text-[11px] font-extrabold text-[#5C525E] uppercase tracking-wider">Multi-Branch Clinics</span>
+                <h3 class="text-xl font-black text-[#1C151D] mt-1">Expert Plan</h3>
+                <p class="text-xs text-[#5C525E] mt-1">Enterprise multi-location HQ, custom forms, and dedicated account manager.</p>
               </div>
 
               <div class="my-6">
                 <div class="flex items-baseline gap-1">
-                  <span class="text-4xl sm:text-5xl font-black text-[#0A0D17]">${{ isAnnual ? '149' : '179' }}</span>
-                  <span class="text-xs text-[#64748B] font-semibold">/month</span>
+                  <span class="text-4xl sm:text-5xl font-black text-[#1C151D]">${{ isAnnual ? '149' : '179' }}</span>
+                  <span class="text-xs text-[#8E8291] font-semibold">/month</span>
                 </div>
-                <p class="text-[11px] text-[#0284C7] font-bold mt-1">
+                <p class="text-[11px] text-[#5C525E] font-bold mt-1">
                   {{ isAnnual ? 'Billed annually ($1,788/yr)' : 'Billed monthly' }}
                 </p>
               </div>
 
-              <div class="pt-5 border-t border-[#F1F5F9] space-y-3 text-xs">
-                <p class="text-[11px] font-bold uppercase tracking-wider text-[#64748B]">Includes Advance, plus:</p>
+              <div class="pt-5 border-t border-[#F0E6EC] space-y-3 text-xs">
+                <p class="text-[11px] font-bold uppercase tracking-wider text-[#8E8291]">Includes Advance, plus:</p>
                 <div v-for="(feat, f) in expertFeatures" :key="f" class="flex items-start gap-2.5">
-                  <Check class="w-4 h-4 text-[#0284C7] shrink-0 mt-0.5" />
-                  <span class="text-[#334155] leading-tight">{{ feat }}</span>
+                  <Check class="w-4 h-4 text-[#AA4184] shrink-0 mt-0.5" />
+                  <span class="text-[#5C525E] leading-tight">{{ feat }}</span>
                 </div>
               </div>
             </div>
 
-            <div class="pt-6 mt-6 border-t border-[#F1F5F9]">
+            <div class="pt-6 mt-6 border-t border-[#F0E6EC]">
               <button 
                 @click="demoOpen = true"
-                class="w-full py-3.5 rounded-full bg-[#0A0D17] text-white font-bold text-xs hover:bg-[#0284C7] transition-all shadow-md hover:scale-[1.02]"
+                class="w-full py-3.5 rounded-full border border-[#D8D3E2] bg-white text-[#1C151D] font-bold text-xs hover:border-[#AA4184] hover:text-[#AA4184] hover:bg-[#FAF7F9] transition-all shadow-xs cursor-pointer"
               >
                 Book Enterprise Demo
               </button>
@@ -225,19 +226,19 @@
         </div>
       </section>
 
-      <!-- 3. UNLIMITED STAFF VALUE BANNER (Signature Salonist Feature) -->
+      <!-- 3. UNLIMITED STAFF VALUE BANNER (DINGG Soft Rose Tint Background) -->
       <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
-        <div class="rounded-3xl bg-gradient-to-r from-[#0A0D17] via-[#0F766E] to-[#0284C7] text-white p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+        <div class="rounded-3xl bg-[#FAF0F5] border border-[#F5DDEB] text-[#1C151D] p-8 sm:p-12 shadow-sm relative overflow-hidden">
           <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             <div class="lg:col-span-8 space-y-3">
-              <span class="px-3.5 py-1 rounded-full bg-white/20 text-white font-mono text-[10px] font-bold uppercase">
+              <span class="px-3.5 py-1 rounded-full bg-[#FBF0F6] text-[#AA4184] border border-[#F5DDEB] font-mono text-[10px] font-bold uppercase">
                 The Salonist Advantage
               </span>
-              <h2 class="text-2xl sm:text-4xl font-black text-white tracking-tight leading-snug">
+              <h2 class="text-2xl sm:text-4xl font-black text-[#1C151D] tracking-tight leading-snug">
                 Why pay per seat when your staff changes every month?
               </h2>
-              <p class="text-xs sm:text-sm text-white/80 max-w-2xl leading-relaxed">
+              <p class="text-xs sm:text-sm text-[#5C525E] max-w-2xl leading-relaxed">
                 Competitors like Vagaro, Fresha, or Boulevard bill you $15-$40 for every single chair or calendar user you add. At Salonist, every paid plan includes unlimited staff profiles at no extra cost. Grow your team without fear of billing shock.
               </p>
             </div>
@@ -245,13 +246,13 @@
             <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 justify-center">
               <button 
                 @click="trialOnboardingOpen = true"
-                class="px-8 py-4 rounded-full bg-white text-[#0A0D17] font-extrabold text-sm hover:bg-[#CCFBF1] transition-all shadow-lg text-center"
+                class="px-8 py-4 rounded-full bg-[#AA4184] hover:bg-[#923470] text-white font-extrabold text-sm transition-all shadow-md text-center cursor-pointer"
               >
                 Start Free 7-Day Trial →
               </button>
               <button 
                 @click="demoOpen = true"
-                class="px-8 py-3.5 rounded-full border border-white/40 text-white font-bold text-xs hover:bg-white/10 transition-colors text-center"
+                class="px-8 py-3.5 rounded-full border border-[#F0E6EC] bg-white text-[#1C151D] hover:text-[#AA4184] hover:border-[#AA4184] font-bold text-xs transition-colors text-center cursor-pointer shadow-xs"
               >
                 Schedule 20-Min Demo
               </button>
@@ -261,38 +262,38 @@
         </div>
       </section>
 
-      <!-- 4. DETAILED FEATURE COMPARISON TABLE (Like Salonist.io) -->
+      <!-- 4. DETAILED FEATURE COMPARISON TABLE (Neat & Clean DINGG Aesthetic) -->
       <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
         <div class="text-center max-w-3xl mx-auto mb-12">
-          <h2 class="text-2xl sm:text-4xl font-black text-[#0A0D17] tracking-tight">
+          <h2 class="text-2xl sm:text-4xl font-black text-[#1C151D] tracking-tight">
             Compare All Features Side-by-Side
           </h2>
-          <p class="text-xs sm:text-sm text-[#64748B] mt-2">
+          <p class="text-xs sm:text-sm text-[#8E8291] mt-2">
             Everything your business needs to schedule, checkout, and retain clients.
           </p>
         </div>
 
-        <div class="rounded-3xl bg-white border border-[#E2E8F0] shadow-sm overflow-hidden">
+        <div class="rounded-3xl bg-white border border-[#F0E6EC] shadow-sm overflow-hidden">
           <div class="overflow-x-auto">
             <table class="w-full text-left text-xs">
               <thead>
-                <tr class="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#0A0D17]">
+                <tr class="bg-[#FAF7F9] border-b border-[#F0E6EC] text-[#1C151D]">
                   <th class="py-5 px-6 font-black text-sm w-2/5">Capability</th>
-                  <th class="py-5 px-4 text-center font-bold">Free</th>
-                  <th class="py-5 px-4 text-center font-bold">Essential ($59)</th>
-                  <th class="py-5 px-4 text-center font-black text-[#0F766E] bg-[#F0FDFA]">Advance ($109)</th>
-                  <th class="py-5 px-4 text-center font-bold">Expert ($179)</th>
+                  <th class="py-5 px-4 text-center font-bold text-[#5C525E]">Free</th>
+                  <th class="py-5 px-4 text-center font-bold text-[#5C525E]">Essential ($59)</th>
+                  <th class="py-5 px-4 text-center font-black text-[#AA4184] bg-[#FBF0F6]">Advance ($109)</th>
+                  <th class="py-5 px-4 text-center font-bold text-[#5C525E]">Expert ($179)</th>
                 </tr>
               </thead>
-              <tbody class="divide-y divide-[#E2E8F0] text-[#334155]">
-                <tr v-for="(row, r) in comparisonRows" :key="r" class="hover:bg-[#F8FAFC]">
-                  <td class="py-4 px-6 font-semibold text-[#0A0D17]">
+              <tbody class="divide-y divide-[#F0E6EC] text-[#5C525E]">
+                <tr v-for="(row, r) in comparisonRows" :key="r" class="hover:bg-[#FAF7F9] transition-colors">
+                  <td class="py-4 px-6 font-semibold text-[#1C151D]">
                     {{ row.title }}
-                    <span v-if="row.sub" class="block text-[10px] text-[#64748B] font-normal mt-0.5">{{ row.sub }}</span>
+                    <span v-if="row.sub" class="block text-[10px] text-[#8E8291] font-normal mt-0.5">{{ row.sub }}</span>
                   </td>
                   <td class="py-4 px-4 text-center font-medium">{{ row.free }}</td>
                   <td class="py-4 px-4 text-center font-medium">{{ row.essential }}</td>
-                  <td class="py-4 px-4 text-center font-bold text-[#0F766E] bg-[#F0FDFA]">{{ row.advance }}</td>
+                  <td class="py-4 px-4 text-center font-bold text-[#AA4184] bg-[#FBF0F6]">{{ row.advance }}</td>
                   <td class="py-4 px-4 text-center font-medium">{{ row.expert }}</td>
                 </tr>
               </tbody>
@@ -304,10 +305,10 @@
       <!-- 5. PRICING FAQ ACCORDION -->
       <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
         <div class="text-center mb-12">
-          <span class="inline-block px-3.5 py-1 rounded-full bg-[#CCFBF1] text-[#0F766E] font-extrabold text-[11px] uppercase tracking-wider mb-2">
+          <span class="inline-block px-3.5 py-1 rounded-full bg-[#FBF0F6] text-[#AA4184] border border-[#F5DDEB] font-extrabold text-[11px] uppercase tracking-wider mb-2">
             Pricing Clarification
           </span>
-          <h2 class="text-2xl sm:text-3xl font-black text-[#0A0D17] tracking-tight">
+          <h2 class="text-2xl sm:text-3xl font-black text-[#1C151D] tracking-tight">
             Frequently Asked Pricing Questions
           </h2>
         </div>
@@ -316,19 +317,19 @@
           <div 
             v-for="(faq, fIdx) in pricingFaqs" 
             :key="fIdx"
-            class="rounded-2xl bg-white border border-[#E2E8F0] hover:border-[#0F766E]/50 transition-all overflow-hidden shadow-xs"
-            :class="{ 'border-[#0F766E] ring-1 ring-[#0F766E]/30': openFaq === fIdx }"
+            class="rounded-2xl bg-white border border-[#F0E6EC] hover:border-[#AA4184]/50 transition-all overflow-hidden shadow-xs"
+            :class="{ 'border-[#AA4184] ring-1 ring-[#AA4184]/20': openFaq === fIdx }"
           >
             <button 
               @click="openFaq = openFaq === fIdx ? null : fIdx"
-              class="w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-sm text-[#0A0D17]"
+              class="w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-sm text-[#1C151D] cursor-pointer"
             >
               <span>{{ faq.q }}</span>
-              <span class="w-7 h-7 rounded-full bg-[#F1F5F9] flex items-center justify-center text-[#0A0D17] text-lg font-light shrink-0" :class="{ 'rotate-45 text-[#0F766E]': openFaq === fIdx }">
+              <span class="w-7 h-7 rounded-full bg-[#FAF7F9] flex items-center justify-center text-[#1C151D] text-lg font-light shrink-0" :class="{ 'rotate-45 text-[#AA4184]': openFaq === fIdx }">
                 +
               </span>
             </button>
-            <div v-show="openFaq === fIdx" class="px-5 pb-5 text-xs text-[#64748B] leading-relaxed border-t border-[#F1F5F9] pt-3">
+            <div v-show="openFaq === fIdx" class="px-5 pb-5 text-xs text-[#5C525E] leading-relaxed border-t border-[#F0E6EC] pt-3">
               {{ faq.a }}
             </div>
           </div>
