@@ -32,10 +32,11 @@
               COMPANY
             </h5>
             <div class="space-y-4">
-              <a 
+              <router-link 
                 v-for="(item, i) in whyUsData.company" 
                 :key="i" 
-                :href="item.href"
+                :to="item.to"
+                @click="$emit('close')"
                 class="group flex items-center gap-3.5 text-left transition-colors p-1.5 -mx-1.5 rounded-xl hover:bg-[#FBF0F6]"
               >
                 <div class="w-6 h-6 flex items-center justify-center text-[#AA4184] group-hover:text-[#AA4184] transition-colors shrink-0">
@@ -46,7 +47,7 @@
                     {{ item.title }}
                   </span>
                 </div>
-              </a>
+              </router-link>
             </div>
           </div>
 
@@ -56,10 +57,11 @@
               GUIDES
             </h5>
             <div class="space-y-4">
-              <a 
+              <router-link 
                 v-for="(item, i) in whyUsData.guides" 
                 :key="i" 
-                :href="item.href"
+                :to="item.to"
+                @click="$emit('close')"
                 class="group flex items-center gap-3.5 text-left transition-colors p-1.5 -mx-1.5 rounded-xl hover:bg-[#FBF0F6]"
               >
                 <div class="w-6 h-6 flex items-center justify-center text-[#AA4184] group-hover:text-[#AA4184] transition-colors shrink-0">
@@ -70,7 +72,7 @@
                     {{ item.title }}
                   </span>
                 </div>
-              </a>
+              </router-link>
             </div>
           </div>
 
@@ -80,10 +82,11 @@
               RESOURCES
             </h5>
             <div class="space-y-4">
-              <a 
+              <router-link 
                 v-for="(item, i) in whyUsData.resources" 
                 :key="i" 
-                :href="item.href"
+                :to="item.to"
+                @click="$emit('close')"
                 class="group flex items-center gap-3.5 text-left transition-colors p-1.5 -mx-1.5 rounded-xl hover:bg-[#FBF0F6]"
               >
                 <div class="w-6 h-6 flex items-center justify-center text-[#AA4184] group-hover:text-[#AA4184] transition-colors shrink-0">
@@ -94,7 +97,7 @@
                     {{ item.title }}
                   </span>
                 </div>
-              </a>
+              </router-link>
             </div>
           </div>
 
@@ -337,18 +340,18 @@ const menuWidthClass = computed(() => {
 /* Exact Data from Image 1: Why Salonist */
 const whyUsData = {
   company: [
-    { title: 'Why Choose Salonist?', icon: CheckSquare, href: '#why-choose-us' },
-    { title: 'Compare Salonist', icon: FileSpreadsheet, href: '#faq' },
+    { title: 'Why Choose Salonist?', icon: CheckSquare, to: '/why-choose-salonist' },
+    { title: 'Compare Salonist', icon: FileSpreadsheet, to: '/compare-salonist' },
   ],
   guides: [
-    { title: 'Salon Management Guide', icon: Armchair, href: '#blog' },
-    { title: 'Spa Management Guide', icon: Sparkles, href: '#blog' },
-    { title: 'Salon Automation', icon: Settings, href: '#blog' },
+    { title: 'Salon Management Guide', icon: Armchair, to: '/guides/salon-management' },
+    { title: 'Spa Management Guide', icon: Sparkles, to: '/guides/spa-management' },
+    { title: 'Salon Automation', icon: Settings, to: '/guides/salon-automation' },
   ],
   resources: [
-    { title: 'Blog', icon: FileEdit, href: '#blog' },
-    { title: 'E-Book', icon: BookMarked, href: '#blog' },
-    { title: 'Salon Success', icon: Trophy, href: '#testimonials' },
+    { title: 'Blog', icon: FileEdit, to: '/blog' },
+    { title: 'E-Book', icon: BookMarked, to: '/blog' },
+    { title: 'Salon Success', icon: Trophy, to: '/why-choose-salonist' },
   ]
 };
 

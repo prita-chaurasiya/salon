@@ -164,16 +164,16 @@
               />
             </button>
             <div v-show="mobileSection === 'why-us'" class="pl-3 pb-3 space-y-2.5 pt-1">
-              <a 
+              <router-link 
                 v-for="(item, i) in whyUsLinks" 
                 :key="i" 
-                :href="item.href"
+                :to="item.to"
                 @click="mobileOpen = false"
                 class="flex items-center gap-2.5 py-1.5 text-sm text-[#5C525E] hover:text-[#AA4184]"
               >
                 <component :is="item.icon" class="w-4 h-4 text-[#AA4184]" />
                 <span>{{ item.title }}</span>
-              </a>
+              </router-link>
             </div>
           </div>
 
@@ -384,9 +384,12 @@ const keepMenuOpen = () => {
 
 /* Links for mobile accordion */
 const whyUsLinks = [
-  { title: 'Why Choose Salonist?', icon: CheckSquare, href: '#why-choose-us' },
-  { title: 'Salon Management Guide', icon: Sparkles, href: '#blog' },
-  { title: 'Client Success Stories', icon: Sparkles, href: '#testimonials' },
+  { title: 'Why Choose Salonist?', icon: CheckSquare, to: '/why-choose-salonist' },
+  { title: 'Compare Salonist', icon: Sparkles, to: '/compare-salonist' },
+  { title: 'Salon Management Guide', icon: Sparkles, to: '/guides/salon-management' },
+  { title: 'Spa Management Guide', icon: Sparkles, to: '/guides/spa-management' },
+  { title: 'Salon Automation', icon: Sparkles, to: '/guides/salon-automation' },
+  { title: 'Blog & Resources', icon: Sparkles, to: '/blog' },
 ];
 
 const featureLinks = [
