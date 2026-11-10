@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-[#581C87] text-purple-100 pt-16 sm:pt-20 pb-8 relative overflow-hidden border-t border-purple-800">
+  <footer class="bg-[#0B0F19] text-[#94A3B8] pt-16 sm:pt-20 pb-8 relative overflow-hidden border-t border-[#1E293B]">
     
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
@@ -11,14 +11,14 @@
           <h4 class="text-base sm:text-lg font-black text-[#FFFFFF] mb-5 tracking-tight">
             Our Company
           </h4>
-          <ul class="space-y-2.5 text-xs sm:text-[13px] text-purple-100">
-            <li><router-link to="/contact" class="hover:text-[#EC4899] transition-colors">About Us</router-link></li>
-            <li><a href="#testimonials" class="hover:text-[#EC4899] transition-colors">Leadership</a></li>
-            <li><a href="#faq" class="hover:text-[#EC4899] transition-colors">Terms & Conditions</a></li>
-            <li><a href="#pricing" class="hover:text-[#EC4899] transition-colors">Refund policy</a></li>
-            <li><router-link to="/contact" class="hover:text-[#EC4899] transition-colors">Contact Us</router-link></li>
-            <li><a href="#blog" class="hover:text-[#EC4899] transition-colors">Blog</a></li>
-            <li><a href="#faq" class="hover:text-[#EC4899] transition-colors">Sitemap</a></li>
+          <ul class="space-y-2.5 text-xs sm:text-[13px] text-[#94A3B8]">
+            <li><router-link to="/contact" class="hover:text-white transition-colors">About Us</router-link></li>
+            <li><a href="#testimonials" class="hover:text-white transition-colors">Leadership</a></li>
+            <li><a href="#faq" class="hover:text-white transition-colors">Terms & Conditions</a></li>
+            <li><a href="#pricing" class="hover:text-white transition-colors">Refund policy</a></li>
+            <li><router-link to="/contact" class="hover:text-white transition-colors">Contact Us</router-link></li>
+            <li><a href="#blog" class="hover:text-white transition-colors">Blog</a></li>
+            <li><a href="#faq" class="hover:text-white transition-colors">Sitemap</a></li>
           </ul>
 
           <!-- FOLLOW US Section matching Screenshot -->
@@ -32,7 +32,7 @@
                 href="https://facebook.com" 
                 target="_blank"
                 rel="noopener noreferrer"
-                class="w-8 h-8 rounded-full bg-white/10 text-purple-200 hover:text-white flex items-center justify-center hover:scale-110 hover:bg-[#EC4899] transition-all shadow-sm"
+                class="w-8 h-8 rounded-full bg-[#1E293B] text-[#CBD5E1] hover:text-white flex items-center justify-center hover:scale-110 hover:bg-[#581C87] transition-all shadow-sm"
               >
                 <Facebook class="w-4 h-4 fill-current" />
               </a>
@@ -42,7 +42,7 @@
                 href="https://instagram.com" 
                 target="_blank"
                 rel="noopener noreferrer"
-                class="w-8 h-8 rounded-full bg-white/10 text-purple-200 hover:text-white flex items-center justify-center hover:scale-110 hover:bg-[#EC4899] transition-all shadow-sm"
+                class="w-8 h-8 rounded-full bg-[#1E293B] text-[#CBD5E1] hover:text-white flex items-center justify-center hover:scale-110 hover:bg-[#EC4899] transition-all shadow-sm"
               >
                 <Instagram class="w-4 h-4" />
               </a>
@@ -52,7 +52,7 @@
                 href="https://twitter.com" 
                 target="_blank"
                 rel="noopener noreferrer"
-                class="w-8 h-8 rounded-full bg-white/10 text-purple-200 hover:text-white flex items-center justify-center hover:scale-110 hover:bg-[#EC4899] transition-all shadow-sm"
+                class="w-8 h-8 rounded-full bg-[#1E293B] text-[#CBD5E1] hover:text-white flex items-center justify-center hover:scale-110 hover:bg-[#581C87] transition-all shadow-sm"
               >
                 <Twitter class="w-4 h-4 fill-current" />
               </a>
@@ -62,7 +62,7 @@
                 href="https://linkedin.com" 
                 target="_blank"
                 rel="noopener noreferrer"
-                class="w-8 h-8 rounded-full bg-white/10 text-purple-200 hover:text-white flex items-center justify-center hover:scale-110 hover:bg-[#EC4899] transition-all shadow-sm"
+                class="w-8 h-8 rounded-full bg-[#1E293B] text-[#CBD5E1] hover:text-white flex items-center justify-center hover:scale-110 hover:bg-[#581C87] transition-all shadow-sm"
               >
                 <Linkedin class="w-4 h-4 fill-current" />
               </a>
@@ -75,13 +75,13 @@
           <h4 class="text-base sm:text-lg font-black text-[#FFFFFF] mb-5 tracking-tight">
             Other Links
           </h4>
-          <ul class="space-y-2.5 text-xs sm:text-[13px] text-purple-100">
-            <li><router-link to="/solutions/tattoo-studio" class="hover:text-[#EC4899] transition-colors">Tattoo Artist Software</router-link></li>
-            <li><router-link to="/solutions/salon-booth-rental" class="hover:text-[#EC4899] transition-colors">Salon Booth For Renter</router-link></li>
-            <li><router-link to="/solutions/tanning-salon" class="hover:text-[#EC4899] transition-colors">Tanning Salon Software</router-link></li>
-            <li><router-link to="/solutions/pet-grooming" class="hover:text-[#EC4899] transition-colors">Pet Grooming</router-link></li>
-            <li><router-link to="/solutions/makeup-studio" class="hover:text-[#EC4899] transition-colors">Makeup Artist Booking Software</router-link></li>
-            <li><router-link to="/features/appointment" class="hover:text-[#EC4899] transition-colors">Mobile Salon Scheduling Software</router-link></li>
+          <ul class="space-y-2.5 text-xs sm:text-[13px] text-[#94A3B8]">
+            <li><router-link to="/solutions/tattoo-studio" class="hover:text-white transition-colors">Tattoo Artist Software</router-link></li>
+            <li><router-link to="/solutions/salon-booth-rental" class="hover:text-white transition-colors">Salon Booth For Renter</router-link></li>
+            <li><router-link to="/solutions/tanning-salon" class="hover:text-white transition-colors">Tanning Salon Software</router-link></li>
+            <li><router-link to="/solutions/pet-grooming" class="hover:text-white transition-colors">Pet Grooming</router-link></li>
+            <li><router-link to="/solutions/makeup-studio" class="hover:text-white transition-colors">Makeup Artist Booking Software</router-link></li>
+            <li><router-link to="/features/appointment" class="hover:text-white transition-colors">Mobile Salon Scheduling Software</router-link></li>
           </ul>
         </div>
 
@@ -90,15 +90,15 @@
           <h4 class="text-base sm:text-lg font-black text-[#FFFFFF] mb-5 tracking-tight">
             Who Can Use It?
           </h4>
-          <ul class="space-y-2.5 text-xs sm:text-[13px] text-purple-100">
-            <li><router-link to="/solutions/barbershop" class="hover:text-[#EC4899] transition-colors">Barber Shops</router-link></li>
-            <li><router-link to="/solutions/hair-salon" class="hover:text-[#EC4899] transition-colors">Hair Salons</router-link></li>
-            <li><router-link to="/solutions/massage-therapy" class="hover:text-[#EC4899] transition-colors">Massage Therapy</router-link></li>
-            <li><router-link to="/solutions/nail-salon" class="hover:text-[#EC4899] transition-colors">Nail Salon</router-link></li>
-            <li><router-link to="/solutions/spa-software" class="hover:text-[#EC4899] transition-colors">Spas</router-link></li>
-            <li><router-link to="/solutions/bridal-salon" class="hover:text-[#EC4899] transition-colors">Bridal Salon</router-link></li>
-            <li><router-link to="/solutions/medical-spa" class="hover:text-[#EC4899] transition-colors">Medical Spa Software</router-link></li>
-            <li><router-link to="/solutions/aesthetic-clinic" class="hover:text-[#EC4899] transition-colors">Aesthetic Skin Clinic</router-link></li>
+          <ul class="space-y-2.5 text-xs sm:text-[13px] text-[#94A3B8]">
+            <li><router-link to="/solutions/barbershop" class="hover:text-white transition-colors">Barber Shops</router-link></li>
+            <li><router-link to="/solutions/hair-salon" class="hover:text-white transition-colors">Hair Salons</router-link></li>
+            <li><router-link to="/solutions/massage-therapy" class="hover:text-white transition-colors">Massage Therapy</router-link></li>
+            <li><router-link to="/solutions/nail-salon" class="hover:text-white transition-colors">Nail Salon</router-link></li>
+            <li><router-link to="/solutions/spa-software" class="hover:text-white transition-colors">Spas</router-link></li>
+            <li><router-link to="/solutions/bridal-salon" class="hover:text-white transition-colors">Bridal Salon</router-link></li>
+            <li><router-link to="/solutions/medical-spa" class="hover:text-white transition-colors">Medical Spa Software</router-link></li>
+            <li><router-link to="/solutions/aesthetic-clinic" class="hover:text-white transition-colors">Aesthetic Skin Clinic</router-link></li>
           </ul>
         </div>
 
@@ -107,37 +107,37 @@
           <h4 class="text-base sm:text-lg font-black text-[#FFFFFF] mb-5 tracking-tight">
             Our Resources
           </h4>
-          <ul class="space-y-2.5 text-xs sm:text-[13px] text-purple-100">
-            <li><a href="#customer-stories" class="hover:text-[#EC4899] transition-colors">Videos</a></li>
-            <li><router-link to="/contact" class="hover:text-[#EC4899] transition-colors">Help Center</router-link></li>
-            <li><router-link to="/contact" class="hover:text-[#EC4899] transition-colors">Support</router-link></li>
-            <li><a href="#features" class="hover:text-[#EC4899] transition-colors">Download the app</a></li>
-            <li><a href="#faq" class="hover:text-[#EC4899] transition-colors">Security</a></li>
-            <li><a href="#customer-stories" class="hover:text-[#EC4899] transition-colors">Client Testimonials</a></li>
-            <li><a href="#pricing" class="hover:text-[#EC4899] transition-colors">Reseller Partner Program</a></li>
-            <li><a href="#pricing" class="hover:text-[#EC4899] transition-colors">Affiliate Partnership</a></li>
-            <li><a href="#why-choose-us" class="hover:text-[#EC4899] transition-colors">Compare Us</a></li>
+          <ul class="space-y-2.5 text-xs sm:text-[13px] text-[#94A3B8]">
+            <li><a href="#customer-stories" class="hover:text-white transition-colors">Videos</a></li>
+            <li><router-link to="/contact" class="hover:text-white transition-colors">Help Center</router-link></li>
+            <li><router-link to="/contact" class="hover:text-white transition-colors">Support</router-link></li>
+            <li><a href="#features" class="hover:text-white transition-colors">Download the app</a></li>
+            <li><a href="#faq" class="hover:text-white transition-colors">Security</a></li>
+            <li><a href="#customer-stories" class="hover:text-white transition-colors">Client Testimonials</a></li>
+            <li><a href="#pricing" class="hover:text-white transition-colors">Reseller Partner Program</a></li>
+            <li><a href="#pricing" class="hover:text-white transition-colors">Affiliate Partnership</a></li>
+            <li><a href="#why-choose-us" class="hover:text-white transition-colors">Compare Us</a></li>
           </ul>
         </div>
 
       </div>
 
       <!-- Trust Badges & Request A Demo Strip (Matching Screenshot Floating Container) -->
-      <div class="rounded-3xl bg-white/10 backdrop-blur-md border border-white/15 p-4 sm:p-5 mb-8 flex flex-col lg:flex-row items-center justify-between gap-6 shadow-lg">
+      <div class="rounded-3xl bg-[#131B2E] border border-[#1E293B] p-4 sm:p-5 mb-8 flex flex-col lg:flex-row items-center justify-between gap-6 shadow-xl">
         
         <!-- 5 White Pill Badges matching screenshot -->
         <div class="flex flex-wrap items-center justify-center gap-3">
           
           <!-- Badge 1: PCI DSS Level 1 -->
           <div class="h-10 sm:h-11 px-4 rounded-full bg-white flex items-center justify-center gap-1.5 shadow-sm">
-            <span class="text-[12px] font-black text-[#581C87] tracking-tighter">PCI</span>
-            <span class="text-[9px] font-bold px-1 py-0.5 rounded bg-[#581C87] text-white leading-none">DSS</span>
+            <span class="text-[12px] font-black text-[#0B0F19] tracking-tighter">PCI</span>
+            <span class="text-[9px] font-bold px-1 py-0.5 rounded bg-[#0B0F19] text-white leading-none">DSS</span>
             <span class="text-[8px] font-mono text-[#64748B] uppercase">Level 1</span>
           </div>
 
           <!-- Badge 2: AICPA SOC -->
           <div class="h-10 sm:h-11 px-4 rounded-full bg-white flex items-center justify-center gap-2 shadow-sm">
-            <div class="w-6 h-6 rounded-full bg-[#581C87] text-white flex items-center justify-center text-[7px] font-black">
+            <div class="w-6 h-6 rounded-full bg-[#0B0F19] text-white flex items-center justify-center text-[7px] font-black">
               SOC
             </div>
             <div class="text-[8px] text-[#0F172A] font-bold leading-tight text-left">
@@ -154,7 +154,7 @@
 
           <!-- Badge 4: GDPR Compliant -->
           <div class="h-10 sm:h-11 px-4 rounded-full bg-white flex items-center justify-center gap-1.5 shadow-sm">
-            <div class="w-5 h-5 rounded-full bg-[#581C87] text-[#EC4899] flex items-center justify-center text-[8px] font-bold">
+            <div class="w-5 h-5 rounded-full bg-[#0B0F19] text-[#EC4899] flex items-center justify-center text-[8px] font-bold">
               ★
             </div>
             <span class="text-[10px] font-black tracking-tight text-[#0F172A]">GDPR</span>
@@ -162,7 +162,7 @@
 
           <!-- Badge 5: CCPA Compliant -->
           <div class="h-10 sm:h-11 px-4 rounded-full bg-white flex items-center justify-center gap-1.5 shadow-sm">
-            <div class="w-5 h-5 rounded-full bg-[#581C87] text-white flex items-center justify-center text-[7px] font-black">
+            <div class="w-5 h-5 rounded-full bg-[#1E293B] text-white flex items-center justify-center text-[7px] font-black">
               CCPA
             </div>
             <span class="text-[10px] font-bold text-[#0F172A]">Compliant</span>
@@ -181,12 +181,12 @@
       </div>
 
       <!-- Bottom Copyright & Privacy Bar -->
-      <div class="pt-4 border-t border-purple-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-purple-200 gap-3">
+      <div class="pt-4 border-t border-[#1E293B] flex flex-col sm:flex-row items-center justify-between text-xs text-[#64748B] gap-3">
         <p>Copyright © 2026 salonist.io | All Rights Reserved.</p>
         <div class="flex items-center gap-4">
-          <a href="#faq" class="hover:text-[#EC4899] transition-colors">Privacy Policy</a>
+          <a href="#faq" class="hover:text-white transition-colors">Privacy Policy</a>
           <span>•</span>
-          <a href="#faq" class="hover:text-[#EC4899] transition-colors">Terms of Service</a>
+          <a href="#faq" class="hover:text-white transition-colors">Terms of Service</a>
         </div>
       </div>
 
