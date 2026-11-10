@@ -8,7 +8,7 @@
         
         <!-- Column 1: Our Company + FOLLOW US -->
         <div>
-          <h4 class="text-base sm:text-lg font-black text-[#FFFFFF] mb-5 tracking-tight">
+          <h4 class="text-base sm:text-lg font-black !text-white mb-5 tracking-tight">
             Our Company
           </h4>
           <ul class="space-y-2.5 text-xs sm:text-[13px] text-[#BEB8CC]">
@@ -23,7 +23,7 @@
 
           <!-- FOLLOW US Section -->
           <div class="mt-8">
-            <h5 class="text-xs sm:text-sm font-black uppercase tracking-wider text-[#FFFFFF] mb-3.5">
+            <h5 class="text-xs sm:text-sm font-black uppercase tracking-wider !text-white mb-3.5">
               FOLLOW US
             </h5>
             <div class="flex items-center gap-2.5">
@@ -72,7 +72,7 @@
 
         <!-- Column 2: Other Links -->
         <div>
-          <h4 class="text-base sm:text-lg font-black text-[#FFFFFF] mb-5 tracking-tight">
+          <h4 class="text-base sm:text-lg font-black !text-white mb-5 tracking-tight">
             Other Links
           </h4>
           <ul class="space-y-2.5 text-xs sm:text-[13px] text-[#BEB8CC]">
@@ -87,7 +87,7 @@
 
         <!-- Column 3: Who Can Use It? -->
         <div>
-          <h4 class="text-base sm:text-lg font-black text-[#FFFFFF] mb-5 tracking-tight">
+          <h4 class="text-base sm:text-lg font-black !text-white mb-5 tracking-tight">
             Who Can Use It?
           </h4>
           <ul class="space-y-2.5 text-xs sm:text-[13px] text-[#BEB8CC]">
@@ -104,7 +104,7 @@
 
         <!-- Column 4: Our Resources -->
         <div>
-          <h4 class="text-base sm:text-lg font-black text-[#FFFFFF] mb-5 tracking-tight">
+          <h4 class="text-base sm:text-lg font-black !text-white mb-5 tracking-tight">
             Our Resources
           </h4>
           <ul class="space-y-2.5 text-xs sm:text-[13px] text-[#BEB8CC]">

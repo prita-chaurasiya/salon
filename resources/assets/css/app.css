@@ -59,41 +59,45 @@ body {
 }
 
 /* Typography Hierarchy */
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Inter', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+h1 {
   font-weight: 800;
   letter-spacing: -0.025em;
   line-height: 1.15;
-  color: #1E1B2E;
 }
 
 h2 {
-  font-family: 'Inter', sans-serif;
   font-weight: 800;
   letter-spacing: -0.025em;
   line-height: 1.2;
-  color: #1E1B2E;
 }
 
 h3 {
-  font-family: 'Inter', sans-serif;
   font-weight: 700;
-  letter-spacing: -0.02em;
   line-height: 1.25;
-  color: #1E1B2E;
 }
 
 h4, h5, h6 {
-  font-family: 'Inter', sans-serif;
   font-weight: 700;
-  letter-spacing: -0.015em;
   line-height: 1.35;
+}
+
+/* Default headings inside light containers inherit primary text color */
+body > *:not(footer) h1:not([class*="text-"]),
+body > *:not(footer) h2:not([class*="text-"]),
+body > *:not(footer) h3:not([class*="text-"]),
+body > *:not(footer) h4:not([class*="text-"]),
+body > *:not(footer) h5:not([class*="text-"]),
+body > *:not(footer) h6:not([class*="text-"]) {
   color: #1E1B2E;
 }
 
 p {
   font-weight: 400;
-  color: #5B5568;
   line-height: 1.65;
 }
 
