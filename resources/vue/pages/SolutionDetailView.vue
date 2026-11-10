@@ -35,11 +35,11 @@
               {{ solution.heroDescription }}
             </p>
 
-            <!-- Buttons: Start Free 7-Day Trial & Book A 20-Min Demo -->
+            <!-- Buttons: Start Free 7-Day Trial & Book A 20-Min Demo with Luxury Gradient -->
             <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
               <button 
                 @click="trialOnboardingOpen = true"
-                class="px-8 py-4 rounded-full bg-[#AA4184] text-white font-extrabold text-sm hover:bg-[#AA4184] transition-all duration-200 shadow-md hover:scale-105 active:scale-95 flex items-center justify-center gap-2"
+                class="px-8 py-4 rounded-full bg-gradient-to-r from-[#1C151D] via-[#AA4184] to-[#923470] hover:from-[#2B2237] hover:to-[#7C3AED] text-white font-extrabold text-sm transition-all duration-300 shadow-lg shadow-[#AA4184]/25 hover:shadow-xl hover:scale-105 active:scale-95 flex items-center justify-center gap-2 cursor-pointer"
               >
                 <span>Start Free 7-Day Trial</span>
                 <span>→</span>
@@ -47,7 +47,7 @@
 
               <button 
                 @click="demoOpen = true"
-                class="px-8 py-4 rounded-full border border-[#F0E6EC] bg-white text-[#1E293B] font-extrabold text-sm hover:border-[#AA4184] hover:text-[#AA4184] hover:bg-[#FAF7F9] transition-all duration-200 flex items-center justify-center gap-2 shadow-xs"
+                class="px-8 py-4 rounded-full border border-[#F0E6EC] bg-white text-[#1C151D] font-extrabold text-sm hover:border-[#AA4184] hover:text-[#AA4184] hover:bg-[#FAF7F9] transition-all duration-200 flex items-center justify-center gap-2 shadow-xs cursor-pointer"
               >
                 <Calendar class="w-4 h-4 text-[#AA4184]" />
                 <span>Book A 20-Min Demo</span>

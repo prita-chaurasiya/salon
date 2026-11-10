@@ -28,18 +28,18 @@
           Salonist is an all-in-one salon management software designed to promote growth in the beauty and wellness industry.
         </p>
 
-        <!-- CTA Buttons matching Screenshot 1 -->
+        <!-- CTA Buttons with Luxury Gradient -->
         <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
           <button 
             @click="trialOpen = true"
-            class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-[#1C151D] hover:bg-[#AA4184] text-white font-bold text-sm shadow-md transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer"
+            class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-gradient-to-r from-[#1C151D] via-[#AA4184] to-[#923470] hover:from-[#2B2237] hover:to-[#7C3AED] text-white font-bold text-sm shadow-lg shadow-[#AA4184]/25 transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer"
           >
             Get A Free Trial
           </button>
           
           <a 
             href="#testimonials"
-            class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-[#AA4184] hover:bg-[#923470] text-white font-bold text-sm shadow-md transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer"
+            class="w-full sm:w-auto px-8 py-3.5 rounded-full border border-[#D8D3E2] bg-white hover:bg-[#FAF7F9] hover:border-[#AA4184] text-[#1C151D] hover:text-[#AA4184] font-bold text-sm shadow-xs transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer"
           >
             Client Testimonials
           </a>

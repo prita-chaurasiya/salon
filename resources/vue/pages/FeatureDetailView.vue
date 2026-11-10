@@ -47,11 +47,11 @@
               {{ feature.heroDescription }}
             </p>
 
-            <!-- Action Buttons -->
+            <!-- Action Buttons with Luxury Gradient -->
             <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
               <button 
                 @click="trialOnboardingOpen = true"
-                class="px-8 py-4 rounded-full bg-[#AA4184] text-white font-extrabold text-sm hover:bg-[#923470] transition-all duration-200 shadow-md hover:scale-105 active:scale-95 flex items-center justify-center gap-2 cursor-pointer"
+                class="px-8 py-4 rounded-full bg-gradient-to-r from-[#1C151D] via-[#AA4184] to-[#923470] hover:from-[#2B2237] hover:to-[#7C3AED] text-white font-extrabold text-sm transition-all duration-300 shadow-lg shadow-[#AA4184]/25 hover:shadow-xl hover:scale-105 active:scale-95 flex items-center justify-center gap-2 cursor-pointer"
               >
                 <span>Start Free 7-Day Trial</span>
                 <span>→</span>
