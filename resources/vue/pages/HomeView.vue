@@ -29,6 +29,9 @@
       <!-- 6. All-in-One Salon Booking & Scheduling Software (Screenshot 4: Dark Sunset Pillars) -->
       <AllInOneSchedulingSection />
 
+      <!-- 6B. Fast, No-Friction Salon Booking & Management (DINGG B2M2 Framework) -->
+      <DinggPillarsSection @start-trial="trialOnboardingOpen = true" />
+
       <!-- 7. Key Live Counters -->
       <Counter />
 
@@ -195,6 +198,7 @@ import OnePlatformSection from '../components/homepage/OnePlatformSection.vue';
 import BusinessTypesGrid from '../components/homepage/BusinessTypesGrid.vue';
 import EverythingSalonNeeds from '../components/homepage/EverythingSalonNeeds.vue';
 import AllInOneSchedulingSection from '../components/homepage/AllInOneSchedulingSection.vue';
+import DinggPillarsSection from '../components/homepage/DinggPillarsSection.vue';
 import LogoSlider from '../components/LogoSlider.vue';
 import Counter from '../components/Counter.vue';
 import FeatureGrid from '../components/FeatureGrid.vue';
