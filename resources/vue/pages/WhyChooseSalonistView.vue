@@ -37,12 +37,12 @@
             Get A Free Trial
           </button>
           
-          <a 
-            href="#testimonials"
-            class="w-full sm:w-auto px-8 py-3.5 rounded-full border border-[#D8D3E2] bg-white hover:bg-[#FAF7F9] hover:border-[#AA4184] text-[#1C151D] hover:text-[#AA4184] font-bold text-sm shadow-xs transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer"
+          <router-link 
+            to="/client-testimonials"
+            class="w-full sm:w-auto px-8 py-3.5 rounded-full border border-[#D8D3E2] bg-white hover:bg-[#FAF7F9] hover:border-[#AA4184] text-[#1C151D] hover:text-[#AA4184] font-bold text-sm shadow-xs transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer inline-flex items-center justify-center"
           >
             Client Testimonials
-          </a>
+          </router-link>
         </div>
 
         <!-- Review Badges: Capterra, G2, SoftwareSuggest (Exact from Screenshot 1) -->
@@ -291,21 +291,20 @@
 
     <!-- Modals -->
     <TrialOnboardingModal 
-      v-if="trialOpen" 
-      :is-open="trialOpen" 
+      v-model="trialOpen" 
       @close="trialOpen = false" 
+      @switch-to-login="trialOpen = false; loginOpen = true"
     />
 
     <DemoBookingModal 
-      v-if="demoOpen" 
-      :is-open="demoOpen" 
+      v-model="demoOpen" 
       @close="demoOpen = false" 
     />
 
     <LoginModal 
-      v-if="loginOpen" 
-      :is-open="loginOpen" 
+      v-model="loginOpen" 
       @close="loginOpen = false" 
+      @switch-to-trial="loginOpen = false; trialOpen = true"
     />
 
     <!-- Footer -->
