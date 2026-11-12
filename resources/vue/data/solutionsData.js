@@ -1298,4 +1298,590 @@ export const solutionsDirectory = {
     }
   ]
 }
+,
+  'makeup-studio': {
+  "slug": "makeup-studio",
+  "category": "Hair & Beauty",
+  "title": "Makeup Studio Software",
+  "headline": "Modern Booking, Bridal Trials & Deposit Software for Makeup Artists & Glam Studios",
+  "heroDescription": "From high-stakes bridal party glam to commercial editorial shoots and red-carpet event makeovers, makeup studios run on precise scheduling, client skin-tone charts, and non-refundable booking deposits. Salonist delivers specialized makeup artist software designed to eliminate double-bookings, coordinate mobile on-location travel kits, and secure upfront deposits with ease.",
+  "heroImage": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=85",
+  "floatingTodayChairs": [
+    {
+      "name": "Glam Station 1 — Bridal Trial (Maya)",
+      "status": "In Session",
+      "color": "purple"
+    },
+    {
+      "name": "Station 2 — Evening Event Glam",
+      "status": "Booked",
+      "color": "emerald"
+    },
+    {
+      "name": "Mobile Van 1 — On-Location Wedding",
+      "status": "En Route",
+      "color": "amber"
+    }
+  ],
+  "floatingBookingPrompt": {
+    "title": "Book Bridal Glam Trial",
+    "sub": "Saturday at 11:30 am"
+  },
+  "floatingReceipt": {
+    "item1": "Full Bridal Glam $220",
+    "item2": "Lash Upgrade $35",
+    "total": "$255"
+  },
+  "trustedTitle": "Trusted by Celebrity Makeup Artists & High-Fashion Beauty Studios",
+  "problemTitle": "Operational Headaches That Hold Makeup Studios Back",
+  "problems": [
+    {
+      "title": "Costly Last-Minute Bridal Cancellations",
+      "desc": "When clients cancel 2-hour glam sessions without non-refundable card deposits, prime weekend earnings are lost forever."
+    },
+    {
+      "title": "Lost Skin-Tone Notes & Product Records",
+      "desc": "Failing to log foundation shades, primer formulas, and allergy sensitivities between bridal trial and wedding day causes panic."
+    },
+    {
+      "title": "Chaotic Multi-Person Group Bookings",
+      "desc": "Scheduling 6 bridesmaids and a mother-of-the-bride across multiple makeup artists creates chaotic spreadsheet timelines."
+    },
+    {
+      "title": "Mobile Travel & Mileage Disconnects",
+      "desc": "Managing on-location travel surcharges, hotel room arrival times, and mobile card reader checkout is tedious without integrated dispatch."
+    },
+    {
+      "title": "Zero Homecare & Cosmetic Retail Sales",
+      "desc": "Artists miss high-margin retail revenue when long-wear setting sprays and lip kits cannot be purchased at checkout."
+    },
+    {
+      "title": "Paper Liability & Skin Sensitivity Consents",
+      "desc": "Paper consent forms for eyelash adhesives and latex sensitivities get lost and create legal exposure during allergic reactions."
+    }
+  ],
+  "feature1": {
+    "tag": "BRIDAL & GROUP PARTY SCHEDULING",
+    "title": "Automated Group Scheduling for Bridal Parties & Glam Teams",
+    "desc": "Coordinate complex bridal parties with flawless precision. Assign multiple makeup artists and hairstylists to bridesmaids in staggered intervals, collect full package deposits upfront, and send itemized wedding-day call sheets via WhatsApp.",
+    "bullets": [
+      "Staggered timeline builder for multi-person bridal parties",
+      "Automatic card deposits to lock high-ticket weekend wedding dates",
+      "Digital call sheets sent to brides with exact artist arrival times",
+      "Mobile dispatch tools for on-location hotel and venue bookings"
+    ],
+    "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=85",
+    "floatingCardType": "booking"
+  },
+  "feature2": {
+    "tag": "DIGITAL FACE CHARTS & CLIENT PROFILES",
+    "title": "Digital Face Charts, Allergy Alerts & Trial Photos",
+    "desc": "Deliver consistent perfection on wedding day. Store high-resolution before-and-after trial photography, foundation shades, lipstick codes, and lash curl styles in encrypted client files accessible from your iPad or smartphone.",
+    "bullets": [
+      "Interactive digital face-chart tagging for contour, eyes, and lips",
+      "Allergy warnings for latex, lash glues, and synthetic fragrances",
+      "Side-by-side bridal trial vs. wedding day photo galleries",
+      "Client skin type tags (Oily, Dehydrated, Sensitive, Acne-Prone)"
+    ],
+    "image": "https://images.unsplash.com/photo-1512290900672-1f55b0a04975?auto=format&fit=crop&w=800&q=85"
+  },
+  "feature3": {
+    "tag": "COSMETIC POS & RETAIL BUNDLES",
+    "title": "Point of Sale, Touch-Up Kits & Digital Vouchers",
+    "desc": "Boost your ticket size with bespoke cosmetic retail. Ring up touch-up setting powders, wedding day lipstick kits, and faux mink lashes during checkout with instant tap-to-pay on your phone or card reader.",
+    "bullets": [
+      "One-tap retail barcode scanning for lip kits and setting sprays",
+      "Integrated tip percentage prompts boosting artist earnings by 24%",
+      "Digital gift cards and seasonal prom glam promotional vouchers",
+      "Automated artist commission calculation per service and product"
+    ],
+    "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=85"
+  },
+  "faqs": [
+    {
+      "q": "Can we collect upfront deposits for bridal wedding party bookings?",
+      "a": "Yes, Salonist allows mandatory customizable deposits (e.g. 50% or full payment) before wedding party slots are locked onto your calendar."
+    },
+    {
+      "q": "Does Salonist support mobile on-location bookings away from the studio?",
+      "a": "Yes, you can configure mobile territory radius settings and automatically add travel surcharges based on client event locations."
+    },
+    {
+      "q": "Can we store before and after makeup trial photos?",
+      "a": "Yes, upload unlimited high-resolution photos with formulation notes directly into the client’s private profile."
+    },
+    {
+      "q": "Can clients complete allergy and lash adhesive consent forms online?",
+      "a": "Yes, automated SMS links allow guests to sign digital liability waivers and allergy forms from their smartphone before arrival."
+    }
+  ]
+},
+  'hair-studio': {
+  "slug": "hair-studio",
+  "category": "Hair & Beauty",
+  "title": "Hair Studio Software",
+  "headline": "Boutique Hair Studio Software for Solo Stylists & Creative Color Collectives",
+  "heroDescription": "Running an intimate boutique hair studio requires a distinct level of personal client care. Salonist provides streamlined hair studio software tailored for independent colorists and creative styling collectives: smart processing time gaps, automated WhatsApp confirmations, contactless payments, and technical formula records.",
+  "heroImage": "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=900&q=85",
+  "floatingTodayChairs": [
+    {
+      "name": "Studio Chair 1 — Balayage & Gloss",
+      "status": "In Process",
+      "color": "purple"
+    },
+    {
+      "name": "Studio Chair 2 — Precision Cut",
+      "status": "Booked",
+      "color": "emerald"
+    },
+    {
+      "name": "Washbasin A — Keratin Treatment",
+      "status": "Occupied",
+      "color": "amber"
+    }
+  ],
+  "floatingBookingPrompt": {
+    "title": "Book Signature Balayage",
+    "sub": "Today at 3:00 pm"
+  },
+  "floatingReceipt": {
+    "item1": "Balayage $210",
+    "item2": "Olaplex Bond Repair $45",
+    "total": "$255"
+  },
+  "trustedTitle": "Trusted by High-End Boutique Hair Studios & Independent Colorists",
+  "problemTitle": "Why Managing a Boutique Hair Studio is Demanding",
+  "problems": [
+    {
+      "title": "Double-Booking Washbasins & Processing Space",
+      "desc": "When multiple stylists overlap on bleach development, salon bottlenecks frustrate guests."
+    },
+    {
+      "title": "Lost Color Formulations Across Appointments",
+      "desc": "Guessing toner formulas from 8 weeks ago leads to inconsistent blonde tones and unhappy clients."
+    },
+    {
+      "title": "Excess Chemical Color Product Waste",
+      "desc": "Pouring full bowls of expensive developer and lightener without digital scale logging destroys profit margins."
+    },
+    {
+      "title": "No-Shows Killing Prime Studio Slots",
+      "desc": "A single missed 3-hour color session costs boutique studios over $300 without card deposit enforcement."
+    },
+    {
+      "title": "Endless Phone Interruptions Mid-Cut",
+      "desc": "Stopping client services to answer booking calls breaks artistic focus and annoys seated guests."
+    },
+    {
+      "title": "Clunky Checkout & Awkward Tip Prompts",
+      "desc": "Using disjointed payment hardware creates friction at the front desk when guests want to leave."
+    }
+  ],
+  "feature1": {
+    "tag": "COLOR PROCESSING GAP SCHEDULING",
+    "title": "Smart Processing Buffers & Double-Chair Booking",
+    "desc": "Maximize studio revenue without rushing clients. Salonist automatically calculates color development downtime (e.g. 45 min processing), allowing you to slot an express haircut or consultation without schedule clashes.",
+    "bullets": [
+      "Automated active service vs. processing buffer split-scheduling",
+      "24/7 online booking widget connected to Instagram and Google Reserve",
+      "Automatic SMS and WhatsApp appointment confirmations with 1-click rebooking",
+      "Upfront card capture deposits to completely eliminate studio no-shows"
+    ],
+    "image": "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=85",
+    "floatingCardType": "booking"
+  },
+  "feature2": {
+    "tag": "TECHNICAL COLOR DISPENSARY RECORDS",
+    "title": "Digital Formula Vault & Backbar Chemical Tracking",
+    "desc": "Log exact grams of color, developer volume (10vol, 20vol, 40vol), toner ratios, and processing times. Replicate signature balayage results effortlessly visit after visit.",
+    "bullets": [
+      "Timestamped formula records with developer and gloss notes",
+      "Side-by-side color progression photos in client records",
+      "Backbar chemical inventory deduction per treatment completed",
+      "Automated supplier reorder alerts for high-turnover color tubes"
+    ],
+    "image": "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=800&q=85"
+  },
+  "feature3": {
+    "tag": "CHAIRSIDE TAP-TO-PAY POS",
+    "title": "Seamless Chairside Checkout, Tips & Retail Sales",
+    "desc": "Ring up tickets right from your smartphone or tablet. Accept contactless Apple Pay, split services between multiple stylists, and encourage retail haircare purchases with personalized product recommendations.",
+    "bullets": [
+      "Fast tap-to-pay card reader support with instant digital receipts",
+      "Custom tip percentage prompts (15%, 20%, 25%) on screen",
+      "Automated stylist commission and chair rent deduction tracking",
+      "E-gift card sales and promotional package series redemptions"
+    ],
+    "image": "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=85"
+  },
+  "faqs": [
+    {
+      "q": "Can I book a haircut client while my color client is processing?",
+      "a": "Yes! Salonist supports processing gap scheduling, allowing you to safely book secondary express services while bleach or color processes."
+    },
+    {
+      "q": "Does Salonist track my color formulas?",
+      "a": "Yes, you can record exact brand, shade, developer volume, and mixing ratios with photos attached to every visit."
+    },
+    {
+      "q": "Can booth renters track their own earnings separately?",
+      "a": "Yes, Salonist provides individual logins with role-based privacy so each stylist only sees their own schedule and commissions."
+    },
+    {
+      "q": "Does it send automated appointment reminders?",
+      "a": "Yes, automated 2-way SMS and WhatsApp reminders reduce no-shows to under 2% across our network."
+    }
+  ]
+},
+  'lash-brow-studio': {
+  "slug": "lash-brow-studio",
+  "category": "Hair & Beauty",
+  "title": "Lash & Brow Studio Software",
+  "headline": "Precision Lash Extension, Brow Lamination & Microblading Management Software",
+  "heroDescription": "Lash and brow artistry demands meticulous timing, strict patch-test compliance, and predictable 2-to-3 week refill cycles. Salonist delivers specialized lash and brow studio software built to automate refill reminders, store mapping lash charts, collect electronic allergy waivers, and secure upfront deposits for high-ticket microblading sessions.",
+  "heroImage": "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?auto=format&fit=crop&w=900&q=85",
+  "floatingTodayChairs": [
+    {
+      "name": "Lash Bed 1 — Mega Volume Full Set",
+      "status": "In Session",
+      "color": "purple"
+    },
+    {
+      "name": "Brow Station 2 — Brow Lamination & Tint",
+      "status": "Booked",
+      "color": "emerald"
+    },
+    {
+      "name": "Lash Bed 3 — 2-Week Classic Infill",
+      "status": "Ready",
+      "color": "amber"
+    }
+  ],
+  "floatingBookingPrompt": {
+    "title": "Book Volume Lash Infill",
+    "sub": "Tomorrow at 1:00 pm"
+  },
+  "floatingReceipt": {
+    "item1": "Volume Full Set $175",
+    "item2": "Lash Bath Cleanser $24",
+    "total": "$199"
+  },
+  "trustedTitle": "Trusted by Elite Lash Bars, Microblading Artists & Brow Salons",
+  "problemTitle": "Key Obstacles Facing Lash & Brow Studios",
+  "problems": [
+    {
+      "title": "Missed Infill Cycles & Client Drifting",
+      "desc": "Clients waiting too long between refills (4+ weeks) arrive with zero lashes left, turning quick infills into full set losses."
+    },
+    {
+      "title": "Severe Adhesive Allergy & Patch Test Liabilities",
+      "desc": "Failure to document cyanoacrylate adhesive sensitivity tests risks severe eye infections and salon lawsuits."
+    },
+    {
+      "title": "Lost Lash Maps & Curl Preferences",
+      "desc": "Stylists forgetting whether a client wears C-curl, D-curl, 11mm or 14mm cat-eye maps leads to inconsistent aesthetics."
+    },
+    {
+      "title": "Last-Minute No-Shows on 2.5-Hour Full Sets",
+      "desc": "Losing a 2.5-hour full set appointment leaves lash artists with hours of empty beds and zero income."
+    },
+    {
+      "title": "Lost Retail on Lash Cleansers & Serums",
+      "desc": "Artists fail to recommend oil-free foaming cleansers and lash growth serums without automated checkout prompts."
+    },
+    {
+      "title": "Manual Rebooking Phone Tag",
+      "desc": "Spending evenings texting clients to coordinate infill times distracts from artistic craftsmanship."
+    }
+  ],
+  "feature1": {
+    "tag": "AUTOMATED REFILL RETENTION ENGINE",
+    "title": "Automated 2 & 3-Week Lash Infill Rebooking Sequences",
+    "desc": "Keep lash beds booked year-round. Salonist automatically calculates optimal infill windows based on whether the client received Classic, Hybrid, or Mega Volume, texting them an automated 1-click booking link before retention slips.",
+    "bullets": [
+      "Automated 14-day and 21-day SMS infill rebooking triggers",
+      "Customizable deposit rules for full sets vs. quick infills",
+      "24/7 client booking widget embedded on Instagram and website",
+      "Real-time bed allocation preventing studio room bottlenecks"
+    ],
+    "image": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=85",
+    "floatingCardType": "booking"
+  },
+  "feature2": {
+    "tag": "DIGITAL LASH CHARTS & PATCH TESTS",
+    "title": "Digital Lash Mapping, Curl Charts & Medical Consents",
+    "desc": "Document every lash set with precision. Record lash diameter (0.03, 0.05, 0.07), curl type (C, CC, D, L), length mapping across inner to outer corners, and maintain timestamped adhesive patch-test logs.",
+    "bullets": [
+      "Visual lash mapping diagrams attached to customer profiles",
+      "Cyanoacrylate adhesive patch test expiration tracking",
+      "Paperless digital consent forms signed on client smartphones",
+      "High-resolution macro before & after photo portfolio"
+    ],
+    "image": "https://images.unsplash.com/photo-1512290900672-1f55b0a04975?auto=format&fit=crop&w=800&q=85"
+  },
+  "feature3": {
+    "tag": "LASH POS & HOMECARE CLEANSERS",
+    "title": "Lash POS, Aftercare Retail & VIP Infill Memberships",
+    "desc": "Transform one-off lash sets into dependable recurring subscription revenue. Offer monthly VIP Lash Clubs with 2 infills per month, and retail foaming aftercare cleansers, mascara wands, and sleep masks at checkout.",
+    "bullets": [
+      "Recurring monthly card subscriptions for VIP lash members",
+      "One-tap retail barcode checkout for oil-free cleansers & growth serums",
+      "Instant digital SMS receipts with built-in rebooking links",
+      "Automated artist commission splits on services and aftercare products"
+    ],
+    "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=85"
+  },
+  "faqs": [
+    {
+      "q": "Can Salonist send automated infill reminders 2 weeks after an appointment?",
+      "a": "Yes! Salonist tracks the exact date of full sets and automatically sends friendly WhatsApp/SMS prompts 14 days later."
+    },
+    {
+      "q": "Does Salonist track lash mapping specifications?",
+      "a": "Yes, record lengths (8mm-15mm), curls (C, CC, D), diameter, and style maps (doll-eye, cat-eye, squirrel) in client files."
+    },
+    {
+      "q": "Can clients complete adhesive allergy consent forms before arrival?",
+      "a": "Yes, clients receive an automated digital consultation link via text to sign electronic waivers on their phone."
+    },
+    {
+      "q": "Can we offer monthly recurring lash memberships?",
+      "a": "Yes, automate monthly card billing that gives members 2 infills per month with automated rollover settings."
+    }
+  ]
+},
+  'cosmetic-clinic': {
+  "slug": "cosmetic-clinic",
+  "category": "Clinics & Specialty",
+  "title": "Cosmetic Clinic Software",
+  "headline": "Clinical Software for Cosmetic Surgeons, Aesthetic Doctors & Injectables Clinics",
+  "heroDescription": "Cosmetic and aesthetics clinics operate under rigorous regulatory, clinical, and patient privacy standards. Salonist provides enterprise-grade cosmetic clinic management software engineered for Botox and dermal filler charting, batch number tracking, electronic medical consents, and patient lifetime treatment courses.",
+  "heroImage": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=85",
+  "floatingTodayChairs": [
+    {
+      "name": "Clinical Suite 1 — Dermal Filler (Dr. V)",
+      "status": "In Procedure",
+      "color": "purple"
+    },
+    {
+      "name": "Room 2 — Botox Touch-Up (12 Units)",
+      "status": "Consultation",
+      "color": "emerald"
+    },
+    {
+      "name": "Laser Suite 3 — Fractional CO2",
+      "status": "Ready",
+      "color": "amber"
+    }
+  ],
+  "floatingBookingPrompt": {
+    "title": "Book Cosmetic Consultation",
+    "sub": "Thursday at 10:30 am"
+  },
+  "floatingReceipt": {
+    "item1": "Botox 3 Areas $380",
+    "item2": "Cheek Filler 1ml $420",
+    "total": "$800"
+  },
+  "trustedTitle": "Trusted by Elite Cosmetic Clinics & Board-Certified Aesthetic Doctors",
+  "problemTitle": "Major Operational Challenges in Modern Cosmetic Clinics",
+  "problems": [
+    {
+      "title": "Strict Medical Auditing & Batch Number Logs",
+      "desc": "Missing Botulinum toxin vial batch numbers or expiration dates during health board audits risks clinic licenses."
+    },
+    {
+      "title": "Inaccurate Anatomical Treatment Charting",
+      "desc": "Failing to precisely mark injection units and depths on facial anatomy charts leads to clinician liability."
+    },
+    {
+      "title": "Complex Multi-Session Treatment Packages",
+      "desc": "Tracking 4-session skin remodeling packages with split doctor fees requires seamless ledger automation."
+    },
+    {
+      "title": "High-Ticket Patient No-Shows",
+      "desc": "Missing a 1-hour surgical consultation or injectables session causes major clinic revenue loss."
+    },
+    {
+      "title": "Paper Consent Filing & Storage Clutter",
+      "desc": "Managing thousands of paper legal liability forms slows down reception check-in and invites data loss."
+    },
+    {
+      "title": "Poor Post-Treatment Follow-Up Care",
+      "desc": "Failing to check in on patients 48 hours after aesthetic procedures weakens trust and review generation."
+    }
+  ],
+  "feature1": {
+    "tag": "ANATOMICAL INJECTABLE CHARTING",
+    "title": "Digital Face & Body Anatomical Injection Charting",
+    "desc": "Chart neuromodulators and dermal fillers with pinpoint anatomical accuracy. Mark exact injection sites, units administered per point, needle gauge, and product lot numbers on interactive 3D facial diagrams.",
+    "bullets": [
+      "Interactive face and body anatomical diagrams with pinpoint injection markers",
+      "Vial batch number, expiration date, and reconstitution tracking",
+      "Device energy settings, passes, and laser pulse counters logged per session",
+      "Encrypted timestamped medical practitioner notes with digital signatures"
+    ],
+    "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=85",
+    "floatingCardType": "booking"
+  },
+  "feature2": {
+    "tag": "STANDARDIZED CLINICAL PHOTOGRAPHY",
+    "title": "Side-by-Side Clinical Before & After Photo Management",
+    "desc": "Capture standardized clinical photography under uniform lighting angles. Present side-by-side comparative views to patients during consultations to illustrate transformative aesthetic outcomes.",
+    "bullets": [
+      "Grid-aligned clinical photo capture on tablet or medical camera",
+      "Side-by-side comparative timelines showing 3-month progression",
+      "Secure patient photo consent permissions (Internal Only vs. Marketing)",
+      "HIPAA-ready cloud storage with bank-grade 256-bit encryption"
+    ],
+    "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=85"
+  },
+  "feature3": {
+    "tag": "FINANCING & TREATMENT PACKAGES",
+    "title": "Cosmetic Packages, Integrated Financing & POS",
+    "desc": "Sell high-ticket treatment courses with integrated patient financing and installment payment plans. Accept deposits online, manage split doctor commissions, and automate post-treatment care instructions.",
+    "bullets": [
+      "Pre-paid treatment package tracking (e.g., Session 2 of 4 Skin Resurfacing)",
+      "Support for patient financing and multi-card split payments at POS",
+      "Automated post-treatment care advice sent via WhatsApp 2 hours post-procedure",
+      "Instant deposit collection eliminating cosmetic consultation no-shows"
+    ],
+    "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=85"
+  },
+  "faqs": [
+    {
+      "q": "Can practitioners chart Botox units directly onto a facial diagram?",
+      "a": "Yes! Salonist features an interactive anatomical face chart where clinicians click to mark injection points, units, and product details."
+    },
+    {
+      "q": "Does Salonist track pharmaceutical batch and lot numbers?",
+      "a": "Yes, record manufacturer batch codes, vial expiration dates, and remaining units for full regulatory compliance."
+    },
+    {
+      "q": "Can we collect electronic informed consent forms prior to treatment?",
+      "a": "Yes, patients receive automated SMS links to review and sign detailed medical liability consents on their phone."
+    },
+    {
+      "q": "Are patient medical records encrypted and secure?",
+      "a": "All patient notes, photos, and medical histories are encrypted with 256-bit SSL at rest and in transit, fulfilling medical privacy standards."
+    }
+  ]
+},
+  'mobile-salon': {
+  "slug": "mobile-salon",
+  "category": "Hair & Beauty",
+  "title": "Mobile Salon Software",
+  "headline": "Software for Traveling Stylists, Mobile Beauty Vans & At-Home Glam Teams",
+  "heroDescription": "Mobile hair stylists, traveling makeup artists, and at-home massage therapists face unique challenges: travel time calculations, parking buffers, geographic service zones, and mobile card processing. Salonist delivers all-in-one mobile salon software engineered to optimize driving routes, automate travel fee calculations, and run your entire beauty business from your phone.",
+  "heroImage": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=900&q=85",
+  "floatingTodayChairs": [
+    {
+      "name": "Route A — Soho to Tribeca (3 Bookings)",
+      "status": "On Route",
+      "color": "purple"
+    },
+    {
+      "name": "Van 2 — Beverly Hills Home Glam",
+      "status": "In Service",
+      "color": "emerald"
+    },
+    {
+      "name": "Booking 3 — Upper East Side Cut & Color",
+      "status": "Confirmed",
+      "color": "amber"
+    }
+  ],
+  "floatingBookingPrompt": {
+    "title": "Book Mobile Hair Styling",
+    "sub": "Tomorrow at 2:00 pm"
+  },
+  "floatingReceipt": {
+    "item1": "At-Home Haircut $110",
+    "item2": "Travel Surcharge $30",
+    "total": "$140"
+  },
+  "trustedTitle": "Trusted by Independent Traveling Stylists & Luxury Mobile Beauty Vans",
+  "problemTitle": "Why Running a Mobile Beauty Business is Challenging",
+  "problems": [
+    {
+      "title": "Unpaid Travel Time & Traffic Delays",
+      "desc": "Booking appointments back-to-back across town without driving buffers causes tardiness and lost revenue."
+    },
+    {
+      "title": "Inconsistent Travel Fee Calculations",
+      "desc": "Manually calculating mileage and parking fees creates billing disputes with at-home clients."
+    },
+    {
+      "title": "Last-Minute Cancellations After Driving Across Town",
+      "desc": "Arriving at a client’s home only to find they forgot the appointment costs hours of unpaid travel."
+    },
+    {
+      "title": "Unreliable Mobile Card Readers & Offline Drops",
+      "desc": "Losing cellular connection in building basements prevents card payments from going through."
+    },
+    {
+      "title": "Scattered Client Address Notes & Gate Codes",
+      "desc": "Digging through text messages to find apartment numbers, parking instructions, and gate codes wastes time."
+    },
+    {
+      "title": "Luggage Weight & Missing Backbar Products",
+      "desc": "Forgetting specific color formulas or styling tools before leaving the studio causes service disruptions."
+    }
+  ],
+  "feature1": {
+    "tag": "SMART ROUTE & TRAVEL BUFFER SCHEDULING",
+    "title": "Geographic Service Zones & Automated Driving Buffers",
+    "desc": "Eliminate wasted travel time. Salonist groups appointments by neighborhood and zip code, automatically inserting realistic driving buffers using Google Maps traffic data so you never arrive late.",
+    "bullets": [
+      "Geographic territory zones with custom distance restrictions",
+      "Automated driving buffer calculations between consecutive appointments",
+      "Automated mileage tracking for tax and expense deductions",
+      "On-the-way ETA text alerts automatically dispatched to clients"
+    ],
+    "image": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=85",
+    "floatingCardType": "booking"
+  },
+  "feature2": {
+    "tag": "MOBILE PHONE POS & TOUCHLESS CHECKOUT",
+    "title": "Smartphone Tap-to-Pay POS & Automatic Travel Surcharges",
+    "desc": "Turn your smartphone into a complete point-of-sale terminal. Tap contactless cards directly onto your iPhone or Android, automatically append mileage surcharges, and send digital SMS receipts in seconds.",
+    "bullets": [
+      "Tap to Pay on iPhone and Android with zero external hardware needed",
+      "Automatic travel fee and parking surcharge additions to ticket",
+      "Offline transaction buffering for low-signal areas",
+      "Direct deposit payouts into your linked business bank account"
+    ],
+    "image": "https://images.unsplash.com/photo-1556742049-0a67c5574f73?auto=format&fit=crop&w=800&q=85"
+  },
+  "feature3": {
+    "tag": "CLIENT PROFILES & ARRIVAL NOTES",
+    "title": "Saved Gate Codes, Parking Notes & Formula History",
+    "desc": "Keep complete client files in your pocket. Access gate access codes, pet warnings, color formulas, and past service notes instantly on your mobile app before knocking on the door.",
+    "bullets": [
+      "Dedicated address fields with apartment numbers and gate access codes",
+      "Pre-authorized card deposits that completely eliminate home no-shows",
+      "Client formula history and allergy alerts accessible offline",
+      "Automated 3-week maintenance rebooking reminders sent via WhatsApp"
+    ],
+    "image": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=800&q=85"
+  },
+  "faqs": [
+    {
+      "q": "Can Salonist automatically calculate travel time between appointments?",
+      "a": "Yes! Salonist integrates travel buffers based on location so you have sufficient driving time between clients."
+    },
+    {
+      "q": "Can I add a travel or mileage surcharge to the booking fee?",
+      "a": "Yes, you can configure automatic travel fees based on client distance from your home studio or base location."
+    },
+    {
+      "q": "Can I accept card payments directly on my smartphone?",
+      "a": "Yes, Salonist supports Tap to Pay on iPhone and Android, turning your personal phone into a contactless payment terminal."
+    },
+    {
+      "q": "Does Salonist store client building entry and parking notes?",
+      "a": "Yes, client profiles feature dedicated fields for gate codes, parking tips, and specific apartment directions."
+    }
+  ]
+}
 };

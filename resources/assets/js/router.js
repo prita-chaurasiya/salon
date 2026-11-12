@@ -93,6 +93,21 @@ const routes = [
         component: () => import('../../vue/pages/CustomerSuccessView.vue'),
     },
     {
+        path: '/help-center',
+        name: 'help-center',
+        component: () => import('../../vue/pages/HelpCenterView.vue'),
+    },
+    {
+        path: '/support',
+        name: 'support',
+        component: () => import('../../vue/pages/SupportView.vue'),
+    },
+    {
+        path: '/security',
+        name: 'security',
+        component: () => import('../../vue/pages/SecurityView.vue'),
+    },
+    {
         path: '/demo',
         name: 'demo',
         component: () => import('../../vue/pages/DemoView.vue'),
