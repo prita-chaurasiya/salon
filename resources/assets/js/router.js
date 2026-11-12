@@ -75,7 +75,12 @@ const routes = [
     {
         path: '/guides/salon-automation',
         name: 'guide-salon-automation',
-        component: () => import('../../vue/pages/GuideView.vue'),
+        component: () => import('../../vue/pages/SalonAutomationView.vue'),
+    },
+    {
+        path: '/salon-automation',
+        name: 'salon-automation',
+        component: () => import('../../vue/pages/SalonAutomationView.vue'),
     },
     {
         path: '/blog',
