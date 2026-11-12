@@ -70,7 +70,12 @@ const routes = [
     {
         path: '/guides/spa-management',
         name: 'guide-spa-management',
-        component: () => import('../../vue/pages/GuideView.vue'),
+        component: () => import('../../vue/pages/SpaManagementView.vue'),
+    },
+    {
+        path: '/spa-management-guide',
+        name: 'spa-management-guide',
+        component: () => import('../../vue/pages/SpaManagementView.vue'),
     },
     {
         path: '/guides/salon-automation',
