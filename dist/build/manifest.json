@@ -15,8 +15,8 @@
       "_x-BHJZX6kS.js"
     ]
   },
-  "_SectionTitle-DE9ui7fp.js": {
-    "file": "assets/SectionTitle-DE9ui7fp.js",
+  "_SectionTitle-DdbUBLX3.js": {
+    "file": "assets/SectionTitle-DdbUBLX3.js",
     "name": "SectionTitle",
     "imports": [
       "_users-JKsRKyY-.js",
@@ -26,6 +26,7 @@
       "_check-Dz1TvNzt.js",
       "_plus-QWXO4zsQ.js",
       "_book-open-dMsMrK7s.js",
+      "_calendar-check-iFLpNPw5.js",
       "_user-check-DkYfmljP.js",
       "_circle-check-big-C92y7-ZK.js",
       "_circle-check-D4UYXqb5.js",
@@ -50,6 +51,13 @@
   "_book-open-dMsMrK7s.js": {
     "file": "assets/book-open-dMsMrK7s.js",
     "name": "book-open",
+    "imports": [
+      "_users-JKsRKyY-.js"
+    ]
+  },
+  "_calendar-check-iFLpNPw5.js": {
+    "file": "assets/calendar-check-iFLpNPw5.js",
+    "name": "calendar-check",
     "imports": [
       "_users-JKsRKyY-.js"
     ]
@@ -170,7 +178,7 @@
     "isDynamicEntry": true
   },
   "resources/assets/css/app.css": {
-    "file": "assets/app-C2VZXn4H.css",
+    "file": "assets/app-D6sgvGzC.css",
     "name": "app",
     "names": [
       "app.css",
@@ -180,7 +188,7 @@
     "isEntry": true
   },
   "resources/assets/js/app.js": {
-    "file": "assets/app-BJYiCTRR.js",
+    "file": "assets/app-CrILUcHx.js",
     "name": "app",
     "src": "resources/assets/js/app.js",
     "isEntry": true,
@@ -193,7 +201,7 @@
       "_user-check-DkYfmljP.js",
       "_plus-QWXO4zsQ.js",
       "_circle-check-D4UYXqb5.js",
-      "_SectionTitle-DE9ui7fp.js",
+      "_SectionTitle-DdbUBLX3.js",
       "_zap-C1YObiDh.js",
       "_phone-call-CeAziS2T.js",
       "_star-BQv-ofE0.js",
@@ -204,6 +212,7 @@
       "resources/vue/pages/PricingView.vue",
       "resources/vue/pages/FeaturesView.vue",
       "resources/vue/pages/AppointmentFeatureView.vue",
+      "resources/vue/pages/OnlineBookingFeatureView.vue",
       "resources/vue/pages/FeatureDetailView.vue",
       "resources/vue/pages/SolutionsView.vue",
       "resources/vue/pages/BarbershopSolutionView.vue",
@@ -231,7 +240,7 @@
     ]
   },
   "resources/css/app.css": {
-    "file": "assets/app-C2VZXn4H.css",
+    "file": "assets/app-D6sgvGzC.css",
     "name": "app",
     "names": [
       "app.css",
@@ -259,7 +268,7 @@
     ]
   },
   "resources/vue/pages/AppointmentFeatureView.vue": {
-    "file": "assets/AppointmentFeatureView-DK9DIXNy.js",
+    "file": "assets/AppointmentFeatureView-0Tdtp0rI.js",
     "name": "AppointmentFeatureView",
     "src": "resources/vue/pages/AppointmentFeatureView.vue",
     "isDynamicEntry": true,
@@ -272,7 +281,7 @@
     ]
   },
   "resources/vue/pages/BarbershopSolutionView.vue": {
-    "file": "assets/BarbershopSolutionView-BlZtPM7W.js",
+    "file": "assets/BarbershopSolutionView-B1FidX0t.js",
     "name": "BarbershopSolutionView",
     "src": "resources/vue/pages/BarbershopSolutionView.vue",
     "isDynamicEntry": true,
@@ -286,7 +295,7 @@
     ]
   },
   "resources/vue/pages/BlogView.vue": {
-    "file": "assets/BlogView-UUK5VPS2.js",
+    "file": "assets/BlogView-BHIeJSzK.js",
     "name": "BlogView",
     "src": "resources/vue/pages/BlogView.vue",
     "isDynamicEntry": true,
@@ -298,7 +307,7 @@
     ]
   },
   "resources/vue/pages/ClientTestimonialsView.vue": {
-    "file": "assets/ClientTestimonialsView-BJQxnp7d.js",
+    "file": "assets/ClientTestimonialsView-BWaeb0FR.js",
     "name": "ClientTestimonialsView",
     "src": "resources/vue/pages/ClientTestimonialsView.vue",
     "isDynamicEntry": true,
@@ -309,7 +318,7 @@
     ]
   },
   "resources/vue/pages/CompareSalonistView.vue": {
-    "file": "assets/CompareSalonistView-DtTpodp1.js",
+    "file": "assets/CompareSalonistView-Hy1lS7Gl.js",
     "name": "CompareSalonistView",
     "src": "resources/vue/pages/CompareSalonistView.vue",
     "isDynamicEntry": true,
@@ -332,7 +341,7 @@
     ]
   },
   "resources/vue/pages/CustomerSuccessView.vue": {
-    "file": "assets/CustomerSuccessView-DRDqcfwR.js",
+    "file": "assets/CustomerSuccessView-Dl7sds-T.js",
     "name": "CustomerSuccessView",
     "src": "resources/vue/pages/CustomerSuccessView.vue",
     "isDynamicEntry": true,
@@ -354,7 +363,7 @@
     ]
   },
   "resources/vue/pages/EBooksView.vue": {
-    "file": "assets/EBooksView-t3Ng7cCx.js",
+    "file": "assets/EBooksView-CGou9b2e.js",
     "name": "EBooksView",
     "src": "resources/vue/pages/EBooksView.vue",
     "isDynamicEntry": true,
@@ -366,7 +375,7 @@
     ]
   },
   "resources/vue/pages/FeatureDetailView.vue": {
-    "file": "assets/FeatureDetailView-CsVCKz-6.js",
+    "file": "assets/FeatureDetailView-BTtuEzjL.js",
     "name": "FeatureDetailView",
     "src": "resources/vue/pages/FeatureDetailView.vue",
     "isDynamicEntry": true,
@@ -381,19 +390,19 @@
     ]
   },
   "resources/vue/pages/FeaturesView.vue": {
-    "file": "assets/FeaturesView-SD5l7lYe.js",
+    "file": "assets/FeaturesView-BxqyP6M5.js",
     "name": "FeaturesView",
     "src": "resources/vue/pages/FeaturesView.vue",
     "isDynamicEntry": true,
     "imports": [
       "_users-JKsRKyY-.js",
       "_Footer-BETv691A.js",
-      "_SectionTitle-DE9ui7fp.js",
+      "_SectionTitle-DdbUBLX3.js",
       "resources/assets/js/app.js"
     ]
   },
   "resources/vue/pages/GuideView.vue": {
-    "file": "assets/GuideView-Dw6GuxVd.js",
+    "file": "assets/GuideView-DTDRXK29.js",
     "name": "GuideView",
     "src": "resources/vue/pages/GuideView.vue",
     "isDynamicEntry": true,
@@ -406,7 +415,7 @@
     ]
   },
   "resources/vue/pages/HelpCenterView.vue": {
-    "file": "assets/HelpCenterView-UVRV9ITO.js",
+    "file": "assets/HelpCenterView-BMV7Nkrm.js",
     "name": "HelpCenterView",
     "src": "resources/vue/pages/HelpCenterView.vue",
     "isDynamicEntry": true,
@@ -421,7 +430,7 @@
     ]
   },
   "resources/vue/pages/LoginView.vue": {
-    "file": "assets/LoginView-CnKnbwIL.js",
+    "file": "assets/LoginView-DiaDL8Gn.js",
     "name": "LoginView",
     "src": "resources/vue/pages/LoginView.vue",
     "isDynamicEntry": true,
@@ -433,8 +442,21 @@
       "_x-BHJZX6kS.js"
     ]
   },
+  "resources/vue/pages/OnlineBookingFeatureView.vue": {
+    "file": "assets/OnlineBookingFeatureView-BtgK8Wfg.js",
+    "name": "OnlineBookingFeatureView",
+    "src": "resources/vue/pages/OnlineBookingFeatureView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_users-JKsRKyY-.js",
+      "_Footer-BETv691A.js",
+      "resources/assets/js/app.js",
+      "_DinggCouponPromoSection-Ckviv-YN.js",
+      "_calendar-check-iFLpNPw5.js"
+    ]
+  },
   "resources/vue/pages/PricingView.vue": {
-    "file": "assets/PricingView-D0C9UELD.js",
+    "file": "assets/PricingView-B7RHt7gC.js",
     "name": "PricingView",
     "src": "resources/vue/pages/PricingView.vue",
     "isDynamicEntry": true,
@@ -447,7 +469,7 @@
     ]
   },
   "resources/vue/pages/SalonAutomationView.vue": {
-    "file": "assets/SalonAutomationView-KR8pEEGf.js",
+    "file": "assets/SalonAutomationView-WxyIamCL.js",
     "name": "SalonAutomationView",
     "src": "resources/vue/pages/SalonAutomationView.vue",
     "isDynamicEntry": true,
@@ -460,7 +482,7 @@
     ]
   },
   "resources/vue/pages/SecurityView.vue": {
-    "file": "assets/SecurityView-DK-2z_wb.js",
+    "file": "assets/SecurityView-BXAvmNIi.js",
     "name": "SecurityView",
     "src": "resources/vue/pages/SecurityView.vue",
     "isDynamicEntry": true,
@@ -474,7 +496,7 @@
     ]
   },
   "resources/vue/pages/SolutionDetailView.vue": {
-    "file": "assets/SolutionDetailView-BnYTjYYm.js",
+    "file": "assets/SolutionDetailView-v9r-9Ry4.js",
     "name": "SolutionDetailView",
     "src": "resources/vue/pages/SolutionDetailView.vue",
     "isDynamicEntry": true,
@@ -488,19 +510,19 @@
     ]
   },
   "resources/vue/pages/SolutionsView.vue": {
-    "file": "assets/SolutionsView-BLsdJdgu.js",
+    "file": "assets/SolutionsView-z40c8yy1.js",
     "name": "SolutionsView",
     "src": "resources/vue/pages/SolutionsView.vue",
     "isDynamicEntry": true,
     "imports": [
       "_users-JKsRKyY-.js",
       "_Footer-BETv691A.js",
-      "_SectionTitle-DE9ui7fp.js",
+      "_SectionTitle-DdbUBLX3.js",
       "resources/assets/js/app.js"
     ]
   },
   "resources/vue/pages/SpaManagementView.vue": {
-    "file": "assets/SpaManagementView-BKAfcbP8.js",
+    "file": "assets/SpaManagementView-DJGmwhWu.js",
     "name": "SpaManagementView",
     "src": "resources/vue/pages/SpaManagementView.vue",
     "isDynamicEntry": true,
@@ -513,7 +535,7 @@
     ]
   },
   "resources/vue/pages/SupportView.vue": {
-    "file": "assets/SupportView-B0H6D_Fy.js",
+    "file": "assets/SupportView-CsRRN5UW.js",
     "name": "SupportView",
     "src": "resources/vue/pages/SupportView.vue",
     "isDynamicEntry": true,
@@ -526,7 +548,7 @@
     ]
   },
   "resources/vue/pages/WhyChooseSalonistView.vue": {
-    "file": "assets/WhyChooseSalonistView-BA8ABG5h.js",
+    "file": "assets/WhyChooseSalonistView-8BV3KyrY.js",
     "name": "WhyChooseSalonistView",
     "src": "resources/vue/pages/WhyChooseSalonistView.vue",
     "isDynamicEntry": true,

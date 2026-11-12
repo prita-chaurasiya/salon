@@ -23,6 +23,16 @@ const routes = [
         component: () => import('../../vue/pages/AppointmentFeatureView.vue'),
     },
     {
+        path: '/features/online-booking',
+        name: 'features-online-booking',
+        component: () => import('../../vue/pages/OnlineBookingFeatureView.vue'),
+    },
+    {
+        path: '/online-booking',
+        name: 'online-booking',
+        component: () => import('../../vue/pages/OnlineBookingFeatureView.vue'),
+    },
+    {
         path: '/features/:slug',
         name: 'feature-detail',
         component: () => import('../../vue/pages/FeatureDetailView.vue'),
