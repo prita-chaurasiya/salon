@@ -40,7 +40,14 @@
 
       </section>
 
-      <!-- ================= 2. TRUSTED LOGO STRIP (Screenshot 2 Match) ================= -->
+      <!-- ================= 2. DINGG BLUSH COUPONS & PROMOTIONS SECTION ================= -->
+      <DinggCouponPromoSection 
+        :business-type="guideSubject"
+        @start-trial="trialOpen = true"
+        class="mb-20"
+      />
+
+      <!-- ================= 2B. TRUSTED LOGO STRIP (Screenshot 2 Match) ================= -->
       <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 text-center">
         <h3 class="text-sm font-bold uppercase tracking-wider text-[#1C151D] mb-6">
           Trusted Growth Software for Beauty & Wellness
@@ -317,6 +324,7 @@ import CTA from '../components/CTA.vue';
 import TrialOnboardingModal from '../components/interactive/TrialOnboardingModal.vue';
 import LoginModal from '../components/interactive/LoginModal.vue';
 import DemoBookingModal from '../components/interactive/DemoBookingModal.vue';
+import DinggCouponPromoSection from '../components/common/DinggCouponPromoSection.vue';
 import { BookOpen } from 'lucide-vue-next';
 
 const route = useRoute();

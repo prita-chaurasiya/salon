@@ -91,7 +91,14 @@
         </div>
       </section>
 
-      <!-- ================= 2. TRUSTED BRAND PILLS (Screenshot 2 Top) ================= -->
+      <!-- ================= 2. DINGG BLUSH COUPONS & PROMO SECTION (Uploaded Screenshot Match) ================= -->
+      <DinggCouponPromoSection 
+        business-type="salon"
+        @start-trial="trialOpen = true"
+        class="mb-24"
+      />
+
+      <!-- ================= 2B. TRUSTED BRAND PILLS (Screenshot 2 Top) ================= -->
       <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
         <h3 class="text-center text-sm font-black uppercase tracking-wider text-[#1C151D] mb-6">
           Trusted Growth Software for Beauty & Wellness
@@ -320,6 +327,7 @@ import CTA from '../components/CTA.vue';
 import TrialOnboardingModal from '../components/interactive/TrialOnboardingModal.vue';
 import DemoBookingModal from '../components/interactive/DemoBookingModal.vue';
 import LoginModal from '../components/interactive/LoginModal.vue';
+import DinggCouponPromoSection from '../components/common/DinggCouponPromoSection.vue';
 
 import { 
   Sparkles, Calendar, Clock, Award, 

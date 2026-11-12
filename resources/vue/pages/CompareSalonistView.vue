@@ -47,7 +47,14 @@
 
       </section>
 
-      <!-- ================= 2. SAVINGS CARDS GRID (Screenshot 1 & 2 Match) ================= -->
+      <!-- ================= 2. DINGG PROMO & GIFT CARDS BLUSH SECTION ================= -->
+      <DinggCouponPromoSection 
+        business-type="salon"
+        @start-trial="trialOpen = true"
+        class="mb-24"
+      />
+
+      <!-- ================= 2B. SAVINGS CARDS GRID (Screenshot 1 & 2 Match) ================= -->
       <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
           <div 
@@ -361,6 +368,7 @@ import CTA from '../components/CTA.vue';
 import TrialOnboardingModal from '../components/interactive/TrialOnboardingModal.vue';
 import LoginModal from '../components/interactive/LoginModal.vue';
 import DemoBookingModal from '../components/interactive/DemoBookingModal.vue';
+import DinggCouponPromoSection from '../components/common/DinggCouponPromoSection.vue';
 import { Sparkles } from 'lucide-vue-next';
 
 const trialOpen = ref(false);
