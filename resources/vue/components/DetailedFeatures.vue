@@ -11,10 +11,10 @@
               <!-- Mock header inside preview -->
               <div class="p-4 bg-[#111111] text-white flex items-center justify-between text-xs">
                 <div class="flex items-center gap-2">
-                  <span class="w-2.5 h-2.5 rounded-full bg-[#C8A96A]"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-[#AA4184]"></span>
                   <span class="font-bold tracking-wide">Dynamic Chair Matrix • Fifth Ave</span>
                 </div>
-                <span class="text-[11px] text-[#C8A96A] font-semibold">Live Drag-and-Drop</span>
+                <span class="text-[11px] text-[#AA4184] font-semibold">Live Drag-and-Drop</span>
               </div>
               
               <!-- Content Mockup -->
@@ -28,10 +28,10 @@
 
                 <div class="grid grid-cols-4 gap-3 min-h-[220px]">
                   <div class="space-y-2">
-                    <div class="p-3 rounded-lg bg-neutral-900 text-white text-xs border-l-4 border-[#C8A96A]">
+                    <div class="p-3 rounded-lg bg-neutral-900 text-white text-xs border-l-4 border-[#AA4184]">
                       <p class="font-bold">Balayage Custom</p>
                       <p class="text-[10px] text-neutral-400">09:00 - 11:30 (VIP)</p>
-                      <span class="mt-1 inline-block text-[9px] px-1 rounded bg-[#C8A96A] text-[#111111] font-bold">Confirmed</span>
+                      <span class="mt-1 inline-block text-[9px] px-1 rounded bg-[#AA4184] text-[#111111] font-bold">Confirmed</span>
                     </div>
                     <div class="p-3 rounded-lg bg-emerald-50 text-emerald-950 text-xs border-l-4 border-emerald-600">
                       <p class="font-bold">Wash & Sculpt</p>
@@ -44,7 +44,7 @@
                       <p class="font-bold">Root Touch-Up</p>
                       <p class="text-[10px] text-[#2B2B2B]/70">10:00 - 11:15</p>
                     </div>
-                    <div class="p-3 rounded-lg bg-amber-50 text-amber-950 text-xs border-l-4 border-[#C8A96A]">
+                    <div class="p-3 rounded-lg bg-amber-50 text-amber-950 text-xs border-l-4 border-[#AA4184]">
                       <p class="font-bold">Glossing Glaze</p>
                       <p class="text-[10px] text-amber-800">01:00 - 02:00</p>
                       <span class="mt-1 inline-block text-[9px] px-1 rounded bg-amber-200 text-amber-900 font-bold">Processing</span>
@@ -76,7 +76,7 @@
 
         <!-- Content Right (5 cols) -->
         <div class="lg:col-span-5 order-1 lg:order-2">
-          <div class="inline-flex items-center gap-2 px-3 py-1 mb-4 rounded-full text-xs font-semibold tracking-wider uppercase border border-[#ECECEC] bg-[#F8F8F8] text-[#C8A96A]">
+          <div class="inline-flex items-center gap-2 px-3 py-1 mb-4 rounded-full text-xs font-semibold tracking-wider uppercase border border-[#ECECEC] bg-[#F8F8F8] text-[#AA4184]">
             <span>Calm & Precision Scheduling</span>
           </div>
 
@@ -85,25 +85,25 @@
           </h3>
 
           <p class="text-base text-[#2B2B2B]/80 font-normal leading-relaxed mb-6">
-            Eliminate frantic front-desk scrambles. Aurum automatically splits multi-step treatments into active stylist work and chemical processing buffer times, dynamically assigning wash basins and chairs.
+            Eliminate frantic front-desk scrambles. Salonist automatically splits multi-step treatments into active stylist work and chemical processing buffer times, dynamically assigning wash basins and chairs.
           </p>
 
           <ul class="space-y-3 mb-8">
             <li class="flex items-start gap-3 text-sm text-[#2B2B2B]">
-              <div class="w-5 h-5 rounded-full bg-[#111111] text-[#C8A96A] flex items-center justify-center text-xs shrink-0 mt-0.5">✓</div>
+              <div class="w-5 h-5 rounded-full bg-[#111111] text-[#AA4184] flex items-center justify-center text-xs shrink-0 mt-0.5">✓</div>
               <span><strong>Intelligent buffer automation:</strong> Free up stylist chairs while foils and toners process.</span>
             </li>
             <li class="flex items-start gap-3 text-sm text-[#2B2B2B]">
-              <div class="w-5 h-5 rounded-full bg-[#111111] text-[#C8A96A] flex items-center justify-center text-xs shrink-0 mt-0.5">✓</div>
+              <div class="w-5 h-5 rounded-full bg-[#111111] text-[#AA4184] flex items-center justify-center text-xs shrink-0 mt-0.5">✓</div>
               <span><strong>Cross-location calendar view:</strong> Effortlessly see stylist availability across your entire salon group.</span>
             </li>
             <li class="flex items-start gap-3 text-sm text-[#2B2B2B]">
-              <div class="w-5 h-5 rounded-full bg-[#111111] text-[#C8A96A] flex items-center justify-center text-xs shrink-0 mt-0.5">✓</div>
+              <div class="w-5 h-5 rounded-full bg-[#111111] text-[#AA4184] flex items-center justify-center text-xs shrink-0 mt-0.5">✓</div>
               <span><strong>Card-on-file no-show policy:</strong> Secure deposits seamlessly via Apple Pay before reservations confirm.</span>
             </li>
           </ul>
 
-          <button class="px-6 py-3 rounded-xl bg-[#111111] text-white font-semibold text-xs hover:bg-[#C8A96A] hover:text-[#111111] transition-all flex items-center gap-2">
+          <button class="px-6 py-3 rounded-xl bg-[#111111] text-white font-semibold text-xs hover:bg-[#AA4184] hover:text-[#111111] transition-all flex items-center gap-2">
             <span>Explore Booking Matrix</span>
             <ArrowRight class="w-4 h-4" />
           </button>
@@ -114,7 +114,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
         <!-- Content Left (5 cols) -->
         <div class="lg:col-span-5">
-          <div class="inline-flex items-center gap-2 px-3 py-1 mb-4 rounded-full text-xs font-semibold tracking-wider uppercase border border-[#ECECEC] bg-[#F8F8F8] text-[#C8A96A]">
+          <div class="inline-flex items-center gap-2 px-3 py-1 mb-4 rounded-full text-xs font-semibold tracking-wider uppercase border border-[#ECECEC] bg-[#F8F8F8] text-[#AA4184]">
             <span>Fast Checkout & POS</span>
           </div>
 
@@ -123,25 +123,25 @@
           </h3>
 
           <p class="text-base text-[#2B2B2B]/80 font-normal leading-relaxed mb-6">
-            Say farewell to clumsy hardware and awkward tip prompts. Aurum’s sleek point-of-sale offers graceful split-checks, instantaneous retail barcode scanning, and transparent tip allocations.
+            Say farewell to clumsy hardware and awkward tip prompts. Salonist’s sleek point-of-sale offers graceful split-checks, instantaneous retail barcode scanning, and transparent tip allocations.
           </p>
 
           <ul class="space-y-3 mb-8">
             <li class="flex items-start gap-3 text-sm text-[#2B2B2B]">
-              <div class="w-5 h-5 rounded-full bg-[#111111] text-[#C8A96A] flex items-center justify-center text-xs shrink-0 mt-0.5">✓</div>
+              <div class="w-5 h-5 rounded-full bg-[#111111] text-[#AA4184] flex items-center justify-center text-xs shrink-0 mt-0.5">✓</div>
               <span><strong>Discreet guest tipping screen:</strong> Elegant custom percentages without guilt or awkward pauses.</span>
             </li>
             <li class="flex items-start gap-3 text-sm text-[#2B2B2B]">
-              <div class="w-5 h-5 rounded-full bg-[#111111] text-[#C8A96A] flex items-center justify-center text-xs shrink-0 mt-0.5">✓</div>
+              <div class="w-5 h-5 rounded-full bg-[#111111] text-[#AA4184] flex items-center justify-center text-xs shrink-0 mt-0.5">✓</div>
               <span><strong>Instant retail recommendation prompts:</strong> Front-desk staff see the exact products recommended during chair consultation.</span>
             </li>
             <li class="flex items-start gap-3 text-sm text-[#2B2B2B]">
-              <div class="w-5 h-5 rounded-full bg-[#111111] text-[#C8A96A] flex items-center justify-center text-xs shrink-0 mt-0.5">✓</div>
+              <div class="w-5 h-5 rounded-full bg-[#111111] text-[#AA4184] flex items-center justify-center text-xs shrink-0 mt-0.5">✓</div>
               <span><strong>Omnichannel gift card redemption:</strong> Accepts stored balances, membership perks, and promo vouchers in 1 click.</span>
             </li>
           </ul>
 
-          <button class="px-6 py-3 rounded-xl bg-[#111111] text-white font-semibold text-xs hover:bg-[#C8A96A] hover:text-[#111111] transition-all flex items-center gap-2">
+          <button class="px-6 py-3 rounded-xl bg-[#111111] text-white font-semibold text-xs hover:bg-[#AA4184] hover:text-[#111111] transition-all flex items-center gap-2">
             <span>Discover Checkout Terminal</span>
             <ArrowRight class="w-4 h-4" />
           </button>
@@ -157,7 +157,7 @@
                   <h4 class="font-bold text-base text-[#111111]">Register #1 • Main Reception</h4>
                   <p class="text-xs text-[#2B2B2B]/60">Guest: Madeleine Montgomery (Card on file • Visa ****4920)</p>
                 </div>
-                <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-[#C8A96A]/20 text-[#111111]">
+                <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-[#AA4184]/20 text-[#111111]">
                   VIP Platinum
                 </span>
               </div>
@@ -212,7 +212,7 @@
                 <button class="py-3 rounded-xl border border-[#ECECEC] bg-white font-semibold text-xs text-[#111111] hover:bg-neutral-100">
                   Email Receipt & Rebook
                 </button>
-                <button class="py-3 rounded-xl bg-[#111111] text-white font-semibold text-xs hover:bg-[#C8A96A] hover:text-[#111111] transition-colors">
+                <button class="py-3 rounded-xl bg-[#111111] text-white font-semibold text-xs hover:bg-[#AA4184] hover:text-[#111111] transition-colors">
                   Charge Visa (One-Click)
                 </button>
               </div>

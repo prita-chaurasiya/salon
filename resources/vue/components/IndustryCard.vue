@@ -1,9 +1,9 @@
 <template>
   <div 
-    class="group relative overflow-hidden rounded-2xl bg-white border border-[#ECECEC] p-6 transition-all duration-300 hover:border-[#C8A96A] hover:shadow-lg hover:-translate-y-1"
+    class="group relative overflow-hidden rounded-2xl bg-white border border-[#ECECEC] p-6 transition-all duration-300 hover:border-[#AA4184] hover:shadow-lg hover:-translate-y-1"
   >
     <div class="flex items-start justify-between mb-5">
-      <div class="w-12 h-12 rounded-xl bg-[#F8F8F8] border border-[#ECECEC] flex items-center justify-center text-[#111111] group-hover:bg-[#111111] group-hover:text-[#C8A96A] transition-colors">
+      <div class="w-12 h-12 rounded-xl bg-[#F8F8F8] border border-[#ECECEC] flex items-center justify-center text-[#111111] group-hover:bg-[#111111] group-hover:text-[#AA4184] transition-colors">
         <component :is="iconComponent" class="w-6 h-6 stroke-[1.8]" />
       </div>
       <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-[#F8F8F8] text-[#2B2B2B] border border-[#ECECEC]">

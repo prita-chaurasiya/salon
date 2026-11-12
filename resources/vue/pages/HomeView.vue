@@ -129,7 +129,7 @@
     >
       <div class="w-full max-w-2xl bg-white rounded-2xl shadow-2xl border border-[#ECECEC] p-6 text-xs">
         <div class="flex items-center gap-3 pb-4 border-b border-[#ECECEC]">
-          <Search class="w-5 h-5 text-[#C8A96A]" />
+          <Search class="w-5 h-5 text-[#AA4184]" />
           <input 
             v-model="searchQuery" 
             type="text" 
@@ -151,7 +151,7 @@
               <p class="font-bold text-[#111111] text-xs">{{ res.title }}</p>
               <p class="text-[11px] text-[#2B2B2B]/70">{{ res.category }}</p>
             </div>
-            <span class="text-[10px] text-[#C8A96A] font-bold">Go to module →</span>
+            <span class="text-[10px] text-[#AA4184] font-bold">Go to module →</span>
           </div>
         </div>
       </div>

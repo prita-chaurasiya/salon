@@ -2,7 +2,7 @@
   <button
     :type="type"
     :disabled="disabled || loading"
-    class="relative inline-flex items-center justify-center font-semibold transition-all duration-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#C8A96A]/50 disabled:opacity-50 disabled:cursor-not-allowed group overflow-hidden"
+    class="relative inline-flex items-center justify-center font-semibold transition-all duration-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#AA4184]/50 disabled:opacity-50 disabled:cursor-not-allowed group overflow-hidden"
     :class="[
       sizeClasses,
       variantClasses,
@@ -99,16 +99,16 @@ const sizeClasses = computed(() => {
 const variantClasses = computed(() => {
   switch (props.variant) {
     case 'accent':
-      return 'bg-[#C8A96A] text-[#111111] hover:bg-white hover:text-[#111111] shadow-md border border-[#C8A96A]';
+      return 'bg-[#AA4184] text-[#111111] hover:bg-white hover:text-[#111111] shadow-md border border-[#AA4184]';
     case 'secondary':
       return 'bg-[#2B2B2B] text-white hover:bg-[#111111] border border-neutral-700';
     case 'outline':
-      return 'bg-white text-[#111111] border border-[#ECECEC] hover:border-[#C8A96A] hover:bg-[#F8F8F8] shadow-sm';
+      return 'bg-white text-[#111111] border border-[#ECECEC] hover:border-[#AA4184] hover:bg-[#F8F8F8] shadow-sm';
     case 'ghost':
       return 'bg-transparent text-[#2B2B2B] hover:text-[#111111] hover:bg-[#F8F8F8]';
     case 'primary':
     default:
-      return 'bg-[#111111] text-white hover:bg-[#C8A96A] hover:text-[#111111] shadow-sm';
+      return 'bg-[#111111] text-white hover:bg-[#AA4184] hover:text-[#111111] shadow-sm';
   }
 });
 </script>

@@ -13,9 +13,9 @@
         <div 
           v-for="(item, i) in integrationsList" 
           :key="i"
-          class="p-6 rounded-2xl bg-white border border-[#ECECEC] transition-all duration-300 hover:border-[#C8A96A] hover:shadow-md flex flex-col items-center text-center group"
+          class="p-6 rounded-2xl bg-white border border-[#ECECEC] transition-all duration-300 hover:border-[#AA4184] hover:shadow-md flex flex-col items-center text-center group"
         >
-          <div class="w-14 h-14 rounded-2xl bg-[#F8F8F8] border border-[#ECECEC] flex items-center justify-center text-[#111111] font-bold text-xl mb-4 group-hover:bg-[#111111] group-hover:text-[#C8A96A] transition-colors">
+          <div class="w-14 h-14 rounded-2xl bg-[#F8F8F8] border border-[#ECECEC] flex items-center justify-center text-[#111111] font-bold text-xl mb-4 group-hover:bg-[#111111] group-hover:text-[#AA4184] transition-colors">
             {{ item.short }}
           </div>
           <h4 class="text-sm font-bold text-[#111111] mb-1">{{ item.name }}</h4>
@@ -28,7 +28,7 @@
 
       <div class="mt-12 text-center">
         <p class="text-xs text-[#2B2B2B]/75">
-          Need a bespoke enterprise integration? Explore our <a href="#api" class="font-bold text-[#111111] underline hover:text-[#C8A96A]">GraphQL Developer API</a> and Webhook suites.
+          Need a bespoke enterprise integration? Explore our <a href="#api" class="font-bold text-[#111111] underline hover:text-[#AA4184]">GraphQL Developer API</a> and Webhook suites.
         </p>
       </div>
     </div>

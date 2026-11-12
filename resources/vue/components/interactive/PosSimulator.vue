@@ -1,15 +1,15 @@
 <template>
   <div class="rounded-3xl bg-[#111111] text-white border border-neutral-800 p-6 sm:p-8 shadow-2xl relative overflow-hidden">
     <!-- Subtle luxury glow -->
-    <div class="absolute -right-20 -top-20 w-72 h-72 rounded-full bg-[#C8A96A]/10 blur-3xl pointer-events-none"></div>
+    <div class="absolute -right-20 -top-20 w-72 h-72 rounded-full bg-[#AA4184]/10 blur-3xl pointer-events-none"></div>
 
     <div class="relative z-10">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-neutral-800">
         <div>
-          <span class="inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-[#C8A96A] text-[#111111] mb-2">
+          <span class="inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-[#AA4184] text-[#111111] mb-2">
             Live Interactive Simulator
           </span>
-          <h3 class="text-xl sm:text-2xl font-bold text-white">Experience Aurum Chairside Checkout</h3>
+          <h3 class="text-xl sm:text-2xl font-bold text-white">Experience Salonist Chairside Checkout</h3>
           <p class="text-xs text-neutral-400 mt-1">Tap items, select tip percentage, and observe instant commission & tax reconciliation.</p>
         </div>
 
@@ -31,11 +31,11 @@
                 :key="service.id"
                 @click="addItem(service)"
                 class="p-3 rounded-xl border text-left text-xs transition-all flex flex-col justify-between"
-                :class="isItemInCart(service.id) ? 'border-[#C8A96A] bg-[#C8A96A]/10 text-white' : 'border-neutral-800 bg-neutral-900 text-neutral-300 hover:border-neutral-700'"
+                :class="isItemInCart(service.id) ? 'border-[#AA4184] bg-[#AA4184]/10 text-white' : 'border-neutral-800 bg-neutral-900 text-neutral-300 hover:border-neutral-700'"
               >
                 <div class="font-bold text-white">{{ service.name }}</div>
                 <div class="flex justify-between items-center mt-2 text-[11px]">
-                  <span class="text-[#C8A96A] font-semibold">${{ service.price }}</span>
+                  <span class="text-[#AA4184] font-semibold">${{ service.price }}</span>
                   <span class="text-neutral-500">{{ service.duration }}m</span>
                 </div>
               </button>
@@ -50,11 +50,11 @@
                 :key="product.id"
                 @click="addItem(product)"
                 class="p-3 rounded-xl border text-left text-xs transition-all flex flex-col justify-between"
-                :class="isItemInCart(product.id) ? 'border-[#C8A96A] bg-[#C8A96A]/10 text-white' : 'border-neutral-800 bg-neutral-900 text-neutral-300 hover:border-neutral-700'"
+                :class="isItemInCart(product.id) ? 'border-[#AA4184] bg-[#AA4184]/10 text-white' : 'border-neutral-800 bg-neutral-900 text-neutral-300 hover:border-neutral-700'"
               >
                 <div class="font-bold text-white">{{ product.name }}</div>
                 <div class="flex justify-between items-center mt-2 text-[11px]">
-                  <span class="text-[#C8A96A] font-semibold">${{ product.price }}</span>
+                  <span class="text-[#AA4184] font-semibold">${{ product.price }}</span>
                   <span class="text-emerald-400 text-[10px]">Stock: {{ product.stock }}</span>
                 </div>
               </button>
@@ -67,7 +67,7 @@
               <span class="text-neutral-400 block text-[10px] uppercase font-bold">Attributed Service Provider</span>
               <span class="font-bold text-white mt-0.5 inline-block">Jean-Luc Dupont (Master Stylist • Level 5)</span>
             </div>
-            <span class="text-[#C8A96A] font-semibold text-xs">Tier: 50% Service / 15% Retail</span>
+            <span class="text-[#AA4184] font-semibold text-xs">Tier: 50% Service / 15% Retail</span>
           </div>
 
         </div>
@@ -118,7 +118,7 @@
             <div class="pt-3 border-t border-[#ECECEC]">
               <div class="flex justify-between items-center mb-2">
                 <span class="text-[11px] font-bold text-[#111111]">Gratuity Choice:</span>
-                <span class="text-xs font-bold text-[#C8A96A]">${{ tipAmount.toFixed(2) }}</span>
+                <span class="text-xs font-bold text-[#AA4184]">${{ tipAmount.toFixed(2) }}</span>
               </div>
               <div class="grid grid-cols-4 gap-1.5 text-xs">
                 <button 
@@ -169,7 +169,7 @@
             <button 
               @click="handleCharge"
               :disabled="cart.length === 0"
-              class="w-full py-3 rounded-xl bg-[#111111] text-white font-bold text-xs hover:bg-[#C8A96A] hover:text-[#111111] transition-all disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              class="w-full py-3 rounded-xl bg-[#111111] text-white font-bold text-xs hover:bg-[#AA4184] hover:text-[#111111] transition-all disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center gap-2"
             >
               <span>{{ charged ? 'Payment Processed via Apple Pay!' : 'Tap to Pay / Authorize Card' }}</span>
             </button>

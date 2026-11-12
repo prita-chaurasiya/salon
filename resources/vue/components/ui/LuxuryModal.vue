@@ -20,7 +20,7 @@
         <!-- Modal Top Bar -->
         <div class="px-6 pt-6 pb-4 border-b border-[#ECECEC] flex items-center justify-between">
           <div>
-            <span v-if="badge" class="inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-[#C8A96A]/20 text-[#111111] mb-1">
+            <span v-if="badge" class="inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-[#AA4184]/20 text-[#111111] mb-1">
               {{ badge }}
             </span>
             <h3 class="text-xl font-bold text-[#111111]" id="modal-title">

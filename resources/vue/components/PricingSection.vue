@@ -25,7 +25,7 @@
           class="relative w-14 h-8 rounded-full bg-[#111111] p-1 transition-colors focus:outline-none"
         >
           <div 
-            class="w-6 h-6 rounded-full bg-[#C8A96A] transition-transform duration-300"
+            class="w-6 h-6 rounded-full bg-[#AA4184] transition-transform duration-300"
             :class="{ 'translate-x-6': annualBilling }"
           ></div>
         </button>
@@ -36,7 +36,7 @@
           @click="annualBilling = true"
         >
           <span>Annual Billing</span>
-          <span class="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase bg-[#C8A96A] text-[#111111]">
+          <span class="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase bg-[#AA4184] text-[#111111]">
             Save 20%
           </span>
         </span>
@@ -71,7 +71,7 @@
               <tr class="border-b border-[#ECECEC] text-[#111111] font-bold">
                 <th class="py-4 px-4 w-2/5">Platform Feature</th>
                 <th class="py-4 px-4 text-center">Starter</th>
-                <th class="py-4 px-4 text-center text-[#C8A96A]">Professional</th>
+                <th class="py-4 px-4 text-center text-[#AA4184]">Professional</th>
                 <th class="py-4 px-4 text-center">Enterprise</th>
               </tr>
             </thead>
@@ -82,7 +82,7 @@
                   <span v-if="row.sub" class="block text-[10px] text-[#2B2B2B]/60 font-normal">{{ row.sub }}</span>
                 </td>
                 <td class="py-3.5 px-4 text-center">{{ row.starter }}</td>
-                <td class="py-3.5 px-4 text-center font-semibold text-[#111111] bg-[#C8A96A]/5">{{ row.pro }}</td>
+                <td class="py-3.5 px-4 text-center font-semibold text-[#111111] bg-[#AA4184]/5">{{ row.pro }}</td>
                 <td class="py-3.5 px-4 text-center font-bold text-[#111111]">{{ row.enterprise }}</td>
               </tr>
             </tbody>

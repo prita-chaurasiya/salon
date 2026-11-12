@@ -18,7 +18,7 @@
         <!-- Modal Top -->
         <div class="flex items-center justify-between pb-4 border-b border-[#ECECEC]">
           <div>
-            <span class="inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-[#C8A96A] text-[#111111] mb-1">
+            <span class="inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-[#AA4184] text-[#111111] mb-1">
               Live Interactive Demo
             </span>
             <h3 class="text-xl font-bold text-[#111111]">Experience Online Guest Booking</h3>
@@ -60,7 +60,7 @@
               :key="service.id"
               @click="selectedService = service"
               class="p-3.5 rounded-xl border cursor-pointer transition-all flex items-center justify-between"
-              :class="selectedService?.id === service.id ? 'border-[#C8A96A] bg-[#C8A96A]/10 shadow-sm' : 'border-[#ECECEC] bg-white hover:border-neutral-300'"
+              :class="selectedService?.id === service.id ? 'border-[#AA4184] bg-[#AA4184]/10 shadow-sm' : 'border-[#ECECEC] bg-white hover:border-neutral-300'"
             >
               <div>
                 <p class="text-xs font-bold text-[#111111]">{{ service.name }}</p>
@@ -81,12 +81,12 @@
                 :key="stylist.id"
                 @click="selectedStylist = stylist"
                 class="p-3 rounded-xl border cursor-pointer flex items-center gap-3 transition-all"
-                :class="selectedStylist?.id === stylist.id ? 'border-[#C8A96A] bg-[#C8A96A]/10' : 'border-[#ECECEC] bg-white hover:border-neutral-300'"
+                :class="selectedStylist?.id === stylist.id ? 'border-[#AA4184] bg-[#AA4184]/10' : 'border-[#ECECEC] bg-white hover:border-neutral-300'"
               >
                 <img :src="stylist.avatar" class="w-10 h-10 rounded-full object-cover" />
                 <div>
                   <p class="text-xs font-bold text-[#111111]">{{ stylist.name }}</p>
-                  <p class="text-[10px] text-[#C8A96A] font-semibold">{{ stylist.role }}</p>
+                  <p class="text-[10px] text-[#AA4184] font-semibold">{{ stylist.role }}</p>
                 </div>
               </div>
             </div>
@@ -125,7 +125,7 @@
             </div>
             <div class="pt-2 border-t border-[#ECECEC] flex justify-between font-bold text-sm text-[#111111]">
               <span>Deposit Due (Secured via Stripe):</span>
-              <span class="text-[#C8A96A]">${{ (selectedService?.price * 0.2).toFixed(2) }}</span>
+              <span class="text-[#AA4184]">${{ (selectedService?.price * 0.2).toFixed(2) }}</span>
             </div>
           </div>
 
@@ -135,7 +135,7 @@
               v-model="guestPhone" 
               type="tel" 
               placeholder="+1 (555) 019-2834" 
-              class="w-full p-3 rounded-xl border border-[#ECECEC] bg-white text-xs outline-none focus:border-[#C8A96A]"
+              class="w-full p-3 rounded-xl border border-[#ECECEC] bg-white text-xs outline-none focus:border-[#AA4184]"
             />
           </div>
         </div>
@@ -152,7 +152,7 @@
           <div class="pt-4">
             <button 
               @click="reset" 
-              class="px-6 py-2.5 rounded-full bg-[#111111] text-white text-xs font-semibold hover:bg-[#C8A96A] hover:text-[#111111]"
+              class="px-6 py-2.5 rounded-full bg-[#111111] text-white text-xs font-semibold hover:bg-[#AA4184] hover:text-[#111111]"
             >
               Test Another Booking Flow
             </button>
@@ -172,7 +172,7 @@
 
           <button 
             @click="nextStep"
-            class="px-6 py-2.5 rounded-full bg-[#111111] text-white text-xs font-semibold hover:bg-[#C8A96A] hover:text-[#111111] transition-all flex items-center gap-1.5 shadow-sm"
+            class="px-6 py-2.5 rounded-full bg-[#111111] text-white text-xs font-semibold hover:bg-[#AA4184] hover:text-[#111111] transition-all flex items-center gap-1.5 shadow-sm"
           >
             <span>{{ step === 3 ? 'Confirm & Secure Deposit' : 'Next Step' }}</span>
             <ArrowRight v-if="step < 3" class="w-3.5 h-3.5" />

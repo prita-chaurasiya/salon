@@ -4,7 +4,7 @@
       <SectionTitle
         badge="Enterprise Architecture"
         title="Why the World's Best Salons"
-        highlight="Choose Aurum Operating System."
+        highlight="Choose Salonist Operating System."
         subtitle="Engineered from the ground up for high-throughput studios, multi-location chains, and discerning owners who refuse to compromise."
         :center="true"
       />
@@ -13,10 +13,10 @@
         <div 
           v-for="(card, i) in pillars" 
           :key="i"
-          class="p-8 rounded-2xl bg-[#F8F8F8] border border-[#ECECEC] transition-all duration-300 hover:border-[#C8A96A] hover:bg-white hover:shadow-lg"
+          class="p-8 rounded-2xl bg-[#F8F8F8] border border-[#ECECEC] transition-all duration-300 hover:border-[#AA4184] hover:bg-white hover:shadow-lg"
         >
           <div class="w-12 h-12 rounded-xl bg-white border border-[#ECECEC] flex items-center justify-center text-[#111111] mb-6 shadow-sm">
-            <component :is="card.icon" class="w-6 h-6 stroke-[1.8] text-[#C8A96A]" />
+            <component :is="card.icon" class="w-6 h-6 stroke-[1.8] text-[#AA4184]" />
           </div>
 
           <h3 class="text-xl font-bold text-[#111111] mb-2">{{ card.title }}</h3>
@@ -63,7 +63,7 @@ const pillars = [
   {
     icon: Scaling,
     title: 'Infinitely Scalable',
-    description: 'Whether you operate 1 boutique chair in Soho or 85 franchise locations across the globe, Aurum seamlessly scales without missing a single beat.',
+    description: 'Whether you operate 1 boutique chair in Soho or 85 franchise locations across the globe, Salonist seamlessly scales without missing a single beat.',
     stat: 'Multi-franchise HQ synchronization'
   },
   {

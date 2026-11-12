@@ -4,11 +4,11 @@
       
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
         <div>
-          <span class="inline-flex items-center gap-2 px-3 py-1 mb-4 rounded-full text-xs font-semibold tracking-wider uppercase border border-[#ECECEC] bg-white text-[#C8A96A] shadow-sm">
+          <span class="inline-flex items-center gap-2 px-3 py-1 mb-4 rounded-full text-xs font-semibold tracking-wider uppercase border border-[#ECECEC] bg-white text-[#AA4184] shadow-sm">
             Operational Intelligence
           </span>
           <h2 class="text-3xl md:text-5xl font-extrabold text-[#111111] tracking-tight">
-            The Aurum Journal.
+            The Salonist Journal.
           </h2>
           <p class="text-base text-[#2B2B2B]/75 mt-2 max-w-xl font-normal">
             Actionable strategies, salon profitability benchmarks, tax optimizations, and guest retention insights from top industry leaders.

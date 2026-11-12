@@ -32,7 +32,7 @@
         <!-- Tab 1: Booking Screen -->
         <div v-if="activeTab === 'booking'" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div class="lg:col-span-5 space-y-4">
-            <span class="text-xs font-bold uppercase tracking-wider text-[#C8A96A]">Seamless Online Guest Portal</span>
+            <span class="text-xs font-bold uppercase tracking-wider text-[#AA4184]">Seamless Online Guest Portal</span>
             <h3 class="text-2xl sm:text-3xl font-extrabold text-[#111111]">
               Convert Instagram & Google searches directly into paid chairs.
             </h3>
@@ -41,11 +41,11 @@
             </p>
             <div class="pt-4 border-t border-[#ECECEC] space-y-2">
               <div class="flex items-center gap-2 text-xs text-[#2B2B2B] font-medium">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#C8A96A]"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-[#AA4184]"></span>
                 Zero login barriers for first-time bookers
               </div>
               <div class="flex items-center gap-2 text-xs text-[#2B2B2B] font-medium">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#C8A96A]"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-[#AA4184]"></span>
                 Automated Google Maps Reserve integration
               </div>
             </div>
@@ -58,11 +58,11 @@
                 <div class="w-20 h-4 bg-neutral-900 mx-auto rounded-full mb-2"></div>
                 <div class="flex items-center justify-between pb-2 border-b border-[#ECECEC]">
                   <span class="font-bold">Maison Aurelia</span>
-                  <span class="text-[10px] text-[#C8A96A] font-semibold">Step 2 of 3</span>
+                  <span class="text-[10px] text-[#AA4184] font-semibold">Step 2 of 3</span>
                 </div>
                 <div class="space-y-2">
                   <p class="font-bold text-xs">Select Preferred Specialist</p>
-                  <div class="p-2.5 rounded-xl border border-[#C8A96A] bg-[#C8A96A]/10 flex items-center gap-3">
+                  <div class="p-2.5 rounded-xl border border-[#AA4184] bg-[#AA4184]/10 flex items-center gap-3">
                     <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80" class="w-8 h-8 rounded-full object-cover" />
                     <div>
                       <p class="font-bold text-[11px]">Jean-Luc (Master)</p>
@@ -83,7 +83,7 @@
                 </div>
                 <button 
                   @click="$emit('open-booking-flow')"
-                  class="w-full py-2.5 rounded-xl bg-[#111111] text-white text-[11px] font-bold hover:bg-[#C8A96A] hover:text-[#111111] transition-colors"
+                  class="w-full py-2.5 rounded-xl bg-[#111111] text-white text-[11px] font-bold hover:bg-[#AA4184] hover:text-[#111111] transition-colors"
                 >
                   Continue with Apple Pay (Try Interactive)
                 </button>
@@ -95,7 +95,7 @@
         <!-- Tab 2: POS Screen -->
         <div v-else-if="activeTab === 'pos'" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div class="lg:col-span-5 space-y-4">
-            <span class="text-xs font-bold uppercase tracking-wider text-[#C8A96A]">Stylist Station Tablet Mode</span>
+            <span class="text-xs font-bold uppercase tracking-wider text-[#AA4184]">Stylist Station Tablet Mode</span>
             <h3 class="text-2xl sm:text-3xl font-extrabold text-[#111111]">
               Equip your artists to add retail and book the next visit right in chair.
             </h3>
@@ -104,11 +104,11 @@
             </p>
             <div class="pt-4 border-t border-[#ECECEC] space-y-2">
               <div class="flex items-center gap-2 text-xs text-[#2B2B2B] font-medium">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#C8A96A]"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-[#AA4184]"></span>
                 Live formula library with exact gram measurements
               </div>
               <div class="flex items-center gap-2 text-xs text-[#2B2B2B] font-medium">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#C8A96A]"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-[#AA4184]"></span>
                 Rebooking prompt boosts retention by 42%
               </div>
             </div>
@@ -126,7 +126,7 @@
                   <div class="p-3 rounded-xl bg-[#F8F8F8] border border-[#ECECEC]">
                     <p class="font-bold text-xs mb-1">Color Bowl Log</p>
                     <p class="text-[10px] text-neutral-600">30g 7N + 15g 8GB + 45g 20Vol</p>
-                    <span class="text-[9px] text-[#C8A96A] font-bold mt-1 inline-block">Saved to Guest Dossier</span>
+                    <span class="text-[9px] text-[#AA4184] font-bold mt-1 inline-block">Saved to Guest Dossier</span>
                   </div>
                   <div class="p-3 rounded-xl bg-[#F8F8F8] border border-[#ECECEC]">
                     <p class="font-bold text-xs mb-1">Recommended Retail</p>
@@ -136,7 +136,7 @@
                 </div>
                 <div class="p-3 rounded-xl bg-neutral-900 text-white flex items-center justify-between">
                   <span class="text-xs">Rebook Next Touchup (6 Weeks)</span>
-                  <button class="px-3 py-1 rounded bg-[#C8A96A] text-[#111111] font-bold text-xs">Lock Dec 12</button>
+                  <button class="px-3 py-1 rounded bg-[#AA4184] text-[#111111] font-bold text-xs">Lock Dec 12</button>
                 </div>
               </div>
             </div>
@@ -146,7 +146,7 @@
         <!-- Tab 3: CRM Screen -->
         <div v-else-if="activeTab === 'crm'" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div class="lg:col-span-5 space-y-4">
-            <span class="text-xs font-bold uppercase tracking-wider text-[#C8A96A]">360° VIP Guest Dossiers</span>
+            <span class="text-xs font-bold uppercase tracking-wider text-[#AA4184]">360° VIP Guest Dossiers</span>
             <h3 class="text-2xl sm:text-3xl font-extrabold text-[#111111]">
               Know your guest's beverage taste, scalp sensitivities & spending history.
             </h3>
@@ -155,11 +155,11 @@
             </p>
             <div class="pt-4 border-t border-[#ECECEC] space-y-2">
               <div class="flex items-center gap-2 text-xs text-[#2B2B2B] font-medium">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#C8A96A]"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-[#AA4184]"></span>
                 Total lifetime spending & average ticket analytics
               </div>
               <div class="flex items-center gap-2 text-xs text-[#2B2B2B] font-medium">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#C8A96A]"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-[#AA4184]"></span>
                 Encrypted allergy and scalp diagnosis records
               </div>
             </div>
@@ -173,7 +173,7 @@
                   <h4 class="text-base font-bold text-[#111111]">Victoria Sterling</h4>
                   <p class="text-xs text-[#2B2B2B]/70">Member since 2022 • Top 1% Spender ($8,420 YTD)</p>
                 </div>
-                <span class="ml-auto px-2.5 py-1 rounded bg-[#C8A96A] text-[#111111] font-bold text-[10px]">DIAMOND VIP</span>
+                <span class="ml-auto px-2.5 py-1 rounded bg-[#AA4184] text-[#111111] font-bold text-[10px]">DIAMOND VIP</span>
               </div>
               <div class="grid grid-cols-3 gap-3 text-center">
                 <div class="p-2.5 rounded-lg bg-[#F8F8F8] border">
@@ -199,7 +199,7 @@
         <!-- Tab 4: Analytics Screen -->
         <div v-else class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div class="lg:col-span-5 space-y-4">
-            <span class="text-xs font-bold uppercase tracking-wider text-[#C8A96A]">Executive Level BI</span>
+            <span class="text-xs font-bold uppercase tracking-wider text-[#AA4184]">Executive Level BI</span>
             <h3 class="text-2xl sm:text-3xl font-extrabold text-[#111111]">
               Real-time P&L, chair yield, and automated multi-location rollups.
             </h3>
@@ -208,11 +208,11 @@
             </p>
             <div class="pt-4 border-t border-[#ECECEC] space-y-2">
               <div class="flex items-center gap-2 text-xs text-[#2B2B2B] font-medium">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#C8A96A]"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-[#AA4184]"></span>
                 Live comparison against historical revenue benchmarks
               </div>
               <div class="flex items-center gap-2 text-xs text-[#2B2B2B] font-medium">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#C8A96A]"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-[#AA4184]"></span>
                 Single-click accounting export for QuickBooks & Xero
               </div>
             </div>
@@ -231,7 +231,7 @@
                 </div>
                 <p class="text-3xl font-black text-white mt-1">$214,840.00</p>
                 <div class="w-full bg-neutral-800 h-2 rounded-full mt-3 overflow-hidden">
-                  <div class="bg-[#C8A96A] h-full w-[84%]"></div>
+                  <div class="bg-[#AA4184] h-full w-[84%]"></div>
                 </div>
                 <p class="text-[10px] text-neutral-400 mt-1">84% toward monthly target ($255,000)</p>
               </div>

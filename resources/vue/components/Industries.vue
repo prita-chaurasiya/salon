@@ -5,7 +5,7 @@
         badge="Tailored For Every Specialty"
         title="Engineered Specifically For"
         highlight="Your Aesthetic Domain."
-        subtitle="Aurum does not force a generic booking template onto your craft. Each vertical includes customized workflows, charting rules, and operational blueprints."
+        subtitle="Salonist does not force a generic booking template onto your craft. Each vertical includes customized workflows, charting rules, and operational blueprints."
         :center="true"
       />
 

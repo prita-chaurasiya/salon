@@ -33,7 +33,7 @@ import Testimonial from './Testimonial.vue';
 
 const testimonials = [
   {
-    quote: "Switching to Aurum eliminated 15 hours of weekly front-desk chaos across our three Manhattan salons. Our stylists rebook 88% of clients right from their chairs before guests step out.",
+    quote: "Switching to Salonist eliminated 15 hours of weekly front-desk chaos across our three Manhattan salons. Our stylists rebook 88% of clients right from their chairs before guests step out.",
     author: "Elena Rostova",
     role: "Founder & Creative Director",
     company: "Atelier Rostova",
@@ -53,7 +53,7 @@ const testimonials = [
     appointmentGrowth: "Zero Double-Bookings"
   },
   {
-    quote: "Our medical spa clients expect five-star luxury. Aurum’s clean aesthetic, silent checkout terminal, and encrypted clinical charting match the caliber of our aesthetic injectors perfectly.",
+    quote: "Our medical spa clients expect five-star luxury. Salonist’s clean aesthetic, silent checkout terminal, and encrypted clinical charting match the caliber of our aesthetic injectors perfectly.",
     author: "Dr. Camilla Sterling, MD",
     role: "Medical Director",
     company: "Lumière Aesthetic Wellness",

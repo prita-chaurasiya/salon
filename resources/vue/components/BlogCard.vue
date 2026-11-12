@@ -1,5 +1,5 @@
 <template>
-  <div class="relative overflow-hidden rounded-2xl bg-white border border-[#ECECEC] transition-all duration-300 hover:border-[#C8A96A] hover:shadow-xl hover:-translate-y-1 group">
+  <div class="relative overflow-hidden rounded-2xl bg-white border border-[#ECECEC] transition-all duration-300 hover:border-[#AA4184] hover:shadow-xl hover:-translate-y-1 group">
     <div class="relative aspect-[16/10] overflow-hidden bg-[#F8F8F8]">
       <img 
         :src="image" 
@@ -8,7 +8,7 @@
         loading="lazy"
       />
       <div class="absolute top-4 left-4">
-        <span class="px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase bg-[#111111]/85 backdrop-blur-sm text-[#C8A96A] border border-white/10">
+        <span class="px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase bg-[#111111]/85 backdrop-blur-sm text-[#AA4184] border border-white/10">
           {{ category }}
         </span>
       </div>
@@ -21,7 +21,7 @@
         <span>{{ readTime }} min read</span>
       </div>
 
-      <h3 class="text-xl font-bold text-[#111111] group-hover:text-[#C8A96A] transition-colors leading-snug mb-3">
+      <h3 class="text-xl font-bold text-[#111111] group-hover:text-[#AA4184] transition-colors leading-snug mb-3">
         {{ title }}
       </h3>
 
@@ -34,7 +34,7 @@
           <img :src="authorAvatar" class="w-6 h-6 rounded-full object-cover" />
           <span>{{ author }}</span>
         </div>
-        <span class="group-hover:translate-x-1 transition-transform text-[#C8A96A]">Read Guide →</span>
+        <span class="group-hover:translate-x-1 transition-transform text-[#AA4184]">Read Guide →</span>
       </div>
     </div>
   </div>
