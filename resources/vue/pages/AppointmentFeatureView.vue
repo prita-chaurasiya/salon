@@ -1,425 +1,373 @@
 <template>
-  <div class="min-h-screen bg-white text-[#140B28] flex flex-col justify-between">
+  <div class="min-h-screen bg-[#FCFBFD] text-[#5C525E] flex flex-col justify-between">
     <!-- Navbar -->
     <Navbar 
       @open-login="loginOpen = true"
-      @start-trial="trialOnboardingOpen = true"
+      @start-trial="trialOpen = true"
     />
 
-    <!-- Main Page Content -->
-    <main class="flex-grow pt-24">
+    <!-- Main Content -->
+    <main class="flex-grow pt-28 sm:pt-36 pb-24">
       
-      <!-- 1. Hero Section -->
-      <section class="relative py-20 lg:py-28 bg-gradient-to-b from-[#FAF8FE] via-white to-white overflow-hidden border-b border-[#E8EAF2]">
+      <!-- ================= 1. HERO SECTION (Salonist Content + Premium Design) ================= -->
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 text-center space-y-6">
         
-        <!-- Luxury Ambient Gradient Orbs -->
-        <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[720px] h-[400px] bg-gradient-to-r from-[#681FA8]/12 via-[#E11D74]/15 to-[#F97316]/10 blur-3xl pointer-events-none rounded-full"></div>
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FBF0F6] text-[#AA4184] text-xs font-black uppercase tracking-wider border border-[#F5DDEB] mb-2 shadow-xs">
+          <Calendar class="w-3.5 h-3.5 text-[#AA4184]" />
+          <span>ONLINE APPOINTMENT MANAGEMENT SOFTWARE</span>
+        </div>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-            
-            <!-- Left Copy Column -->
-            <div class="lg:col-span-7">
-              <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#EFE9FA] border border-[#D9C8F5] mb-6 shadow-xs">
-                <span class="w-2 h-2 rounded-full bg-[#E11D74] animate-pulse"></span>
-                <span class="text-xs font-extrabold uppercase tracking-wider text-[#681FA8]">Salon Appointment Software</span>
-              </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-[#1C151D] tracking-tight leading-[1.12] max-w-5xl mx-auto">
+          Online Appointment Booking & <br />
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#AA4184] via-[#923470] to-[#E11D48]">
+            Scheduling Software for Salons & Spas
+          </span>
+        </h1>
 
-              <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-[#140B28] tracking-tight leading-[1.12]">
-                Effortless 24/7 Booking. <br />
-                <span class="bg-gradient-to-r from-[#681FA8] via-[#E11D74] to-[#F97316] bg-clip-text text-transparent">
-                  Zero No-Shows.
-                </span>
-                <br />
-                Full Salon Chairs.
-              </h1>
+        <p class="text-base sm:text-lg text-[#5C525E] max-w-3xl mx-auto font-normal leading-relaxed">
+          Say goodbye to missed calls, double-bookings, and empty chairs. Salonist’s centralized appointment calendar lets clients self-book 24/7 via Instagram, Facebook, and your website, while your front-desk manages multi-staff shifts and room resources with simple drag-and-drop.
+        </p>
 
-              <p class="mt-6 text-base sm:text-lg text-[#554C68] max-w-xl leading-relaxed">
-                Empower your clients to book haircuts, hair color, manicures, and massages right from your website, Instagram, and Google profile. Automate deposit collection, buffer times, and WhatsApp reminders with ease.
-              </p>
+        <!-- CTA Buttons with Luxury Gradient -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+          <button 
+            @click="trialOpen = true"
+            class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-gradient-to-r from-[#1C151D] via-[#AA4184] to-[#923470] hover:scale-105 active:scale-95 text-white font-bold text-sm shadow-lg shadow-[#AA4184]/25 transition-all duration-300 cursor-pointer"
+          >
+            Start Free 7-Day Trial
+          </button>
+          
+          <router-link 
+            to="/client-testimonials"
+            class="w-full sm:w-auto px-8 py-3.5 rounded-full border border-[#D8D3E2] bg-white hover:bg-[#FAF7F9] hover:border-[#AA4184] text-[#1C151D] hover:text-[#AA4184] font-bold text-sm shadow-xs transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer inline-flex items-center justify-center"
+          >
+            Client Testimonials
+          </router-link>
+        </div>
 
-              <!-- CTA Actions -->
-              <div class="mt-8 flex flex-wrap items-center gap-4">
-                <button 
-                  @click="trialOnboardingOpen = true"
-                  class="px-8 py-4 rounded-full bg-gradient-to-r from-[#681FA8] via-[#E11D74] to-[#F97316] text-white font-bold text-sm sm:text-base shadow-xl shadow-[#E11D74]/25 hover:shadow-2xl hover:shadow-[#E11D74]/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
-                >
-                  Start Free 7-Day Trial
-                </button>
+      </section>
 
-                <button 
-                  @click="demoOpen = true"
-                  class="px-7 py-4 rounded-full bg-white border border-[#E8EAF2] text-[#140B28] font-bold text-sm hover:border-[#681FA8] hover:bg-[#FAF8FE] transition-all duration-200 shadow-xs flex items-center gap-2"
-                >
-                  <Calendar class="w-4 h-4 text-[#681FA8]" />
-                  <span>Schedule Live Demo</span>
-                </button>
-              </div>
-
-              <!-- Trust Micro-metrics -->
-              <div class="mt-10 pt-6 border-t border-[#E8EAF2] flex flex-wrap items-center gap-6 text-xs text-[#554C68]">
-                <div class="flex items-center gap-2">
-                  <CheckCircle2 class="w-4 h-4 text-[#E11D74]" />
-                  <span>No credit card required</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <CheckCircle2 class="w-4 h-4 text-[#E11D74]" />
-                  <span>Unlimited staff included</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <CheckCircle2 class="w-4 h-4 text-[#E11D74]" />
-                  <span>Free client data migration</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Right Interactive Tablet Preview -->
-            <div class="lg:col-span-5 relative">
-              <div class="rounded-3xl bg-white border border-[#E8EAF2] p-5 shadow-2xl relative">
-                
-                <!-- Live Calendar Header -->
-                <div class="flex items-center justify-between pb-4 border-b border-[#F0EDF6]">
-                  <div>
-                    <h3 class="text-sm font-black text-[#140B28]">Live Calendar Matrix</h3>
-                    <p class="text-[11px] text-[#554C68]">Today, Saturday • 4 Active Chairs</p>
-                  </div>
-                  <span class="px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 font-bold text-[10px] border border-emerald-200 flex items-center gap-1">
-                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                    96% Occupancy
-                  </span>
-                </div>
-
-                <!-- Chair Timeline Simulation -->
-                <div class="mt-4 space-y-3">
-                  <!-- Chair 1 -->
-                  <div class="p-3 rounded-2xl bg-[#FAF5EE] border border-[#EFE8DA]">
-                    <div class="flex items-center justify-between mb-1.5">
-                      <div class="flex items-center gap-2">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80" class="w-6 h-6 rounded-full object-cover" />
-                        <span class="text-xs font-bold text-[#140B28]">Aurelia S. (Master Stylist)</span>
-                      </div>
-                      <span class="text-[10px] font-mono text-[#E11D74] font-bold">10:00 - 12:30 PM</span>
-                    </div>
-                    <div class="p-2 rounded-xl bg-white border border-[#E8E4DB] flex items-center justify-between">
-                      <div>
-                        <p class="text-xs font-bold text-[#140B28]">Balayage & Glaze • Emily Watson</p>
-                        <p class="text-[10px] text-[#554C68]">Includes 40m processing buffer gap</p>
-                      </div>
-                      <span class="text-xs font-black text-emerald-600">$260</span>
-                    </div>
-                  </div>
-
-                  <!-- Chair 2 -->
-                  <div class="p-3 rounded-2xl bg-[#FAF8FE] border border-[#EFE9FA]">
-                    <div class="flex items-center justify-between mb-1.5">
-                      <div class="flex items-center gap-2">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&q=80" class="w-6 h-6 rounded-full object-cover" />
-                        <span class="text-xs font-bold text-[#140B28]">Marcus Vance (Senior Barber)</span>
-                      </div>
-                      <span class="text-[10px] font-mono text-[#681FA8] font-bold">11:15 - 12:00 PM</span>
-                    </div>
-                    <div class="p-2 rounded-xl bg-white border border-[#E8E4DB] flex items-center justify-between">
-                      <div>
-                        <p class="text-xs font-bold text-[#140B28]">Precision Fade & Hot Towel • David K.</p>
-                        <p class="text-[10px] text-[#554C68]">Booked via Instagram direct link</p>
-                      </div>
-                      <span class="text-xs font-black text-emerald-600">$85</span>
-                    </div>
-                  </div>
-
-                  <!-- Chair 3: Automated Buffer Slot -->
-                  <div class="p-3 rounded-2xl bg-emerald-50/70 border border-emerald-200">
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center gap-2">
-                        <Sparkles class="w-4 h-4 text-emerald-600" />
-                        <span class="text-xs font-bold text-emerald-900">AI Buffer Auto-Fill</span>
-                      </div>
-                      <span class="text-[10px] font-bold text-emerald-700">Waitlist Alert Sent</span>
-                    </div>
-                    <p class="text-[11px] text-emerald-800 mt-1">
-                      Elena Miller auto-confirmed 30m Express Blowout in vacant slot!
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Floating Badge -->
-                <div class="mt-4 pt-3 border-t border-[#F0EDF6] flex items-center justify-between text-[11px] text-[#554C68]">
-                  <span>Instant 2-way sync with Google Calendar</span>
-                  <span class="font-bold text-[#681FA8]">Zero Latency</span>
-                </div>
-
-              </div>
-            </div>
-
+      <!-- ================= 2. TRUSTED BRAND PILLS ================= -->
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 text-center">
+        <h3 class="text-sm font-bold uppercase tracking-wider text-[#1C151D] mb-6">
+          Trusted Growth Software for Beauty & Wellness
+        </h3>
+        
+        <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+          <div 
+            v-for="(brand, bIdx) in brandLogos" 
+            :key="bIdx"
+            class="px-6 py-3 rounded-full bg-white border border-[#F0E6EC] shadow-xs flex items-center gap-2 hover:border-[#AA4184] transition-colors"
+          >
+            <span class="text-sm">{{ brand.icon }}</span>
+            <span class="text-xs font-bold text-[#1C151D]">{{ brand.name }}</span>
           </div>
         </div>
       </section>
 
-      <!-- 2. Pillar Modules Deep Dive (Appointment Specifics) -->
-      <section class="py-24 bg-white border-b border-[#E8EAF2]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- ================= 3. EDITORIAL + INSET "Give Salonist a try !!" BANNER CARD ================= -->
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           
-          <div class="text-center max-w-3xl mx-auto mb-16">
-            <span class="inline-block px-4 py-1.5 rounded-full bg-[#EFE9FA] text-[#681FA8] font-bold text-xs uppercase tracking-wider mb-3">
-              Complete Scheduling Suite
-            </span>
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#140B28] tracking-tight">
-              Every Feature Designed to <br />
-              <span class="bg-gradient-to-r from-[#681FA8] to-[#E11D74] bg-clip-text text-transparent">
-                Fill Your Salon Calendar
-              </span>
+          <!-- Left Editorial (7 cols) -->
+          <div class="lg:col-span-7 space-y-6 text-left">
+            <h2 class="text-3xl sm:text-4xl font-black text-[#1C151D] tracking-tight leading-tight">
+              Manage Your Entire Floor from a Single Interactive Screen
             </h2>
-            <p class="mt-4 text-sm sm:text-base text-[#554C68] max-w-2xl mx-auto leading-relaxed">
-              From online booking widgets to smart slot blockers, here is how Salonist keeps every chair profitable without double bookings.
+
+            <p class="text-base text-[#5C525E] leading-relaxed">
+              Handling dozens of daily hair color appointments, haircut finishes, and spa treatments across multiple staff members requires surgical coordination. Without smart appointment management software, receptionists waste hours fielding phone calls, manually rearranging schedules, and resolving awkward double-bookings.
             </p>
-          </div>
 
-          <!-- 6 Grid Feature Cards -->
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div 
-              v-for="(feat, fIdx) in appointmentFeatures" 
-              :key="fIdx"
-              class="p-8 rounded-[28px] bg-[#FAF8FE] border border-[#E8EAF2] hover:border-[#681FA8]/40 hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
-            >
-              <div>
-                <div class="w-14 h-14 rounded-2xl bg-white border border-[#E8EAF2] flex items-center justify-center text-[#681FA8] shadow-xs mb-6 group-hover:bg-[#E11D74] group-hover:text-white transition-all duration-300">
-                  <component :is="feat.icon" class="w-6 h-6" />
-                </div>
-                <h3 class="text-xl font-bold text-[#140B28] mb-3">{{ feat.title }}</h3>
-                <p class="text-xs sm:text-[13px] text-[#554C68] leading-relaxed mb-6">{{ feat.description }}</p>
+            <p class="text-base text-[#5C525E] leading-relaxed">
+              Salonist consolidates all bookings into one high-velocity master calendar. Whether an appointment is booked through your Instagram profile at midnight, reserved by a walk-in guest at the front desk, or scheduled as a repeat weekly appointment, your entire team stays synchronized in real time.
+            </p>
+
+            <div class="space-y-3 pt-2">
+              <div class="flex items-start gap-3 text-sm text-[#1C151D]">
+                <span class="text-[#AA4184] font-black">✔</span>
+                <span><strong>24/7 Self-Service Web & App Booking:</strong> Clients book services and choose stylists without calling.</span>
               </div>
-
-              <div class="pt-4 border-t border-[#E8EAF2] flex items-center justify-between text-xs">
-                <span class="font-bold text-[#681FA8]">{{ feat.highlight }}</span>
-                <span class="text-neutral-400 group-hover:translate-x-1 transition-transform">→</span>
+              <div class="flex items-start gap-3 text-sm text-[#1C151D]">
+                <span class="text-[#AA4184] font-black">✔</span>
+                <span><strong>Smart Slot Blockers:</strong> Automatically block out staff breaks, shift ends, and equipment maintenance.</span>
+              </div>
+              <div class="flex items-start gap-3 text-sm text-[#1C151D]">
+                <span class="text-[#AA4184] font-black">✔</span>
+                <span><strong>Drag & Drop Rescheduling:</strong> Move appointments across chairs or times with automatic client SMS alerts.</span>
               </div>
             </div>
           </div>
 
-        </div>
-      </section>
+          <!-- Right Floating "Give Salonist a try !!" Banner Card -->
+          <div class="lg:col-span-5">
+            <div class="rounded-3xl bg-gradient-to-br from-[#1C151D] via-[#2A1D2C] to-[#451B38] text-white p-8 sm:p-10 shadow-2xl relative overflow-hidden border border-[#AA4184]/30">
+              
+              <div class="absolute -top-12 -right-12 w-48 h-48 bg-[#AA4184]/40 rounded-full blur-2xl pointer-events-none"></div>
 
-      <!-- 3. Omnichannel Booking Embeds (Website + Instagram + WhatsApp) -->
-      <section class="py-24 bg-[#FAF5EE] border-b border-[#EBE3D5]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
-            <div class="lg:col-span-6">
-              <span class="text-xs font-bold uppercase tracking-widest text-[#E11D74]">
-                Omnichannel Booking
-              </span>
-              <h2 class="text-3xl sm:text-4xl font-extrabold text-[#140B28] mt-2 mb-6 leading-tight">
-                Clients Book Wherever They Find You. <br />
-                <span class="bg-gradient-to-r from-[#681FA8] to-[#E11D74] bg-clip-text text-transparent">
-                  In Seconds.
-                </span>
-              </h2>
-              <p class="text-sm sm:text-base text-[#554C68] leading-relaxed mb-8">
-                Never lose a booking because a client messaged after hours or couldn’t get through on the phone. Embed our high-converting widget anywhere or generate dedicated booking links.
-              </p>
-
-              <div class="space-y-4">
-                <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-[#E8E4DB] shadow-xs">
-                  <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#E11D74] to-[#F97316] text-white flex items-center justify-center shrink-0">
-                    <Instagram class="w-5 h-5" />
+              <div class="relative z-10 space-y-5">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-amber-400 via-rose-500 to-[#AA4184] flex items-center justify-center font-black text-xs text-white">
+                    ▲
                   </div>
-                  <div>
-                    <h4 class="text-sm font-bold text-[#140B28]">Instagram & Facebook "Book Now" Buttons</h4>
-                    <p class="text-xs text-[#554C68] mt-0.5">Direct integration turns profile visitors and story viewers into confirmed appointments instantly.</p>
-                  </div>
+                  <span class="text-2xl font-black tracking-tight text-white">Salonist</span>
                 </div>
 
-                <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-[#E8E4DB] shadow-xs">
-                  <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-600 text-white flex items-center justify-center shrink-0">
-                    <MessageSquare class="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 class="text-sm font-bold text-[#140B28]">2-Way WhatsApp Booking Concierge</h4>
-                    <p class="text-xs text-[#554C68] mt-0.5">Automated conversational bot shares available slots, collects deposit payments, and confirms bookings 24/7.</p>
-                  </div>
-                </div>
+                <h3 class="text-xl font-black text-white leading-snug">
+                  Give Salonist a try !!
+                </h3>
 
-                <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-[#E8E4DB] shadow-xs">
-                  <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 text-white flex items-center justify-center shrink-0">
-                    <Globe class="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 class="text-sm font-bold text-[#140B28]">Branded Website Booking Widget</h4>
-                    <p class="text-xs text-[#554C68] mt-0.5">Seamless embed for WordPress, Wix, Squarespace, Shopify, or custom websites with custom colors.</p>
-                  </div>
-                </div>
-              </div>
+                <p class="text-sm text-slate-200 leading-relaxed">
+                  We have everything that you need to run your Salon business. Use Salonist free for 7 days and experience the difference!!
+                </p>
 
-            </div>
-
-            <!-- Booking Mockup Card -->
-            <div class="lg:col-span-6">
-              <div class="rounded-3xl bg-white border border-[#E8E4DB] p-6 sm:p-8 shadow-xl">
-                <div class="flex items-center justify-between pb-4 border-b border-neutral-100 mb-6">
-                  <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-full bg-[#140B28] text-white flex items-center justify-center font-bold">
-                      S
-                    </div>
-                    <div>
-                      <h4 class="text-sm font-bold text-[#140B28]">Atelier Aurelia • Online Booking</h4>
-                      <p class="text-[11px] text-[#554C68]">Step 2 of 3: Select Date & Time</p>
-                    </div>
-                  </div>
-                  <span class="text-xs font-bold text-[#E11D74]">Deposit Protected</span>
-                </div>
-
-                <!-- Calendar Time Picker -->
-                <div class="space-y-4">
-                  <div class="flex items-center justify-between text-xs font-bold text-[#140B28] px-1">
-                    <span>Selected: Balayage & Cut with Aurelia</span>
-                    <span class="text-[#681FA8]">$260 (2h 30m)</span>
-                  </div>
-
-                  <div class="grid grid-cols-4 gap-2 text-center text-xs">
-                    <div class="p-2.5 rounded-xl border border-[#E8EAF2] text-[#554C68] hover:border-[#681FA8] cursor-pointer">10:00 AM</div>
-                    <div class="p-2.5 rounded-xl bg-[#681FA8] text-white font-bold cursor-pointer shadow-sm">11:30 AM</div>
-                    <div class="p-2.5 rounded-xl border border-[#E8EAF2] text-[#554C68] hover:border-[#681FA8] cursor-pointer">02:00 PM</div>
-                    <div class="p-2.5 rounded-xl border border-[#E8EAF2] text-[#554C68] hover:border-[#681FA8] cursor-pointer">04:15 PM</div>
-                  </div>
-
-                  <!-- Client Card Info -->
-                  <div class="p-4 rounded-xl bg-[#FAF8FE] border border-[#E8EAF2] mt-4">
-                    <div class="flex items-center justify-between text-xs mb-2">
-                      <span class="text-[#554C68]">Card Deposit (Stripe)</span>
-                      <span class="font-bold text-[#140B28]">$50.00</span>
-                    </div>
-                    <div class="flex items-center justify-between text-xs">
-                      <span class="text-[#554C68]">Cancellation Policy</span>
-                      <span class="text-[11px] text-emerald-600 font-semibold">Free cancellation up to 24h</span>
-                    </div>
-                  </div>
-
+                <div class="pt-2">
                   <button 
-                    @click="trialOnboardingOpen = true"
-                    class="w-full py-3.5 rounded-xl bg-[#140B28] text-white font-bold text-xs hover:bg-[#681FA8] transition-colors shadow-sm"
+                    @click="trialOpen = true"
+                    class="w-full py-3.5 rounded-full bg-gradient-to-r from-[#AA4184] to-[#C05A9A] hover:from-[#923470] hover:to-[#AA4184] text-white font-bold text-sm shadow-lg hover:scale-105 active:scale-95 transition-all cursor-pointer"
                   >
-                    Confirm Appointment with Apple Pay / Card →
+                    Start Your Free Trial &rarr;
                   </button>
                 </div>
+
+                <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs text-slate-300">
+                  <span>✔ No Credit Card Required</span>
+                  <span>✔ Unlimited Stylists</span>
+                </div>
+
+                <div class="pt-2">
+                  <img 
+                    src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=600&q=80" 
+                    alt="Salon Calendar Dashboard" 
+                    class="w-full h-44 object-cover rounded-2xl shadow-md border border-white/10"
+                  />
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= 4. 7 CORE APPOINTMENT CAPABILITIES ACCORDIONS ================= -->
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
+        <div class="text-left space-y-3 mb-10">
+          <h2 class="text-3xl sm:text-4xl font-black text-[#1C151D] tracking-tight">
+            Key Features of Salonist Appointment Software
+          </h2>
+          <p class="text-base text-[#5C525E] max-w-4xl">
+            Explore the advanced tools that keep your calendar full, eliminate unbooked processing gaps, and protect your staff's working hours.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <div 
+            v-for="(feat, fIdx) in appointmentFeatures" 
+            :key="fIdx"
+            class="rounded-2xl bg-white border border-[#F0E6EC] p-5 shadow-xs hover:border-[#AA4184] transition-all cursor-pointer"
+            @click="activeFeature = activeFeature === fIdx ? null : fIdx"
+          >
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-4">
+                <div class="w-8 h-8 rounded-full bg-[#1C151D] text-white flex items-center justify-center font-black text-xs">
+                  {{ fIdx + 1 }}
+                </div>
+                <h3 class="font-bold text-base text-[#1C151D]">{{ feat.title }}</h3>
+              </div>
+              <svg 
+                class="w-5 h-5 text-slate-400 transition-transform duration-300"
+                :class="{ 'rotate-180 text-[#AA4184]': activeFeature === fIdx }"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            
+            <p v-show="activeFeature === fIdx" class="mt-4 text-sm text-[#5C525E] leading-relaxed pl-12 border-t border-slate-100 pt-3">
+              {{ feat.content }}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 5. DINGG SOFT BLUSH BACKGROUND SECTION ================= -->
+      <DinggCouponPromoSection 
+        business-type="salon & spa"
+        @start-trial="trialOpen = true"
+        class="mb-24"
+      />
+
+      <!-- ================= 6. CUSTOMER STORIES: "Loved by thousands of salons and spas" ================= -->
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
+        <div class="text-center space-y-3 mb-12">
+          <span class="text-xs uppercase font-extrabold tracking-widest text-[#AA4184]">CUSTOMER STORIES</span>
+          <h2 class="text-3xl sm:text-5xl font-black text-[#1C151D] tracking-tight">
+            Loved by thousands of salons and spas
+          </h2>
+          <p class="text-base text-[#5C525E] max-w-2xl mx-auto">
+            Watch real video case studies from salon directors who scaled multi-chair revenue and eliminated calendar double-bookings.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div 
+            v-for="(video, vIdx) in videoStories" 
+            :key="vIdx" 
+            class="group relative rounded-3xl overflow-hidden shadow-xl border border-[#F0E6EC] bg-slate-900 cursor-pointer aspect-[3/4]"
+          >
+            <img 
+              :src="video.image" 
+              :alt="video.name" 
+              class="w-full h-full object-cover opacity-85 group-hover:scale-105 group-hover:opacity-75 transition-all duration-700"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-14 h-14 rounded-full bg-[#AA4184] text-white flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
+                <svg class="w-6 h-6 fill-current ml-1" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
               </div>
             </div>
 
+            <div class="absolute inset-x-4 bottom-6 text-center space-y-1">
+              <p class="text-lg font-black text-white leading-tight drop-shadow-md">
+                "{{ video.highlight }}"
+              </p>
+              <h4 class="font-bold text-xs text-rose-200 uppercase tracking-widest pt-2">
+                {{ video.name }}
+              </h4>
+              <p class="text-[11px] text-slate-300">{{ video.salonType }}</p>
+            </div>
           </div>
+        </div>
 
+        <div class="text-center pt-10">
+          <router-link 
+            to="/client-testimonials"
+            class="px-8 py-3.5 rounded-full bg-[#1C151D] hover:bg-[#AA4184] text-white font-bold text-sm shadow-md hover:scale-105 transition-all cursor-pointer inline-flex items-center gap-2"
+          >
+            <span>View All Verified Client Testimonials</span>
+            <span>&rarr;</span>
+          </router-link>
         </div>
       </section>
 
-      <!-- 4. Interactive Master Multi-Chair Matrix -->
-      <section class="py-24 bg-white border-b border-[#E8EAF2]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center max-w-3xl mx-auto mb-16">
-            <span class="inline-block px-4 py-1.5 rounded-full bg-[#EFE9FA] text-[#681FA8] font-bold text-xs uppercase tracking-wider mb-3">
-              Interactive Matrix
-            </span>
-            <h2 class="text-3xl sm:text-4xl font-black text-[#140B28] tracking-tight">
-              Test Our Multi-Chair Schedule
-            </h2>
-            <p class="mt-4 text-sm sm:text-base text-[#554C68]">
-              Click on slots to experience how stylists, processing buffers, and walk-in checkouts coordinate in real-time.
-            </p>
-          </div>
-
-          <LiveCalendarMatrix />
-        </div>
+      <!-- ================= 7. CTA ================= -->
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+        <CTA 
+          badge="Start Automating Today"
+          title="Keep every chair fully booked with Salonist Appointment Software"
+          subtitle="Everything from calendar buffer rules to automated WhatsApp deposit reminders, ready out of the box."
+          @start-trial="trialOpen = true"
+          @book-demo="demoOpen = true"
+        />
       </section>
-
-      <!-- 5. FAQ Section -->
-      <FAQSection />
-
-      <!-- 6. Bottom Banner CTA -->
-      <div class="py-20 bg-[#FAF8FE]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <CTA 
-            @start-trial="trialOnboardingOpen = true"
-            @book-demo="demoOpen = true"
-          />
-        </div>
-      </div>
 
     </main>
 
-    <!-- Footer -->
     <Footer />
 
     <!-- Modals -->
     <TrialOnboardingModal 
-      v-model="trialOnboardingOpen"
-      @close="trialOnboardingOpen = false"
-      @switch-to-login="trialOnboardingOpen = false; loginOpen = true"
+      v-model="trialOpen" 
+      @close="trialOpen = false" 
+      @switch-to-login="trialOpen = false; loginOpen = true"
     />
-
     <LoginModal 
-      v-model="loginOpen"
-      @close="loginOpen = false"
-      @switch-to-trial="loginOpen = false; trialOnboardingOpen = true"
+      v-model="loginOpen" 
+      @close="loginOpen = false" 
+      @switch-to-trial="loginOpen = false; trialOpen = true"
     />
-
+    <DemoBookingModal 
+      v-model="demoOpen" 
+      @close="demoOpen = false" 
+    />
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue';
-import { 
-  Calendar, CheckCircle2, Sparkles, Clock, 
-  Instagram, MessageSquare, Globe, Shield, 
-  Repeat, Users, Bell, Layers 
-} from 'lucide-vue-next';
-
 import Navbar from '../components/Navbar.vue';
 import Footer from '../components/Footer.vue';
-import FAQSection from '../components/FAQSection.vue';
 import CTA from '../components/CTA.vue';
-import LiveCalendarMatrix from '../components/interactive/LiveCalendarMatrix.vue';
+import DinggCouponPromoSection from '../components/common/DinggCouponPromoSection.vue';
 import TrialOnboardingModal from '../components/interactive/TrialOnboardingModal.vue';
 import LoginModal from '../components/interactive/LoginModal.vue';
+import DemoBookingModal from '../components/interactive/DemoBookingModal.vue';
+import { Calendar } from 'lucide-vue-next';
 
-const trialOnboardingOpen = ref(false);
-const loginOpen = ref(false);
+const trialOpen = ref(false);
 const demoOpen = ref(false);
+const loginOpen = ref(false);
+
+const activeFeature = ref(0);
+
+const brandLogos = [
+  { name: 'Toni & Guy', icon: '✂️' },
+  { name: 'Buqwal', icon: '💈' },
+  { name: 'Memories', icon: '🌸' },
+  { name: 'Meraki Spa', icon: '🌿' },
+  { name: 'Stile Barbers', icon: '✂️' },
+  { name: 'Looks Salon', icon: '💆‍♀️' }
+];
 
 const appointmentFeatures = [
   {
-    icon: Calendar,
-    title: '24/7 Online Self-Booking',
-    description: 'Clients can browse your service menu, select their favorite stylist, view real-time availability, and reserve appointments around the clock without calling.',
-    highlight: 'Zero Phone Tag'
+    title: '24/7 Multi-Channel Online Booking Integration',
+    content: 'Allow clients to book appointments around the clock through your website, mobile app, or social media handles (Instagram, Facebook, and Google Reserve) without telephone tag or reception delays.'
   },
   {
-    icon: Clock,
-    title: 'Smart Slot Blockers & Breaks',
-    description: 'Easily block out lunch breaks, staff holidays, deep cleans, or personal time. Salonist automatically adjusts your booking calendar so no client books an off slot.',
-    highlight: 'Zero Overlaps'
+    title: 'Slot Blockers & Unavailability Management',
+    content: 'Automatically block off days off, break times, and maintenance windows so clients only book during active, available stylist hours.'
   },
   {
-    icon: Bell,
-    title: 'Automated 2-Way Reminders',
-    description: 'Cut salon no-shows by up to 80% with automated SMS and WhatsApp confirmations 48h and 2h ahead. Clients reply to confirm or reschedule automatically.',
-    highlight: 'Cut No-Shows by 80%'
+    title: 'Visual Drag & Drop Centralized Calendar',
+    content: 'Quickly rearrange, reschedule, or reassign appointments across staff columns and treatment rooms from any tablet, phone, or desktop with instant client SMS notifications.'
   },
   {
-    icon: Repeat,
-    title: 'Recurring & Package Bookings',
-    description: 'Lock in regular clients with recurring weekly or monthly appointment schedules, pre-paid packages, and seasonal promotional treatment bundles.',
-    highlight: 'Guaranteed Repeat Bookings'
+    title: 'Popup Notes & Customer Consultation History',
+    content: 'Attach hair color formulas, patch test alerts, allergy warnings, and past visit notes directly to each appointment card for personalized service.'
   },
   {
-    icon: Users,
-    title: 'Staff Roster & Chair Allocation',
-    description: 'Assign specific chairs, treatment rooms, and equipment. Manage variable shift schedules, custom commission ladders, and staff breaks in one view.',
-    highlight: 'Multi-Stylist Orchestration'
+    title: 'Automated Recurring Appointments',
+    content: 'Easily set up weekly blowouts, bi-weekly beard trims, or monthly manicures with automatic recurrence so regulars never lose their preferred slot.'
   },
   {
-    icon: Layers,
-    title: 'Chemical Processing Buffers',
-    description: 'Allow colorists to take another haircut or blowout while hair color or toner is developing. Maximize hourly chair productivity and top-line salon revenue.',
-    highlight: '+35% Chair Yield'
+    title: 'Color-Coded Status & Stylist Highlighting',
+    content: 'Differentiate between confirmed, arrived, in-service, and completed visits with clear color-coded indicators across daily and weekly station views.'
+  },
+  {
+    title: 'Automated 2-Way Reminders & Deposit Collection',
+    content: 'Drastically reduce costly no-shows by collecting pre-authorized deposits and sending automated WhatsApp/SMS reminders with one-tap confirmations.'
+  }
+];
+
+const videoStories = [
+  {
+    name: 'Slenco Grooming',
+    salonType: 'Flagship Barbershop Chain',
+    highlight: 'managing staff and appointments seamlessly',
+    image: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=80'
+  },
+  {
+    name: 'BB Salon & Spa',
+    salonType: 'Boutique Hair & Color Bar',
+    highlight: 'valuable asset for our everyday growth',
+    image: 'https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=600&q=80'
+  },
+  {
+    name: 'G Salon Flagship',
+    salonType: 'Multi-Station Beauty Studio',
+    highlight: 'zero chair double-bookings ever again',
+    image: 'https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=600&q=80'
+  },
+  {
+    name: 'Glow Box Clinic',
+    salonType: 'Aesthetic Skin & Laser Clinic',
+    highlight: 'our most successful software investment',
+    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80'
   }
 ];
 </script>
-
