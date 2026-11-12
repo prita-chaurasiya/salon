@@ -161,3 +161,4 @@ import LoginModal from '../components/interactive/LoginModal.vue';
 const trialOpen = ref(false);
 const loginOpen = ref(false);
 </script>
+

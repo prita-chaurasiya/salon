@@ -32,6 +32,9 @@
       <!-- 6B. Fast, No-Friction Salon Booking & Management (DINGG B2M2 Framework) -->
       <DinggPillarsSection @start-trial="trialOnboardingOpen = true" />
 
+      <!-- 6C. Salonist Pixel-by-Pixel Automation & Experience Suite (Screenshot 2 & 3 Match) -->
+      <SalonistExperienceSection @start-trial="trialOnboardingOpen = true" />
+
       <!-- 7. Key Live Counters -->
       <Counter />
 
@@ -199,6 +202,7 @@ import BusinessTypesGrid from '../components/homepage/BusinessTypesGrid.vue';
 import EverythingSalonNeeds from '../components/homepage/EverythingSalonNeeds.vue';
 import AllInOneSchedulingSection from '../components/homepage/AllInOneSchedulingSection.vue';
 import DinggPillarsSection from '../components/homepage/DinggPillarsSection.vue';
+import SalonistExperienceSection from '../components/homepage/SalonistExperienceSection.vue';
 import LogoSlider from '../components/LogoSlider.vue';
 import Counter from '../components/Counter.vue';
 import FeatureGrid from '../components/FeatureGrid.vue';
