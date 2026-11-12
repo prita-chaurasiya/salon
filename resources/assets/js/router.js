@@ -108,6 +108,16 @@ const routes = [
         component: () => import('../../vue/pages/SecurityView.vue'),
     },
     {
+        path: '/client-testimonials',
+        name: 'client-testimonials',
+        component: () => import('../../vue/pages/ClientTestimonialsView.vue'),
+    },
+    {
+        path: '/clients',
+        name: 'clients',
+        component: () => import('../../vue/pages/ClientTestimonialsView.vue'),
+    },
+    {
         path: '/demo',
         name: 'demo',
         component: () => import('../../vue/pages/DemoView.vue'),

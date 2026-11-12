@@ -414,3 +414,4 @@ defineEmits(['start-trial']);
 const activePillar1 = ref(1);
 const activePillar2 = ref(1);
 </script>
+

@@ -35,18 +35,17 @@
               @click="$emit('start-trial')"
               class="px-8 py-3.5 rounded-full btn-3d-primary font-bold text-xs sm:text-sm flex items-center justify-center gap-2 group cursor-pointer"
             >
-              <span>Start Free 7-Day Trial</span>
+              <span>Get A Free Trial</span>
               <span class="group-hover:translate-x-1.5 transition-transform">→</span>
             </button>
 
-            <!-- 20-Min Demo CTA (Secondary Button) -->
-            <button 
-              @click="$emit('open-demo')"
-              class="px-7 py-3.5 rounded-full btn-secondary-luxury font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-xs cursor-pointer"
+            <!-- Client Testimonials CTA (Secondary Button linking directly to /client-testimonials) -->
+            <router-link 
+              to="/client-testimonials"
+              class="px-7 py-3.5 rounded-full btn-secondary-luxury font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-xs cursor-pointer hover:border-[#AA4184] hover:text-[#AA4184] transition-colors"
             >
-              <Calendar class="w-4 h-4 text-[#AA4184]" />
-              <span>Book A 20-Min Demo</span>
-            </button>
+              <span>Client Testimonials</span>
+            </router-link>
           </div>
 
           <!-- Subtext under buttons -->
