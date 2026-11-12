@@ -217,6 +217,78 @@
         </div>
       </section>
 
+      <!-- ================= 5.5 DINGG/SALONIST GIFT CARDS & CLIENT PROMOTIONS SHOWCASE ================= -->
+      <section class="bg-[#FAF0F5] border-y border-[#F5DDEB] py-20 mb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Copy: Exact match to user screenshot -->
+            <div class="lg:col-span-6 space-y-6">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white text-[#AA4184] text-xs font-black uppercase tracking-wider border border-[#F0E6EC] shadow-xs">
+                <span>✓ Reduced no-shows</span>
+              </div>
+
+              <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1C151D] tracking-tight leading-[1.15]">
+                Easy and Flexible <br />
+                <span class="text-[#AA4184]">Coupons and Gift Cards</span>
+              </h2>
+
+              <p class="text-base text-[#5C525E] leading-relaxed">
+                Promotions and gift cards play a big role in salon and spa growth, especially for new client acquisition. Salonist's <strong>salon management system</strong> makes it easy to create, manage, and track coupons and gift cards.
+              </p>
+
+              <p class="text-base text-[#5C525E] leading-relaxed">
+                Everything is linked to client profiles, so there's no confusion during redemption. It's simple, clean, and works well even during peak holiday rush.
+              </p>
+
+              <div class="flex items-center gap-3 pt-2">
+                <button 
+                  @click="trialOnboardingOpen = true"
+                  class="px-7 py-3 rounded-full bg-gradient-to-r from-[#1C151D] via-[#AA4184] to-[#923470] text-white font-extrabold text-xs shadow-md hover:scale-105 transition-all cursor-pointer"
+                >
+                  Create Your First Promo
+                </button>
+              </div>
+            </div>
+
+            <!-- Right Visual: Woman with smartphone and floating interactive callouts matching screenshot -->
+            <div class="lg:col-span-6 relative flex justify-center">
+              <div class="relative max-w-md w-full">
+                
+                <!-- Curved Teal/Sage Background Blob matching screenshot -->
+                <div class="absolute inset-0 bg-[#A0D2CD]/50 rounded-[40px] transform rotate-3 scale-95 -z-10"></div>
+
+                <!-- Main Photo -->
+                <div class="rounded-[36px] overflow-hidden bg-white border border-[#F0E6EC] shadow-xl aspect-[4/5]">
+                  <img 
+                    src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=85" 
+                    alt="Salon Client Happy" 
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+
+                <!-- Floating Callout 1: Top Right (Coral Red) -->
+                <div class="absolute -top-3 -right-4 sm:-right-6 px-4 py-2 rounded-xl bg-[#E05345] text-white text-xs font-black shadow-lg animate-pulse">
+                  Launch Seasonal Promotions
+                </div>
+
+                <!-- Floating Callout 2: Middle Right (Berry Rose #AA4184) -->
+                <div class="absolute top-1/2 -right-4 sm:-right-6 -translate-y-1/2 px-4 py-2 rounded-xl bg-[#AA4184] text-white text-xs font-black shadow-lg">
+                  Use Targeted Discounts On Packages
+                </div>
+
+                <!-- Floating Callout 3: Bottom Left (Lime Gold) -->
+                <div class="absolute bottom-6 -left-4 sm:-left-6 px-4 py-2 rounded-xl bg-[#C7D938] text-[#1C151D] text-xs font-black shadow-lg">
+                  Easily Track Redemption And Sales
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       <!-- ================= 6. TESTIMONIAL QUOTE ================= -->
       <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-24 text-center">
         <div class="rounded-3xl bg-white border border-[#F0E6EC] p-8 sm:p-12 shadow-xs">

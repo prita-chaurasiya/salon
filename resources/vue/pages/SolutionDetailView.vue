@@ -390,6 +390,81 @@
 
       </section>
 
+      <!-- ================= 4.5 DINGG/SALONIST COUPONS & GIFT CARDS SHOWCASE (User Screenshot Match) ================= -->
+      <section class="bg-[#FAF0F5] border-y border-[#F5DDEB] py-20 mb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Copy: Exact match to user screenshot -->
+            <div class="lg:col-span-6 space-y-6">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white text-[#AA4184] text-xs font-black uppercase tracking-wider border border-[#F0E6EC] shadow-xs">
+                <span>✓ Reduced no-shows</span>
+              </div>
+
+              <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1C151D] tracking-tight leading-[1.15]">
+                Easy and Flexible <br />
+                <span class="text-[#AA4184]">Coupons and Gift Cards</span>
+              </h2>
+
+              <p class="text-base text-[#5C525E] leading-relaxed">
+                Promotions and gift cards play a big role in {{ solution.title.toLowerCase() }} growth, especially for new client acquisition. Salonist's <strong>{{ solution.title.toLowerCase() }} software</strong> makes it easy to create, manage, and track coupons and gift cards.
+              </p>
+
+              <p class="text-base text-[#5C525E] leading-relaxed">
+                Everything is linked to client profiles, so there's no confusion during redemption. It's simple, clean, and works well even during busy days.
+              </p>
+
+              <!-- Feature Pills Strip -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                <div class="flex items-center gap-2.5 p-3 rounded-2xl bg-white border border-[#F0E6EC] shadow-xs">
+                  <span class="w-2 h-2 rounded-full bg-[#AA4184]"></span>
+                  <span class="text-xs font-bold text-[#1C151D]">Instant Online Vouchers</span>
+                </div>
+                <div class="flex items-center gap-2.5 p-3 rounded-2xl bg-white border border-[#F0E6EC] shadow-xs">
+                  <span class="w-2 h-2 rounded-full bg-[#AA4184]"></span>
+                  <span class="text-xs font-bold text-[#1C151D]">One-Tap POS Redemption</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Visual: Woman with smartphone and floating interactive callouts matching screenshot -->
+            <div class="lg:col-span-6 relative flex justify-center">
+              <div class="relative max-w-md w-full">
+                
+                <!-- Curved Teal/Sage Background Blob matching screenshot -->
+                <div class="absolute inset-0 bg-[#A0D2CD]/50 rounded-[40px] transform rotate-3 scale-95 -z-10"></div>
+
+                <!-- Main Photo -->
+                <div class="rounded-[36px] overflow-hidden bg-white border border-[#F0E6EC] shadow-xl aspect-[4/5]">
+                  <img 
+                    src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=85" 
+                    alt="Salon Client Happy" 
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+
+                <!-- Floating Callout 1: Top Right (Coral Red) -->
+                <div class="absolute -top-3 -right-4 sm:-right-6 px-4 py-2 rounded-xl bg-[#E05345] text-white text-xs font-black shadow-lg animate-pulse">
+                  Launch Seasonal Promotions
+                </div>
+
+                <!-- Floating Callout 2: Middle Right (Berry Rose #AA4184) -->
+                <div class="absolute top-1/2 -right-4 sm:-right-6 -translate-y-1/2 px-4 py-2 rounded-xl bg-[#AA4184] text-white text-xs font-black shadow-lg">
+                  Use Targeted Discounts On Packages
+                </div>
+
+                <!-- Floating Callout 3: Bottom Left (Lime Gold) -->
+                <div class="absolute bottom-6 -left-4 sm:-left-6 px-4 py-2 rounded-xl bg-[#C7D938] text-[#1C151D] text-xs font-black shadow-lg">
+                  Easily Track Redemption And Sales
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       <!-- ================= 5. SOLUTION-SPECIFIC ACCORDION FAQS ================= -->
       <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
         <div class="text-center mb-12">
